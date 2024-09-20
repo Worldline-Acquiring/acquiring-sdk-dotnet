@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Worldline.Acquiring.Sdk</RootNamespace>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <Version>0.1.0</Version>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>Worldline</Company>
+    <Product>Worldline Acquiring .NET SDK integration tests</Product>
+    <Description>Integration tests for the Worldline Acquiring .NET SDK</Description>
+    <PackageTags>Worldline Acquiring SDK</PackageTags>
+    <Copyright>Copyright (c) 2024 Worldline Financial Services (Europe) SA</Copyright>
+    <Authors>Worldline</Authors>
+    <PackageProjectUrl>https://docs.acquiring.worldline-solutions.com/Developer-Tools/sdk/dotnet</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIcon>packageIcon.png</PackageIcon>
+    <PackageIconUrl>https://github.com/Worldline-Acquiring/acquiring-sdk-dotnet/blob/master/packageIcon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Worldline-Acquiring/acquiring-sdk-dotnet</RepositoryUrl>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Worldline.Acquiring.Sdk\Worldline.Acquiring.Sdk.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
+    <PackageReference Include="NunitXml.TestLogger" Version="3.1.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\packageIcon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+    <Copy SourceFiles="app.config" DestinationFiles="$(OutDir)\testhost.dll.config" />
+  </Target>
+
+</Project>

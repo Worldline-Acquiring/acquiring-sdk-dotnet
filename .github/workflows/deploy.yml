@@ -1,0 +1,40 @@
+name: Deploy
+
+on:
+  push:
+    tags: ['[0-9]+.[0-9]+*']
+
+env:
+  SDK_VERSION: ${{ github.ref_name }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0'
+      - name: Build
+        run: |
+          dotnet restore Worldline.Acquiring.Sdk
+          dotnet build -c Release Worldline.Acquiring.Sdk
+          dotnet pack -c Release Worldline.Acquiring.Sdk
+          dotnet restore Worldline.Acquiring.Sdk.StrongName
+          dotnet build -c Release Worldline.Acquiring.Sdk.StrongName
+          dotnet pack -c Release Worldline.Acquiring.Sdk.StrongName
+      - uses: actions/upload-artifact@v4
+        with:
+          name: packages
+          path: '**/*.nupkg'
+          retention-days: 1
+      - name: Deploy
+        run: |
+          dotnet nuget push Worldline.Acquiring.Sdk/bin/Release/Worldline.Acquiring.Sdk.${env:SDK_VERSION}.nupkg                       --api-key "${env:NUGET_API_KEY}" --source https://api.nuget.org/v3/index.json
+          dotnet nuget push Worldline.Acquiring.Sdk.StrongName/bin/Release/Worldline.Acquiring.Sdk.StrongName.${env:SDK_VERSION}.nupkg --api-key "${env:NUGET_API_KEY}" --source https://api.nuget.org/v3/index.json
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
