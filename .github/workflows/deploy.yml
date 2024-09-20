@@ -34,7 +34,7 @@ jobs:
           retention-days: 1
       - name: Deploy
         run: |
-          dotnet nuget push Worldline.Acquiring.Sdk/bin/Release/Worldline.Acquiring.Sdk.${env:SDK_VERSION}.nupkg                       --api-key "${env:NUGET_API_KEY}" --source https://api.nuget.org/v3/index.json
-          dotnet nuget push Worldline.Acquiring.Sdk.StrongName/bin/Release/Worldline.Acquiring.Sdk.StrongName.${env:SDK_VERSION}.nupkg --api-key "${env:NUGET_API_KEY}" --source https://api.nuget.org/v3/index.json
+          dotnet nuget push Worldline.Acquiring.Sdk/bin/Release/Worldline.Acquiring.Sdk.$SDK_VERSION.nupkg                       --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json
+          dotnet nuget push Worldline.Acquiring.Sdk.StrongName/bin/Release/Worldline.Acquiring.Sdk.StrongName.$SDK_VERSION.nupkg --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
