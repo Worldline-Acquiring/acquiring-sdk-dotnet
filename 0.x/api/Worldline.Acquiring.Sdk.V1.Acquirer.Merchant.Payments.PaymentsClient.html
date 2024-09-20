@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PaymentsClient
+ | Worldline Acquiring .NET SDK </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PaymentsClient
+ | Worldline Acquiring .NET SDK ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="https://docs.acquiring.worldline-solutions.com/Developer-Tools/sdk/dotnet">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient">
+
+
+
+  <h1 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient" class="text-break">Class PaymentsClient
+</h1>
+  <div class="markdown level0 summary"><p>Payments client. Thread-safe.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Worldline.Acquiring.Sdk.ApiResource.html">ApiResource</a></div>
+    <div class="level2"><span class="xref">PaymentsClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Worldline.Acquiring.Sdk.ApiResource.html#Worldline_Acquiring_Sdk_ApiResource__communicator">ApiResource._communicator</a>
+    </div>
+    <div>
+      <a class="xref" href="Worldline.Acquiring.Sdk.ApiResource.html#Worldline_Acquiring_Sdk_ApiResource_InstantiateUri_System_String_System_Collections_Generic_IDictionary_System_String_System_String__">ApiResource.InstantiateUri(string, IDictionary&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">Worldline</span>.<span class="xref">Acquiring</span>.<a class="xref" href="Worldline.Acquiring.Sdk.html">Sdk</a>.<a class="xref" href="Worldline.Acquiring.Sdk.V1.html">V1</a>.<a class="xref" href="Worldline.Acquiring.Sdk.V1.Acquirer.html">Acquirer</a>.<a class="xref" href="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.html">Merchant</a>.<a class="xref" href="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.html">Payments</a></h6>
+  <h6><strong>Assembly</strong>: Worldline.Acquiring.Sdk.dll</h6>
+  <h5 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PaymentsClient : ApiResource</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient__ctor_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.#ctor*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient__ctor_Worldline_Acquiring_Sdk_ApiResource_System_Collections_Generic_IDictionary_System_String_System_String__" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.#ctor(Worldline.Acquiring.Sdk.ApiResource,System.Collections.Generic.IDictionary{System.String,System.String})">PaymentsClient(ApiResource, IDictionary&lt;string, string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PaymentsClient(ApiResource parent, IDictionary&lt;string, string&gt; pathContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.ApiResource.html">ApiResource</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">pathContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_CreateRefund_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.CreateRefund*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_CreateRefund_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRefundRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.CreateRefund(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest,Worldline.Acquiring.Sdk.CallContext)">CreateRefund(string, ApiPaymentRefundRequest, CallContext)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/refunds</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/createRefund">Refund payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; CreateRefund(string paymentId, ApiPaymentRefundRequest body, CallContext context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest.html">ApiPaymentRefundRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiPaymentRefundRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html">ApiActionResponseForRefund</a>&gt;</td>
+        <td><p>ApiActionResponseForRefund</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_GetPaymentStatus_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.GetPaymentStatus*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_GetPaymentStatus_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_GetPaymentStatusParams_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.GetPaymentStatus(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.GetPaymentStatusParams,Worldline.Acquiring.Sdk.CallContext)">GetPaymentStatus(string, GetPaymentStatusParams, CallContext)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/getPaymentStatus">Retrieve payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiPaymentResource&gt; GetPaymentStatus(string paymentId, GetPaymentStatusParams query, CallContext context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.GetPaymentStatusParams.html">GetPaymentStatusParams</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>GetPaymentStatusParams</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.html">ApiPaymentResource</a>&gt;</td>
+        <td><p>ApiPaymentResource</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_IncrementPayment_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.IncrementPayment*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_IncrementPayment_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiIncrementRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.IncrementPayment(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest,Worldline.Acquiring.Sdk.CallContext)">IncrementPayment(string, ApiIncrementRequest, CallContext)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/increments</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/incrementPayment">Increment authorization</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiIncrementResponse&gt; IncrementPayment(string paymentId, ApiIncrementRequest body, CallContext context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest.html">ApiIncrementRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiIncrementRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementResponse.html">ApiIncrementResponse</a>&gt;</td>
+        <td><p>ApiIncrementResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_ProcessPayment_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.ProcessPayment*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_ProcessPayment_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.ProcessPayment(Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest,Worldline.Acquiring.Sdk.CallContext)">ProcessPayment(ApiPaymentRequest, CallContext)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/processPayment">Create payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiPaymentResponse&gt; ProcessPayment(ApiPaymentRequest body, CallContext context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest.html">ApiPaymentRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiPaymentRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html">ApiPaymentResponse</a>&gt;</td>
+        <td><p>ApiPaymentResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_ReverseAuthorization_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.ReverseAuthorization*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_ReverseAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentReversalRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.ReverseAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext)">ReverseAuthorization(string, ApiPaymentReversalRequest, CallContext)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/authorization-reversals</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/reverseAuthorization">Reverse authorization</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiReversalResponse&gt; ReverseAuthorization(string paymentId, ApiPaymentReversalRequest body, CallContext context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest.html">ApiPaymentReversalRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiPaymentReversalRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiReversalResponse.html">ApiReversalResponse</a>&gt;</td>
+        <td><p>ApiReversalResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_SimpleCaptureOfPayment_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.SimpleCaptureOfPayment*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Payments_PaymentsClient_SimpleCaptureOfPayment_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiCaptureRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.SimpleCaptureOfPayment(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest,Worldline.Acquiring.Sdk.CallContext)">SimpleCaptureOfPayment(string, ApiCaptureRequest, CallContext)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/captures</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/simpleCaptureOfPayment">Capture payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponse&gt; SimpleCaptureOfPayment(string paymentId, ApiCaptureRequest body, CallContext context = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest.html">ApiCaptureRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiCaptureRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.html">ApiActionResponse</a>&gt;</td>
+        <td><p>ApiActionResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright (c) 2024 Worldline Financial Services (Europe) SA
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

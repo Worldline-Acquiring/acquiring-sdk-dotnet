@@ -1,0 +1,1371 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/acquiring-sdk-dotnet/acquiring-sdk-dotnet/code/documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.ApiResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.ApiResource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.AuthorizationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.AuthorizationType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.IAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.IAuthenticator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.OAuth2Exception.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.OAuth2Exception.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.CallContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.CallContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Client.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.CommunicationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.CommunicationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.IConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.IConnection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.IMultipartFormDataRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.IMultipartFormDataRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.IPooledConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.IPooledConnection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.IRequestHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.IRequestHeader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.IResponseHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.IResponseHeader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.MetadataProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.MetadataProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.MetadataProviderBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.MetadataProviderBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.NotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.NotFoundException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.RequestHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.RequestHeader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.RequestHeaderUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.RequestHeaderUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.RequestParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.RequestParam.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.ResponseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.ResponseException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.ResponseHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.ResponseHeader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.ResponseHeaderUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.ResponseHeaderUtils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communicator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.CommunicatorBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.CommunicatorBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Domain.ShoppingCartExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Domain.ShoppingCartExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Domain.UploadableFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Domain.UploadableFile.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Domain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Factory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Json.DefaultMarshaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Json.DefaultMarshaller.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Json.IMarshaller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Json.IMarshaller.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Json.MarshallerSyntaxException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Json.MarshallerSyntaxException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Json.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.BodyObfuscator.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.BodyObfuscator.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.BodyObfuscator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.BodyObfuscator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.HeaderObfuscator.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.HeaderObfuscator.Builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.HeaderObfuscator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.HeaderObfuscator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.ICommunicatorLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.ICommunicatorLogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.ILoggingCapable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.ILoggingCapable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.IObfuscationCapable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.IObfuscationCapable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.LogMessageBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.LogMessageBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.NLogCommunicatorLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.NLogCommunicatorLogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.ObfuscationRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.ObfuscationRule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.RequestLogMessageBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.RequestLogMessageBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.ResponseLogMessageBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.ResponseLogMessageBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.SystemConsoleCommunicatorLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.SystemConsoleCommunicatorLogger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Proxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Proxy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.AcquirerClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.AcquirerClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.MerchantClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.MerchantClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.GetPaymentStatusParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.GetPaymentStatusParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.PaymentsClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.GetRefundParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.GetRefundParams.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Acquirer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.ApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.ApiException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.AuthorizationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.AuthorizationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.AddressVerificationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.AddressVerificationData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.AmountData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.AmountData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentErrorResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentErrorResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiReferencesForResponses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiReferencesForResponses.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiReversalResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiReversalResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardDataForDcc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardDataForDcc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardOnFileData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardOnFileData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForResource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForVerification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForVerification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.DccData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.DccData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.DccProposal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.DccProposal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ECommerceData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ECommerceData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ECommerceDataForAccountVerification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ECommerceDataForAccountVerification.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ECommerceDataForResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ECommerceDataForResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.GetDCCRateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.GetDCCRateRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.GetDccRateResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.GetDccRateResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.InitialCardOnFileData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.InitialCardOnFileData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.MerchantData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.MerchantData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.NetworkTokenData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.NetworkTokenData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PaymentReferences.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PaymentReferences.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForDcc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForDcc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.RateData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.RateData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.SubOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.SubOperation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.SubsequentCardOnFileData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.SubsequentCardOnFileData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ThreeDSecure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ThreeDSecure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.TransactionDataForDcc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.TransactionDataForDcc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.ExceptionFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.ExceptionFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Ping.PingClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Ping.PingClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Ping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Ping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.PlatformException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.PlatformException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.ReferenceException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.ReferenceException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.V1Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.V1Client.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.ValidationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.ValidationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
