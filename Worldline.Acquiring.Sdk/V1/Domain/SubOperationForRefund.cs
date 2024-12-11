@@ -22,13 +22,21 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string OperationId { get; set; }
 
         /// <summary>
-        /// Timestamp of the operation in merchant time zone in format
+        /// Timestamp of the operation in ISO 8601 format (YYYY-MM-DDThh:mm:ss+TZD)<br />
+        /// It can be expressed in merchant time zone (ex: 2023-10-10T08:00+02:00)
+        /// or in UTC (ex: 2023-10-10T08:00Z)
         /// yyyy-MM-ddTHH:mm:ssZ
         /// </summary>
         public DateTimeOffset OperationTimestamp { get; set; }
 
         /// <summary>
-        /// The kind of operation
+        /// The kind of operation<br />
+        /// Possible values are:
+        /// <list type="bullet">
+        ///   <item><description>AUTHORIZATION</description></item>
+        ///   <item><description>CAPTURE</description></item>
+        ///   <item><description>AUTHORIZATION_REVERSAL</description></item>
+        /// </list>
         /// </summary>
         public string OperationType { get; set; }
 
@@ -38,7 +46,13 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string ResponseCode { get; set; }
 
         /// <summary>
-        /// Category of response code.
+        /// Category of response code.<br />
+        /// Possible values are:
+        /// <list type="bullet">
+        ///   <item><description>APPROVED</description></item>
+        ///   <item><description>PARTIALLY_APPROVED</description></item>
+        ///   <item><description>DECLINED</description></item>
+        /// </list>
         /// </summary>
         public string ResponseCodeCategory { get; set; }
 

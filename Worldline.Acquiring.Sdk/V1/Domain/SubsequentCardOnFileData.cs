@@ -11,7 +11,8 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string CardOnFileInitiator { get; set; }
 
         /// <summary>
-        /// Scheme transaction ID of initial transaction
+        /// ID assigned by the scheme to identify a transaction through
+        /// its whole lifecycle.
         /// </summary>
         public string InitialSchemeTransactionId { get; set; }
 

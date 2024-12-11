@@ -12,9 +12,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
 
         public ECommerceDataForResponse EcommerceData { get; set; }
 
-        /// <summary>
-        /// Payment terminal request data
-        /// </summary>
-        public PointOfSaleData PointOfSaleData { get; set; }
+        public PointOfSaleDataForResponse PointOfSaleData { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// <summary>
         /// Amount of transaction formatted according to card scheme
         /// specifications.
-        /// E.g. 100 for 1.00 EUR. Either this or amount must be present.
+        /// E.g. 100 for 1.00 EUR.
         /// </summary>
         public long? Amount { get; set; }
 

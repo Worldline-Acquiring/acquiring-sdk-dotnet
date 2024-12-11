@@ -3,13 +3,8 @@
  */
 namespace Worldline.Acquiring.Sdk.V1.Domain
 {
-    public class CardPaymentData
+    public class CardPaymentDataForBalanceInquiry
     {
-        /// <summary>
-        /// Indicate whether you allow partial approval or not
-        /// </summary>
-        public bool? AllowPartialApproval { get; set; }
-
         /// <summary>
         /// The card brand
         /// </summary>
@@ -21,11 +16,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string BrandSelector { get; set; }
 
         /// <summary>
-        /// If true the transaction will be authorized and captured immediately
-        /// </summary>
-        public bool? CaptureImmediately { get; set; }
-
-        /// <summary>
         /// Card data in plain text
         /// </summary>
         public PlainCardData CardData { get; set; }
@@ -34,8 +24,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// Card entry mode used in the transaction
         /// </summary>
         public string CardEntryMode { get; set; }
-
-        public CardOnFileData CardOnFileData { get; set; }
 
         /// <summary>
         /// Cardholder verification method used in the transaction
@@ -46,8 +34,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// Request data for eCommerce transactions
         /// </summary>
         public ECommerceData EcommerceData { get; set; }
-
-        public NetworkTokenData NetworkTokenData { get; set; }
 
         /// <summary>
         /// Request data for Point Of Sale (POS) or &quot;in person&quot; Transaction

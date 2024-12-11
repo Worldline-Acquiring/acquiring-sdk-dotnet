@@ -27,6 +27,8 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// </summary>
         public AmountData ReversalAmount { get; set; }
 
+        public TerminalData TerminalData { get; set; }
+
         /// <summary>
         /// Timestamp of transaction in ISO 8601 format (YYYY-MM-DDThh:mm:ss+TZD)<br />
         /// It can be expressed in merchant time zone (ex: 2023-10-10T08:00+02:00)

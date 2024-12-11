@@ -18,8 +18,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
 
         /// <summary>
         /// Electronic Commerce Indicator<br />
-        /// Value returned by the 3D Secure process that indicates the level of
-        /// authentication.<br />
+        /// Value that indicates the level of authentication.<br />
         /// Contains different values depending on the brand.
         /// </summary>
         public string Eci { get; set; }

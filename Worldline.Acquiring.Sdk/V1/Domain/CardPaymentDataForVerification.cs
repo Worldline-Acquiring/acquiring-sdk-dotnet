@@ -11,12 +11,17 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string Brand { get; set; }
 
         /// <summary>
+        /// The party responsible for the brand selection.
+        /// </summary>
+        public string BrandSelector { get; set; }
+
+        /// <summary>
         /// Card data in plain text
         /// </summary>
         public PlainCardData CardData { get; set; }
 
         /// <summary>
-        /// Card entry mode used in the transaction, defaults to ECOMMERCE
+        /// Card entry mode used in the transaction
         /// </summary>
         public string CardEntryMode { get; set; }
 
@@ -28,11 +33,16 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string CardholderVerificationMethod { get; set; }
 
         /// <summary>
-        /// Request data for eCommerce and MOTO transactions
+        /// Request data for eCommerce transactions
         /// </summary>
         public ECommerceDataForAccountVerification EcommerceData { get; set; }
 
         public NetworkTokenData NetworkTokenData { get; set; }
+
+        /// <summary>
+        /// Request data for Point Of Sale (POS) or &quot;in person&quot; Transaction
+        /// </summary>
+        public PointOfSaleData PointOfSaleData { get; set; }
 
         /// <summary>
         /// Type of wallet, values are assigned by card schemes, e.g. 101

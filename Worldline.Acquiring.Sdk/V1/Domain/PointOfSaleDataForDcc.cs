@@ -6,7 +6,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
     public class PointOfSaleDataForDcc
     {
         /// <summary>
-        /// Country code of the terminal
+        /// ISO 3166 Country code of the terminal
         /// </summary>
         public string TerminalCountryCode { get; set; }
 

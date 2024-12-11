@@ -8,7 +8,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public InitialCardOnFileData InitialCardOnFileData { get; set; }
 
         /// <summary>
-        /// Indicate wether this is the initial Card on File transaction or not
+        /// Indicate whether this is the initial Card on File transaction or not
         /// </summary>
         public bool? IsInitialTransaction { get; set; }
 

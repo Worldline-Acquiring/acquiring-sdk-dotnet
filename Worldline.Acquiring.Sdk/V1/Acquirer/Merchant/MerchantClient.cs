@@ -3,6 +3,7 @@
  */
 using System.Collections.Generic;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications;
+using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds;
@@ -37,6 +38,12 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant
         /// </summary>
         /// <returns>AccountVerificationsClient</returns>
         public AccountVerificationsClient AccountVerifications => new AccountVerificationsClient(this, null);
+
+        /// <summary>
+        /// Resource /processing/v1/{acquirerId}/{merchantId}/balance-inquiries
+        /// </summary>
+        /// <returns>BalanceInquiriesClient</returns>
+        public BalanceInquiriesClient BalanceInquiries => new BalanceInquiriesClient(this, null);
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/operations/{operationId}/reverse

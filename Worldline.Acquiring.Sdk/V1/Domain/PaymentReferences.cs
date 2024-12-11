@@ -17,10 +17,5 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// The value provided here is returned in the baseTrxType/addlMercData element of the MRX file.
         /// </summary>
         public string MerchantReference { get; set; }
-
-        /// <summary>
-        /// Retrieval reference number for transaction, must be AN(12) if provided
-        /// </summary>
-        public string RetrievalReferenceNumber { get; set; }
     }
 }

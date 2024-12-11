@@ -36,7 +36,17 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string RetryAfter { get; set; }
 
         /// <summary>
-        /// The status of the payment, refund or credit transfer
+        /// The status of the payment, refund or credit transfer<br />
+        /// Possible values are:
+        /// <list type="bullet">
+        ///   <item><description>AUTHORIZED</description></item>
+        ///   <item><description>NOT_AUTHORIZED</description></item>
+        ///   <item><description>PENDING</description></item>
+        ///   <item><description>PENDING_CAPTURE</description></item>
+        ///   <item><description>CONFIRMED</description></item>
+        ///   <item><description>REVERSED</description></item>
+        ///   <item><description>CANCELLED</description></item>
+        /// </list>
         /// </summary>
         public string Status { get; set; }
 

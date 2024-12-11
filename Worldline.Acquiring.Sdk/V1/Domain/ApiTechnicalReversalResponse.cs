@@ -16,6 +16,13 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
 
         /// <summary>
         /// The party that originated the response
+        /// Possible values are:
+        /// <list type="bullet">
+        ///   <item><description>WORLDLINE</description></item>
+        ///   <item><description>ISSUER</description></item>
+        ///   <item><description>SCHEME</description></item>
+        ///   <item><description>PARTNER</description></item>
+        /// </list>
         /// </summary>
         public string Responder { get; set; }
 
@@ -25,7 +32,13 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string ResponseCode { get; set; }
 
         /// <summary>
-        /// Category of response code.
+        /// Category of response code.<br />
+        /// Possible values are:
+        /// <list type="bullet">
+        ///   <item><description>APPROVED</description></item>
+        ///   <item><description>PARTIALLY_APPROVED</description></item>
+        ///   <item><description>DECLINED</description></item>
+        /// </list>
         /// </summary>
         public string ResponseCodeCategory { get; set; }
 
