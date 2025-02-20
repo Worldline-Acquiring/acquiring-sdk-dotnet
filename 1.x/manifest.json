@@ -973,6 +973,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.yml",
       "output": {
         ".html": {

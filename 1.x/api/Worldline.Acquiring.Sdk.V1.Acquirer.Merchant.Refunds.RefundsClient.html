@@ -448,7 +448,7 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
     </tbody>
   </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Refunds_RefundsClient_ReverseRefundAuthorization_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization*"></a>
-  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Refunds_RefundsClient_ReverseRefundAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentReversalRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext)">ReverseRefundAuthorization(string, ApiPaymentReversalRequest, CallContext)</h4>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Refunds_RefundsClient_ReverseRefundAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext)">ReverseRefundAuthorization(string, ApiRefundReversalRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/authorization-reversals</p>
 <ul>
 <li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Refunds/operation/reverseRefundAuthorization">Reverse refund authorization</a></li>
@@ -457,7 +457,7 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; ReverseRefundAuthorization(string refundId, ApiPaymentReversalRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; ReverseRefundAuthorization(string refundId, ApiRefundReversalRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -476,9 +476,9 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest.html">ApiPaymentReversalRequest</a></td>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html">ApiRefundReversalRequest</a></td>
         <td><span class="parametername">body</span></td>
-        <td><p>ApiPaymentReversalRequest</p>
+        <td><p>ApiRefundReversalRequest</p>
 </td>
       </tr>
       <tr>

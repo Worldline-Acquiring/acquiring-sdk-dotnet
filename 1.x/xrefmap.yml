@@ -4278,15 +4278,15 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ProcessStandaloneRefund
   nameWithType: RefundsClient.ProcessStandaloneRefund
-- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext)
-  name: ReverseRefundAuthorization(string, ApiPaymentReversalRequest, CallContext)
-  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Refunds_RefundsClient_ReverseRefundAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentReversalRequest_Worldline_Acquiring_Sdk_CallContext_
-  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext)
-  name.vb: ReverseRefundAuthorization(String, ApiPaymentReversalRequest, CallContext)
-  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(string, Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest, Worldline.Acquiring.Sdk.CallContext)
-  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(String, Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest, Worldline.Acquiring.Sdk.CallContext)
-  nameWithType: RefundsClient.ReverseRefundAuthorization(string, ApiPaymentReversalRequest, CallContext)
-  nameWithType.vb: RefundsClient.ReverseRefundAuthorization(String, ApiPaymentReversalRequest, CallContext)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext)
+  name: ReverseRefundAuthorization(string, ApiRefundReversalRequest, CallContext)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Refunds_RefundsClient_ReverseRefundAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_Worldline_Acquiring_Sdk_CallContext_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext)
+  name.vb: ReverseRefundAuthorization(String, ApiRefundReversalRequest, CallContext)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(string, Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest, Worldline.Acquiring.Sdk.CallContext)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization(String, Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest, Worldline.Acquiring.Sdk.CallContext)
+  nameWithType: RefundsClient.ReverseRefundAuthorization(string, ApiRefundReversalRequest, CallContext)
+  nameWithType.vb: RefundsClient.ReverseRefundAuthorization(String, ApiRefundReversalRequest, CallContext)
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.ReverseRefundAuthorization*
   name: ReverseRefundAuthorization
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds.RefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Refunds_RefundsClient_ReverseRefundAuthorization_
@@ -6296,6 +6296,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.References
   nameWithType: ApiRefundRequest.References
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.TerminalData
+  name: TerminalData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundRequest_TerminalData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.TerminalData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.TerminalData
+  nameWithType: ApiRefundRequest.TerminalData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.TerminalData*
+  name: TerminalData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundRequest_TerminalData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.TerminalData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.TerminalData
+  nameWithType: ApiRefundRequest.TerminalData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.TransactionTimestamp
   name: TransactionTimestamp
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundRequest_TransactionTimestamp
@@ -6646,6 +6659,51 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.TotalAuthorizedAmount
   nameWithType: ApiRefundResponse.TotalAuthorizedAmount
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest
+  name: ApiRefundReversalRequest
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html
+  commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest
+  nameWithType: ApiRefundReversalRequest
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.OperationId
+  name: OperationId
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_OperationId
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.OperationId
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.OperationId
+  nameWithType: ApiRefundReversalRequest.OperationId
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.OperationId*
+  name: OperationId
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_OperationId_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.OperationId
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.OperationId
+  nameWithType: ApiRefundReversalRequest.OperationId
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TerminalData
+  name: TerminalData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_TerminalData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TerminalData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TerminalData
+  nameWithType: ApiRefundReversalRequest.TerminalData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TerminalData*
+  name: TerminalData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_TerminalData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TerminalData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TerminalData
+  nameWithType: ApiRefundReversalRequest.TerminalData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TransactionTimestamp
+  name: TransactionTimestamp
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_TransactionTimestamp
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TransactionTimestamp
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TransactionTimestamp
+  nameWithType: ApiRefundReversalRequest.TransactionTimestamp
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TransactionTimestamp*
+  name: TransactionTimestamp
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_TransactionTimestamp_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TransactionTimestamp
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.TransactionTimestamp
+  nameWithType: ApiRefundReversalRequest.TransactionTimestamp
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse
   name: ApiRefundSummaryForResponse
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.html
@@ -7337,6 +7395,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.NetworkTokenData
   nameWithType: CardPaymentDataForRefund.NetworkTokenData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.PointOfSaleData
+  name: PointOfSaleData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_CardPaymentDataForRefund_PointOfSaleData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.PointOfSaleData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.PointOfSaleData
+  nameWithType: CardPaymentDataForRefund.PointOfSaleData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.PointOfSaleData*
+  name: PointOfSaleData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_CardPaymentDataForRefund_PointOfSaleData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.PointOfSaleData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.PointOfSaleData
+  nameWithType: CardPaymentDataForRefund.PointOfSaleData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.WalletId
   name: WalletId
   href: api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentDataForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_CardPaymentDataForRefund_WalletId
