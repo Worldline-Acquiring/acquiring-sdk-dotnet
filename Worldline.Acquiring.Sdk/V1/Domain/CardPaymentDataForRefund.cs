@@ -38,6 +38,11 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public NetworkTokenData NetworkTokenData { get; set; }
 
         /// <summary>
+        /// Request data for Point Of Sale (POS) or &quot;in person&quot; Transaction
+        /// </summary>
+        public PointOfSaleData PointOfSaleData { get; set; }
+
+        /// <summary>
         /// Type of wallet, values are assigned by card schemes, e.g. 101
         /// for MasterPass in eCommerce, 102 for MasterPass NFC, 103 for Apple Pay,
         /// 216 for Google Pay and 217 for Samsung Pay

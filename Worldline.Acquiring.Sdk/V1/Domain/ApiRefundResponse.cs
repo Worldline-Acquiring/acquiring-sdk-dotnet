@@ -58,7 +58,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string Responder { get; set; }
 
         /// <summary>
-        /// Numeric response code, e.g. 0000, 0005
+        /// Numeric response code, e.g. 0, 5
         /// </summary>
         public string ResponseCode { get; set; }
 

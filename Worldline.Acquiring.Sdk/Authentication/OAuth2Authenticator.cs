@@ -136,7 +136,8 @@ namespace Worldline.Acquiring.Sdk.Authentication
         // The empty path will ensure that all paths will match, as each full path ends with an empty string.
         private readonly List<TokenType> _accessTokens = new List<TokenType> {
             new TokenType("", "processing_payment", "processing_refund", "processing_credittransfer",
-                "processing_accountverification", "processing_operation_reverse", "processing_dcc_rate", "services_ping")
+                "processing_accountverification", "processing_balanceinquiry", "processing_operation_reverse",
+                "processing_dcc_rate", "services_ping")
         };
     }
 }

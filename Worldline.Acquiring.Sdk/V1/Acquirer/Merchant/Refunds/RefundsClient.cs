@@ -134,7 +134,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds
         /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Refunds/operation/reverseRefundAuthorization">Reverse refund authorization</a>
         /// </summary>
         /// <param name="refundId">string</param>
-        /// <param name="body">ApiPaymentReversalRequest</param>
+        /// <param name="body">ApiRefundReversalRequest</param>
         /// <param name="context">CallContext</param>
         /// <returns>ApiActionResponseForRefund</returns>
         /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
@@ -145,7 +145,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task<ApiActionResponseForRefund> ReverseRefundAuthorization(string refundId, ApiPaymentReversalRequest body, CallContext context = null)
+        public async Task<ApiActionResponseForRefund> ReverseRefundAuthorization(string refundId, ApiRefundReversalRequest body, CallContext context = null)
         {
             var pathContext = new Dictionary<string, string>
             {
