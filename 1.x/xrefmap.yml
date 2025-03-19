@@ -4519,6 +4519,38 @@ references:
   commentId: N:Worldline.Acquiring.Sdk.V1.Domain
   fullName: Worldline.Acquiring.Sdk.V1.Domain
   nameWithType: Worldline.Acquiring.Sdk.V1.Domain
+- uid: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.html
+  commentId: T:Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData
+  nameWithType: AdditionalResponseData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode
+  name: MerchantAdviceCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.html#Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCode
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode
+  nameWithType: AdditionalResponseData.MerchantAdviceCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode*
+  name: MerchantAdviceCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.html#Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCode_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode
+  nameWithType: AdditionalResponseData.MerchantAdviceCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription
+  name: MerchantAdviceCodeDescription
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.html#Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCodeDescription
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription
+  nameWithType: AdditionalResponseData.MerchantAdviceCodeDescription
+- uid: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription*
+  name: MerchantAdviceCodeDescription
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.html#Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCodeDescription_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription
+  nameWithType: AdditionalResponseData.MerchantAdviceCodeDescription
 - uid: Worldline.Acquiring.Sdk.V1.Domain.AddressVerificationData
   name: AddressVerificationData
   href: api/Worldline.Acquiring.Sdk.V1.Domain.AddressVerificationData.html
@@ -4686,6 +4718,19 @@ references:
   commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse
   nameWithType: ApiAccountVerificationResponse
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.AdditionalResponseData
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiAccountVerificationResponse_AdditionalResponseData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.AdditionalResponseData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.AdditionalResponseData
+  nameWithType: ApiAccountVerificationResponse.AdditionalResponseData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.AdditionalResponseData*
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiAccountVerificationResponse_AdditionalResponseData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.AdditionalResponseData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.AdditionalResponseData
+  nameWithType: ApiAccountVerificationResponse.AdditionalResponseData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.AuthorizationCode
   name: AuthorizationCode
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiAccountVerificationResponse_AuthorizationCode
@@ -4796,6 +4841,19 @@ references:
   commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse
   nameWithType: ApiActionResponse
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.AdditionalResponseData
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiActionResponse_AdditionalResponseData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.AdditionalResponseData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.AdditionalResponseData
+  nameWithType: ApiActionResponse.AdditionalResponseData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.AdditionalResponseData*
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiActionResponse_AdditionalResponseData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.AdditionalResponseData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.AdditionalResponseData
+  nameWithType: ApiActionResponse.AdditionalResponseData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.OperationId
   name: OperationId
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiActionResponse_OperationId
@@ -4880,6 +4938,19 @@ references:
   commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund
   nameWithType: ApiActionResponseForRefund
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.AdditionalResponseData
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_ApiActionResponseForRefund_AdditionalResponseData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.AdditionalResponseData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.AdditionalResponseData
+  nameWithType: ApiActionResponseForRefund.AdditionalResponseData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.AdditionalResponseData*
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_ApiActionResponseForRefund_AdditionalResponseData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.AdditionalResponseData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.AdditionalResponseData
+  nameWithType: ApiActionResponseForRefund.AdditionalResponseData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.OperationId
   name: OperationId
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_ApiActionResponseForRefund_OperationId
@@ -5048,6 +5119,19 @@ references:
   commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse
   nameWithType: ApiBalanceInquiryResponse
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AdditionalResponseData
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiBalanceInquiryResponse_AdditionalResponseData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AdditionalResponseData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AdditionalResponseData
+  nameWithType: ApiBalanceInquiryResponse.AdditionalResponseData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AdditionalResponseData*
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiBalanceInquiryResponse_AdditionalResponseData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AdditionalResponseData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AdditionalResponseData
+  nameWithType: ApiBalanceInquiryResponse.AdditionalResponseData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AuthorizationCode
   name: AuthorizationCode
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiBalanceInquiryResponse_AuthorizationCode
@@ -5074,6 +5158,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.AvailableAmount
   nameWithType: ApiBalanceInquiryResponse.AvailableAmount
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.CardPaymentData
+  name: CardPaymentData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiBalanceInquiryResponse_CardPaymentData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.CardPaymentData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.CardPaymentData
+  nameWithType: ApiBalanceInquiryResponse.CardPaymentData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.CardPaymentData*
+  name: CardPaymentData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiBalanceInquiryResponse_CardPaymentData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.CardPaymentData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.CardPaymentData
+  nameWithType: ApiBalanceInquiryResponse.CardPaymentData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.OperationId
   name: OperationId
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiBalanceInquiryResponse_OperationId
@@ -5785,19 +5882,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.References
   nameWithType: ApiPaymentResource.References
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResource_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.RetryAfter
-  nameWithType: ApiPaymentResource.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResource_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.RetryAfter
-  nameWithType: ApiPaymentResource.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.Status
   name: Status
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResource_Status
@@ -5843,6 +5927,19 @@ references:
   commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse
   nameWithType: ApiPaymentResponse
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.AdditionalResponseData
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_AdditionalResponseData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.AdditionalResponseData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.AdditionalResponseData
+  nameWithType: ApiPaymentResponse.AdditionalResponseData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.AdditionalResponseData*
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_AdditionalResponseData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.AdditionalResponseData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.AdditionalResponseData
+  nameWithType: ApiPaymentResponse.AdditionalResponseData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.CardPaymentData
   name: CardPaymentData
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_CardPaymentData
@@ -5856,19 +5953,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.CardPaymentData
   nameWithType: ApiPaymentResponse.CardPaymentData
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.EmvData
-  name: EmvData
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_EmvData
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.EmvData
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.EmvData
-  nameWithType: ApiPaymentResponse.EmvData
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.EmvData*
-  name: EmvData
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_EmvData_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.EmvData
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.EmvData
-  nameWithType: ApiPaymentResponse.EmvData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.InitialAuthorizationCode
   name: InitialAuthorizationCode
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_InitialAuthorizationCode
@@ -5973,19 +6057,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.ResponseCodeDescription
   nameWithType: ApiPaymentResponse.ResponseCodeDescription
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.RetryAfter
-  nameWithType: ApiPaymentResponse.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.RetryAfter
-  nameWithType: ApiPaymentResponse.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.Status
   name: Status
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentResponse_Status
@@ -6128,19 +6199,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.References
   nameWithType: ApiPaymentSummaryForResponse.References
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentSummaryForResponse_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.RetryAfter
-  nameWithType: ApiPaymentSummaryForResponse.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentSummaryForResponse_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.RetryAfter
-  nameWithType: ApiPaymentSummaryForResponse.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.Status
   name: Status
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentSummaryForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentSummaryForResponse_Status
@@ -6406,19 +6464,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.RefundId
   nameWithType: ApiRefundResource.RefundId
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResource_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.RetryAfter
-  nameWithType: ApiRefundResource.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResource_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.RetryAfter
-  nameWithType: ApiRefundResource.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.Status
   name: Status
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResource_Status
@@ -6464,6 +6509,19 @@ references:
   commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse
   nameWithType: ApiRefundResponse
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.AdditionalResponseData
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResponse_AdditionalResponseData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.AdditionalResponseData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.AdditionalResponseData
+  nameWithType: ApiRefundResponse.AdditionalResponseData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.AdditionalResponseData*
+  name: AdditionalResponseData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResponse_AdditionalResponseData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.AdditionalResponseData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.AdditionalResponseData
+  nameWithType: ApiRefundResponse.AdditionalResponseData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.AuthorizationCode
   name: AuthorizationCode
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResponse_AuthorizationCode
@@ -6607,19 +6665,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.ResponseCodeDescription
   nameWithType: ApiRefundResponse.ResponseCodeDescription
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResponse_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.RetryAfter
-  nameWithType: ApiRefundResponse.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResponse_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.RetryAfter
-  nameWithType: ApiRefundResponse.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.Status
   name: Status
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundResponse_Status
@@ -6736,19 +6781,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.RefundId
   nameWithType: ApiRefundSummaryForResponse.RefundId
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundSummaryForResponse_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.RetryAfter
-  nameWithType: ApiRefundSummaryForResponse.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundSummaryForResponse_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.RetryAfter
-  nameWithType: ApiRefundSummaryForResponse.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.Status
   name: Status
   href: api/Worldline.Acquiring.Sdk.V1.Domain.ApiRefundSummaryForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_ApiRefundSummaryForResponse_Status
@@ -7175,6 +7207,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.PointOfSaleData
   nameWithType: CardPaymentData.PointOfSaleData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.ServiceLocationData
+  name: ServiceLocationData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.html#Worldline_Acquiring_Sdk_V1_Domain_CardPaymentData_ServiceLocationData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.ServiceLocationData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.ServiceLocationData
+  nameWithType: CardPaymentData.ServiceLocationData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.ServiceLocationData*
+  name: ServiceLocationData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.html#Worldline_Acquiring_Sdk_V1_Domain_CardPaymentData_ServiceLocationData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.ServiceLocationData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.ServiceLocationData
+  nameWithType: CardPaymentData.ServiceLocationData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.WalletId
   name: WalletId
   href: api/Worldline.Acquiring.Sdk.V1.Domain.CardPaymentData.html#Worldline_Acquiring_Sdk_V1_Domain_CardPaymentData_WalletId
@@ -7878,6 +7923,38 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.EmvDataItem.Value
   nameWithType: EmvDataItem.Value
+- uid: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates
+  name: GeoCoordinates
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.html
+  commentId: T:Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates
+  nameWithType: GeoCoordinates
+- uid: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Latitude
+  name: Latitude
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.html#Worldline_Acquiring_Sdk_V1_Domain_GeoCoordinates_Latitude
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Latitude
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Latitude
+  nameWithType: GeoCoordinates.Latitude
+- uid: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Latitude*
+  name: Latitude
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.html#Worldline_Acquiring_Sdk_V1_Domain_GeoCoordinates_Latitude_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Latitude
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Latitude
+  nameWithType: GeoCoordinates.Latitude
+- uid: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Longitude
+  name: Longitude
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.html#Worldline_Acquiring_Sdk_V1_Domain_GeoCoordinates_Longitude
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Longitude
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Longitude
+  nameWithType: GeoCoordinates.Longitude
+- uid: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Longitude*
+  name: Longitude
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.html#Worldline_Acquiring_Sdk_V1_Domain_GeoCoordinates_Longitude_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Longitude
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.Longitude
+  nameWithType: GeoCoordinates.Longitude
 - uid: Worldline.Acquiring.Sdk.V1.Domain.GetDCCRateRequest
   name: GetDCCRateRequest
   href: api/Worldline.Acquiring.Sdk.V1.Domain.GetDCCRateRequest.html
@@ -8245,6 +8322,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSecurityCode
   nameWithType: PlainCardData.CardSecurityCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber
+  name: CardSequenceNumber
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.html#Worldline_Acquiring_Sdk_V1_Domain_PlainCardData_CardSequenceNumber
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber
+  nameWithType: PlainCardData.CardSequenceNumber
+- uid: Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber*
+  name: CardSequenceNumber
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.html#Worldline_Acquiring_Sdk_V1_Domain_PlainCardData_CardSequenceNumber_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber
+  nameWithType: PlainCardData.CardSequenceNumber
 - uid: Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.ExpiryDate
   name: ExpiryDate
   href: api/Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.html#Worldline_Acquiring_Sdk_V1_Domain_PlainCardData_ExpiryDate
@@ -8380,6 +8470,19 @@ references:
   commentId: T:Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse
   fullName: Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse
   nameWithType: PointOfSaleDataForResponse
+- uid: Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData
+  name: EmvData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_EmvData
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData
+  nameWithType: PointOfSaleDataForResponse.EmvData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData*
+  name: EmvData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_EmvData_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData
+  nameWithType: PointOfSaleDataForResponse.EmvData
 - uid: Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.PanLast4Digits
   name: PanLast4Digits
   href: api/Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.html#Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_PanLast4Digits
@@ -8477,6 +8580,96 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.RateData.QuotationDateTime
   nameWithType: RateData.QuotationDateTime
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress
+  name: ServiceLocationAddress
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html
+  commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress
+  nameWithType: ServiceLocationAddress
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.City
+  name: City
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_City
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.City
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.City
+  nameWithType: ServiceLocationAddress.City
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.City*
+  name: City
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_City_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.City
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.City
+  nameWithType: ServiceLocationAddress.City
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountryCode
+  name: CountryCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_CountryCode
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountryCode
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountryCode
+  nameWithType: ServiceLocationAddress.CountryCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountryCode*
+  name: CountryCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_CountryCode_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountryCode
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountryCode
+  nameWithType: ServiceLocationAddress.CountryCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountrySubdivisionCode
+  name: CountrySubdivisionCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_CountrySubdivisionCode
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountrySubdivisionCode
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountrySubdivisionCode
+  nameWithType: ServiceLocationAddress.CountrySubdivisionCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountrySubdivisionCode*
+  name: CountrySubdivisionCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_CountrySubdivisionCode_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountrySubdivisionCode
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.CountrySubdivisionCode
+  nameWithType: ServiceLocationAddress.CountrySubdivisionCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.PostalCode
+  name: PostalCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_PostalCode
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.PostalCode
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.PostalCode
+  nameWithType: ServiceLocationAddress.PostalCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.PostalCode*
+  name: PostalCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationAddress_PostalCode_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.PostalCode
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.PostalCode
+  nameWithType: ServiceLocationAddress.PostalCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData
+  name: ServiceLocationData
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.html
+  commentId: T:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData
+  nameWithType: ServiceLocationData
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.Address
+  name: Address
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationData_Address
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.Address
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.Address
+  nameWithType: ServiceLocationData.Address
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.Address*
+  name: Address
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationData_Address_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.Address
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.Address
+  nameWithType: ServiceLocationData.Address
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.GeoCoordinates
+  name: GeoCoordinates
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationData_GeoCoordinates
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.GeoCoordinates
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.GeoCoordinates
+  nameWithType: ServiceLocationData.GeoCoordinates
+- uid: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.GeoCoordinates*
+  name: GeoCoordinates
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.html#Worldline_Acquiring_Sdk_V1_Domain_ServiceLocationData_GeoCoordinates_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.GeoCoordinates
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.GeoCoordinates
+  nameWithType: ServiceLocationData.GeoCoordinates
 - uid: Worldline.Acquiring.Sdk.V1.Domain.SubOperation
   name: SubOperation
   href: api/Worldline.Acquiring.Sdk.V1.Domain.SubOperation.html
@@ -8587,19 +8780,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.SubOperation.ResponseCodeDescription
   nameWithType: SubOperation.ResponseCodeDescription
-- uid: Worldline.Acquiring.Sdk.V1.Domain.SubOperation.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.SubOperation.html#Worldline_Acquiring_Sdk_V1_Domain_SubOperation_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.SubOperation.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.SubOperation.RetryAfter
-  nameWithType: SubOperation.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.SubOperation.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.SubOperation.html#Worldline_Acquiring_Sdk_V1_Domain_SubOperation_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.SubOperation.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.SubOperation.RetryAfter
-  nameWithType: SubOperation.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund
   name: SubOperationForRefund
   href: api/Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.html
@@ -8697,19 +8877,6 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.ResponseCodeDescription
   nameWithType: SubOperationForRefund.ResponseCodeDescription
-- uid: Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.RetryAfter
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_SubOperationForRefund_RetryAfter
-  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.RetryAfter
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.RetryAfter
-  nameWithType: SubOperationForRefund.RetryAfter
-- uid: Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.RetryAfter*
-  name: RetryAfter
-  href: api/Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.html#Worldline_Acquiring_Sdk_V1_Domain_SubOperationForRefund_RetryAfter_
-  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.RetryAfter
-  isSpec: "True"
-  fullName: Worldline.Acquiring.Sdk.V1.Domain.SubOperationForRefund.RetryAfter
-  nameWithType: SubOperationForRefund.RetryAfter
 - uid: Worldline.Acquiring.Sdk.V1.Domain.SubsequentCardOnFileData
   name: SubsequentCardOnFileData
   href: api/Worldline.Acquiring.Sdk.V1.Domain.SubsequentCardOnFileData.html
@@ -8813,6 +8980,32 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.IsAttendedTerminal
   nameWithType: TerminalData.IsAttendedTerminal
+- uid: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.IsOfflineApproved
+  name: IsOfflineApproved
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.TerminalData.html#Worldline_Acquiring_Sdk_V1_Domain_TerminalData_IsOfflineApproved
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.TerminalData.IsOfflineApproved
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.IsOfflineApproved
+  nameWithType: TerminalData.IsOfflineApproved
+- uid: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.IsOfflineApproved*
+  name: IsOfflineApproved
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.TerminalData.html#Worldline_Acquiring_Sdk_V1_Domain_TerminalData_IsOfflineApproved_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.TerminalData.IsOfflineApproved
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.IsOfflineApproved
+  nameWithType: TerminalData.IsOfflineApproved
+- uid: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.OfflineAuthorizationResponseCode
+  name: OfflineAuthorizationResponseCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.TerminalData.html#Worldline_Acquiring_Sdk_V1_Domain_TerminalData_OfflineAuthorizationResponseCode
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.TerminalData.OfflineAuthorizationResponseCode
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.OfflineAuthorizationResponseCode
+  nameWithType: TerminalData.OfflineAuthorizationResponseCode
+- uid: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.OfflineAuthorizationResponseCode*
+  name: OfflineAuthorizationResponseCode
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.TerminalData.html#Worldline_Acquiring_Sdk_V1_Domain_TerminalData_OfflineAuthorizationResponseCode_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.TerminalData.OfflineAuthorizationResponseCode
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.OfflineAuthorizationResponseCode
+  nameWithType: TerminalData.OfflineAuthorizationResponseCode
 - uid: Worldline.Acquiring.Sdk.V1.Domain.TerminalData.PinEntryCapability
   name: PinEntryCapability
   href: api/Worldline.Acquiring.Sdk.V1.Domain.TerminalData.html#Worldline_Acquiring_Sdk_V1_Domain_TerminalData_PinEntryCapability

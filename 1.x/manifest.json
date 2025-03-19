@@ -743,6 +743,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.AddressVerificationData.yml",
       "output": {
         ".html": {
@@ -1163,6 +1173,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.GeoCoordinates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.GetDCCRateRequest.yml",
       "output": {
         ".html": {
@@ -1267,6 +1287,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.RateData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationAddress.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.V1.Domain.ServiceLocationData.html"
         }
       },
       "version": ""

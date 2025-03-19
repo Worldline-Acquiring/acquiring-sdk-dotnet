@@ -172,6 +172,31 @@ and have different names: CVV2, CVC2, CVN2, CID, CVC, CAV2, etc.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Domain_PlainCardData_CardSequenceNumber_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Domain_PlainCardData_CardSequenceNumber" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.CardSequenceNumber">CardSequenceNumber</h4>
+  <div class="markdown level1 summary"><p>Card sequence number extracted from track2</p>
+<ul><li>usually known only for on-us cards, as the position of the sequence number is issuer specific</li><li>for requests without track2 the card sequence number is usually stored in the EMV tag <code>5F34</code></li></ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int? CardSequenceNumber { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Domain_PlainCardData_ExpiryDate_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.ExpiryDate*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Domain_PlainCardData_ExpiryDate" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PlainCardData.ExpiryDate">ExpiryDate</h4>
   <div class="markdown level1 summary"><p>Card or token expiry date in format MMYYYY</p>

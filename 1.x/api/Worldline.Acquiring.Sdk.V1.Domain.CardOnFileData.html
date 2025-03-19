@@ -124,7 +124,8 @@
 </h3>
   <a id="Worldline_Acquiring_Sdk_V1_Domain_CardOnFileData_InitialCardOnFileData_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.CardOnFileData.InitialCardOnFileData*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Domain_CardOnFileData_InitialCardOnFileData" data-uid="Worldline.Acquiring.Sdk.V1.Domain.CardOnFileData.InitialCardOnFileData">InitialCardOnFileData</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>When card data is stored you need to flag its purpose using <code>transactionType</code> and the intended <code>futureUse</code> of the card data.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -171,7 +172,11 @@
   </table>
   <a id="Worldline_Acquiring_Sdk_V1_Domain_CardOnFileData_SubsequentCardOnFileData_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.CardOnFileData.SubsequentCardOnFileData*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Domain_CardOnFileData_SubsequentCardOnFileData" data-uid="Worldline.Acquiring.Sdk.V1.Domain.CardOnFileData.SubsequentCardOnFileData">SubsequentCardOnFileData</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>When you are using stored card you need to again specify the <code>transactionType</code>. All values are supported when the MERCHANT is
+the initiator of the transaction. When the CARDHOLDER is the initiator of the transaction, only <code>UNSCHEDULED_CARD_ON_FILE</code> is
+supported. For all cases when the MERCHANT is the initiator of the transaction, the <code>initialSchemeTransactionId</code> property
+is mandatory.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">

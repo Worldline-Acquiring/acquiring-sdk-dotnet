@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class PointOfSaleDataForResponse
+      <title>Class AdditionalResponseData
  | Worldline Acquiring .NET SDK </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class PointOfSaleDataForResponse
+      <meta name="title" content="Class AdditionalResponseData
  | Worldline Acquiring .NET SDK ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -77,18 +77,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse">
+            <article class="content wrap" id="_content" data-uid="Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData">
 
 
 
-  <h1 id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse" class="text-break">Class PointOfSaleDataForResponse
+  <h1 id="Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData" data-uid="Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData" class="text-break">Class AdditionalResponseData
 </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">PointOfSaleDataForResponse</span></div>
+    <div class="level1"><span class="xref">AdditionalResponseData</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -116,44 +116,24 @@
   </div>
   <h6><strong>Namespace</strong>: <span class="xref">Worldline</span>.<span class="xref">Acquiring</span>.<a class="xref" href="Worldline.Acquiring.Sdk.html">Sdk</a>.<a class="xref" href="Worldline.Acquiring.Sdk.V1.html">V1</a>.<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.html">Domain</a></h6>
   <h6><strong>Assembly</strong>: Worldline.Acquiring.Sdk.dll</h6>
-  <h5 id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_syntax">Syntax</h5>
+  <h5 id="Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PointOfSaleDataForResponse</code></pre>
+    <pre><code class="lang-csharp hljs">public class AdditionalResponseData</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
-  <a id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_EmvData_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData*"></a>
-  <h4 id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_EmvData" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.EmvData">EmvData</h4>
-  <div class="markdown level1 summary"><p>EMV data of the card as tag/value pairs.</p>
+  <a id="Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCode_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCode" data-uid="Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCode">MerchantAdviceCode</h4>
+  <div class="markdown level1 summary"><p>Merchant advice code as returned by the scheme, usually returned upon rejection.
+Known possible values at the time of writing this documentation are:</p>
+<ul><li><code>01</code> - New Account Information Available</li><li><code>02</code> - Try Again Later</li><li><code>03</code> - Do Not Try Again</li><li><code>04</code> - Token requirements not fulfilled for this token type</li><li><code>05</code> - Negotiated value not provided</li><li><code>21</code> - Payment Cancellation</li><li><code>22</code> - Merchant does not qualify for product code</li><li><code>24</code> - Retry after 1 hour</li><li><code>25</code> - Retry after 24 hours</li><li><code>26</code> - Retry after 2 days</li><li><code>27</code> - Retry after 4 days</li><li><code>28</code> - Retry after 6 days</li><li><code>29</code> - Retry after 8 days</li><li><code>30</code> - Retry after 10 days</li><li><code>40</code> - Consumer non-reloadable prepaid card</li><li><code>41</code> - Consumer single-use virtual card number</li><li><code>42</code> - Sanctions Scoring Service: Score Exceeds Applicable Threshold Value</li><li><code>43</code> - Consumer multi-use virtual card number
+Note: In case new values are added and returned by the schemes, they will be returned as is. We will
+maintain the above list on a best-effort basis.</li></ul>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IList&lt;EmvDataItem&gt; EmvData { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.EmvDataItem.html">EmvDataItem</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_PanLast4Digits_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.PanLast4Digits*"></a>
-  <h4 id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_PanLast4Digits" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.PanLast4Digits">PanLast4Digits</h4>
-  <div class="markdown level1 summary"><p>Last 4 digits of the PAN</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string PanLast4Digits { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string MerchantAdviceCode { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -170,14 +150,15 @@
       </tr>
     </tbody>
   </table>
-  <a id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_PinRetryCounter_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.PinRetryCounter*"></a>
-  <h4 id="Worldline_Acquiring_Sdk_V1_Domain_PointOfSaleDataForResponse_PinRetryCounter" data-uid="Worldline.Acquiring.Sdk.V1.Domain.PointOfSaleDataForResponse.PinRetryCounter">PinRetryCounter</h4>
-  <div class="markdown level1 summary"><p>Number of PIN retries</p>
+  <a id="Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCodeDescription_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Domain_AdditionalResponseData_MerchantAdviceCodeDescription" data-uid="Worldline.Acquiring.Sdk.V1.Domain.AdditionalResponseData.MerchantAdviceCodeDescription">MerchantAdviceCodeDescription</h4>
+  <div class="markdown level1 summary"><p>Human readable description of the merchant advice code.
+Note: In case the merchant advice code is unknown (unmapped), the system returns <code>Unknown</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int? PinRetryCounter { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string MerchantAdviceCodeDescription { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -189,7 +170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td></td>
       </tr>
     </tbody>
