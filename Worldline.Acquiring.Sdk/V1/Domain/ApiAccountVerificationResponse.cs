@@ -6,6 +6,11 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
     public class ApiAccountVerificationResponse
     {
         /// <summary>
+        /// Additional response data
+        /// </summary>
+        public AdditionalResponseData AdditionalResponseData { get; set; }
+
+        /// <summary>
         /// Authorization approval code
         /// </summary>
         public string AuthorizationCode { get; set; }

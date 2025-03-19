@@ -35,6 +35,9 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// </summary>
         public string CardEntryMode { get; set; }
 
+        /// <summary>
+        /// Card data can be kept on file to support various use cases. It requires you to flag the transaction correctly.
+        /// </summary>
         public CardOnFileData CardOnFileData { get; set; }
 
         /// <summary>
@@ -55,9 +58,21 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public PointOfSaleData PointOfSaleData { get; set; }
 
         /// <summary>
-        /// Type of wallet, values are assigned by card schemes, e.g. 101
-        /// for MasterPass in eCommerce, 102 for MasterPass NFC, 103 for Apple Pay,
-        /// 216 for Google Pay and 217 for Samsung Pay
+        /// Request data object to describe the location where the cardholder received the service.
+        /// Note: You should either provide the address or the geo coordinates.
+        /// </summary>
+        public ServiceLocationData ServiceLocationData { get; set; }
+
+        /// <summary>
+        /// Type of wallet, values are assigned by card schemes, e.g.
+        /// <list type="bullet">
+        ///   <item><description>101 for MasterPass in eCommerce</description></item>
+        ///   <item><description>102 for MasterPass NFC</description></item>
+        ///   <item><description>103 for Apple Pay</description></item>
+        ///   <item><description>216 for Google Pay</description></item>
+        ///   <item><description>217 for Samsung Pay</description></item>
+        ///   <item><description>327 to indicate the usage of Network tokens in the transaction</description></item>
+        /// </list>
         /// </summary>
         public string WalletId { get; set; }
     }

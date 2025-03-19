@@ -2,18 +2,17 @@
  * This file was automatically generated.
  */
 using System;
-using System.Collections.Generic;
 
 namespace Worldline.Acquiring.Sdk.V1.Domain
 {
     public class ApiPaymentResponse
     {
-        public CardPaymentDataForResponse CardPaymentData { get; set; }
-
         /// <summary>
-        /// EMV data of the card as tag/value pairs.
+        /// Additional response data
         /// </summary>
-        public IList<EmvDataItem> EmvData { get; set; }
+        public AdditionalResponseData AdditionalResponseData { get; set; }
+
+        public CardPaymentDataForResponse CardPaymentData { get; set; }
 
         /// <summary>
         /// Authorization approval code
@@ -71,14 +70,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// Description of the response code
         /// </summary>
         public string ResponseCodeDescription { get; set; }
-
-        /// <summary>
-        /// The duration to wait after the initial submission before retrying the payment.<br />
-        /// Expressed using ISO 8601 duration format, ex: PT2H for 2 hours.<br />
-        /// This field is only present when the payment can be retried later.<br />
-        /// PT0 means that the payment can be retried immediately.
-        /// </summary>
-        public string RetryAfter { get; set; }
 
         /// <summary>
         /// The status of the payment, refund or credit transfer<br />

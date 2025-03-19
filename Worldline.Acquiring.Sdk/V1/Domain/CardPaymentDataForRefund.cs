@@ -43,9 +43,15 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public PointOfSaleData PointOfSaleData { get; set; }
 
         /// <summary>
-        /// Type of wallet, values are assigned by card schemes, e.g. 101
-        /// for MasterPass in eCommerce, 102 for MasterPass NFC, 103 for Apple Pay,
-        /// 216 for Google Pay and 217 for Samsung Pay
+        /// Type of wallet, values are assigned by card schemes, e.g.
+        /// <list type="bullet">
+        ///   <item><description>101 for MasterPass in eCommerce</description></item>
+        ///   <item><description>102 for MasterPass NFC</description></item>
+        ///   <item><description>103 for Apple Pay</description></item>
+        ///   <item><description>216 for Google Pay</description></item>
+        ///   <item><description>217 for Samsung Pay</description></item>
+        ///   <item><description>327 to indicate the usage of Network tokens in the transaction</description></item>
+        /// </list>
         /// </summary>
         public string WalletId { get; set; }
     }

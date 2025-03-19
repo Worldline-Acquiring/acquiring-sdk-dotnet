@@ -67,13 +67,5 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// Description of the response code
         /// </summary>
         public string ResponseCodeDescription { get; set; }
-
-        /// <summary>
-        /// The duration to wait after the initial submission before retrying the operation.<br />
-        /// Expressed using ISO 8601 duration format, ex: PT2H for 2 hours.<br />
-        /// This field is only present when the operation can be retried later.<br />
-        /// PT0 means that the operation can be retried immediately.
-        /// </summary>
-        public string RetryAfter { get; set; }
     }
 }
