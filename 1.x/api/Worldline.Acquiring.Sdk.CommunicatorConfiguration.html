@@ -427,6 +427,30 @@ For instance, for <a class="xref" href="Worldline.Acquiring.Sdk.Authentication.A
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_CommunicatorConfiguration_OAuth2Scopes_" data-uid="Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_CommunicatorConfiguration_OAuth2Scopes" data-uid="Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes">OAuth2Scopes</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the OAuth2 scopes. Leave empty to let the SDK provide a set of defaults.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OAuth2Scopes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_CommunicatorConfiguration_OAuth2TokenUri_" data-uid="Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2TokenUri*"></a>
   <h4 id="Worldline_Acquiring_Sdk_CommunicatorConfiguration_OAuth2TokenUri" data-uid="Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2TokenUri">OAuth2TokenUri</h4>
   <div class="markdown level1 summary"><p>Gets or sets the OAuth2 token URI.</p>
@@ -1007,6 +1031,49 @@ For instance, for <a class="xref" href="Worldline.Acquiring.Sdk.Authentication.A
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">oauth2ClientSecret</span></td>
         <td><p>The OAuth2 client secret</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CommunicatorConfiguration.html">CommunicatorConfiguration</a></td>
+        <td><p>This.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_CommunicatorConfiguration_WithOAuth2Scopes_" data-uid="Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_CommunicatorConfiguration_WithOAuth2Scopes_System_String_" data-uid="Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes(System.String)">WithOAuth2Scopes(string)</h4>
+  <div class="markdown level1 summary"><p>Returns this with the OAuth2 scopes assigned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommunicatorConfiguration WithOAuth2Scopes(string oauth2Scopes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">oauth2Scopes</span></td>
+        <td><p>The OAuth2 scopes</p>
 </td>
       </tr>
     </tbody>

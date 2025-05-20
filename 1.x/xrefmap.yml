@@ -198,6 +198,82 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Authentication.OAuth2Exception.New
   nameWithType: OAuth2Exception.OAuth2Exception
   nameWithType.vb: OAuth2Exception.New
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes
+  name: OAuth2Scopes
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html
+  commentId: T:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes
+  nameWithType: OAuth2Scopes
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.All
+  name: All
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_All
+  commentId: P:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.All
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.All
+  nameWithType: OAuth2Scopes.All
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.All*
+  name: All
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_All_
+  commentId: Overload:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.All
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.All
+  nameWithType: OAuth2Scopes.All
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForApiVersion(System.String)
+  name: ForApiVersion(string)
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_ForApiVersion_System_String_
+  commentId: M:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForApiVersion(System.String)
+  name.vb: ForApiVersion(String)
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForApiVersion(string)
+  fullName.vb: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForApiVersion(String)
+  nameWithType: OAuth2Scopes.ForApiVersion(string)
+  nameWithType.vb: OAuth2Scopes.ForApiVersion(String)
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForApiVersion*
+  name: ForApiVersion
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_ForApiVersion_
+  commentId: Overload:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForApiVersion
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForApiVersion
+  nameWithType: OAuth2Scopes.ForApiVersion
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperation(System.String,System.String)
+  name: ForOperation(string, string)
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_ForOperation_System_String_System_String_
+  commentId: M:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperation(System.String,System.String)
+  name.vb: ForOperation(String, String)
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperation(string, string)
+  fullName.vb: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperation(String, String)
+  nameWithType: OAuth2Scopes.ForOperation(string, string)
+  nameWithType.vb: OAuth2Scopes.ForOperation(String, String)
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperation*
+  name: ForOperation
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_ForOperation_
+  commentId: Overload:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperation
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperation
+  nameWithType: OAuth2Scopes.ForOperation
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(System.Func{System.String,System.String,System.Boolean})
+  name: ForOperations(Func<string, string, bool>)
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_ForOperations_System_Func_System_String_System_String_System_Boolean__
+  commentId: M:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(System.Func{System.String,System.String,System.Boolean})
+  name.vb: ForOperations(Func(Of String, String, Boolean))
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(System.Func<string, string, bool>)
+  fullName.vb: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(System.Func(Of String, String, Boolean))
+  nameWithType: OAuth2Scopes.ForOperations(Func<string, string, bool>)
+  nameWithType.vb: OAuth2Scopes.ForOperations(Func(Of String, String, Boolean))
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(System.String,System.String[])
+  name: ForOperations(string, params string[])
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_ForOperations_System_String_System_String___
+  commentId: M:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(System.String,System.String[])
+  name.vb: ForOperations(String, ParamArray String())
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(string, params string[])
+  fullName.vb: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations(String, ParamArray String())
+  nameWithType: OAuth2Scopes.ForOperations(string, params string[])
+  nameWithType.vb: OAuth2Scopes.ForOperations(String, ParamArray String())
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations*
+  name: ForOperations
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Scopes_ForOperations_
+  commentId: Overload:Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations
+  nameWithType: OAuth2Scopes.ForOperations
 - uid: Worldline.Acquiring.Sdk.CallContext
   name: CallContext
   href: api/Worldline.Acquiring.Sdk.CallContext.html
@@ -2129,6 +2205,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2ClientSecret
   nameWithType: CommunicatorConfiguration.OAuth2ClientSecret
+- uid: Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes
+  name: OAuth2Scopes
+  href: api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.html#Worldline_Acquiring_Sdk_CommunicatorConfiguration_OAuth2Scopes
+  commentId: P:Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes
+  fullName: Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes
+  nameWithType: CommunicatorConfiguration.OAuth2Scopes
+- uid: Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes*
+  name: OAuth2Scopes
+  href: api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.html#Worldline_Acquiring_Sdk_CommunicatorConfiguration_OAuth2Scopes_
+  commentId: Overload:Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2Scopes
+  nameWithType: CommunicatorConfiguration.OAuth2Scopes
 - uid: Worldline.Acquiring.Sdk.CommunicatorConfiguration.OAuth2TokenUri
   name: OAuth2TokenUri
   href: api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.html#Worldline_Acquiring_Sdk_CommunicatorConfiguration_OAuth2TokenUri
@@ -2371,6 +2460,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2ClientSecret
   nameWithType: CommunicatorConfiguration.WithOAuth2ClientSecret
+- uid: Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes(System.String)
+  name: WithOAuth2Scopes(string)
+  href: api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.html#Worldline_Acquiring_Sdk_CommunicatorConfiguration_WithOAuth2Scopes_System_String_
+  commentId: M:Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes(System.String)
+  name.vb: WithOAuth2Scopes(String)
+  fullName: Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes(string)
+  fullName.vb: Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes(String)
+  nameWithType: CommunicatorConfiguration.WithOAuth2Scopes(string)
+  nameWithType.vb: CommunicatorConfiguration.WithOAuth2Scopes(String)
+- uid: Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes*
+  name: WithOAuth2Scopes
+  href: api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.html#Worldline_Acquiring_Sdk_CommunicatorConfiguration_WithOAuth2Scopes_
+  commentId: Overload:Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2Scopes
+  nameWithType: CommunicatorConfiguration.WithOAuth2Scopes
 - uid: Worldline.Acquiring.Sdk.CommunicatorConfiguration.WithOAuth2TokenUri(System.String)
   name: WithOAuth2TokenUri(string)
   href: api/Worldline.Acquiring.Sdk.CommunicatorConfiguration.html#Worldline_Acquiring_Sdk_CommunicatorConfiguration_WithOAuth2TokenUri_System_String_

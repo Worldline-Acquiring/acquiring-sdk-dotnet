@@ -63,6 +63,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.yml",
       "output": {
         ".html": {
