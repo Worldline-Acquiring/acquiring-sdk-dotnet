@@ -43,11 +43,29 @@ namespace Worldline.Acquiring.Sdk.Authentication
             _oauth2TokenUri = new Uri(communicatorConfiguration.OAuth2TokenUri);
             _socketTimeout = communicatorConfiguration.SocketTimeout.Value;
             _proxy = communicatorConfiguration.Proxy;
+
+            var oauth2Scopes = communicatorConfiguration.OAuth2Scopes;
+            if (string.IsNullOrEmpty(oauth2Scopes))
+            {
+                // Only a limited amount of scopes may be sent in one request.
+                // While at the moment all scopes fit in one request, keep this code so we can easily add more token types if necessary.
+                // The empty path will ensure that all paths will match, as each full path ends with an empty string.
+                var tokenTypes = new List<TokenType>
+                {
+                    new TokenType("", string.Join(" ", OAuth2Scopes.All))
+                };
+                _pathToTokenTypeMapper = path => GetTokenType(path, tokenTypes);
+            }
+            else
+            {
+                var tokenType = new TokenType("", oauth2Scopes);
+                _pathToTokenTypeMapper = path => tokenType;
+            }
         }
 
         public async Task<string> GetAuthorization(HttpMethod httpMethod, Uri resourceUri, IEnumerable<IRequestHeader> requestHeaders)
         {
-            var tokenType = GetTokenType(resourceUri.AbsolutePath);
+            var tokenType = _pathToTokenTypeMapper(resourceUri.AbsolutePath);
             await tokenType.Semaphore.WaitAsync().ConfigureAwait(false);
             try
             {
@@ -94,9 +112,9 @@ namespace Worldline.Acquiring.Sdk.Authentication
             }
         }
 
-        private TokenType GetTokenType(string fullPath)
+        private static TokenType GetTokenType(string fullPath, List<TokenType> tokenTypes)
         {
-            foreach (var tokenTypeEntry in _accessTokens)
+            foreach (var tokenTypeEntry in tokenTypes)
             {
                 if (fullPath.EndsWith(tokenTypeEntry.Path) || fullPath.Contains(tokenTypeEntry.Path + "/"))
                 {
@@ -107,6 +125,7 @@ namespace Worldline.Acquiring.Sdk.Authentication
             throw new OAuth2Exception("Scope could not be found for path " + fullPath);
         }
 
+
         private class TokenType
         {
             internal SemaphoreSlim Semaphore { get; } = new SemaphoreSlim(1);
@@ -114,10 +133,10 @@ namespace Worldline.Acquiring.Sdk.Authentication
             internal string Path { get; }
             internal string Scopes { get; }
 
-            public TokenType(string path, params string[] scopes)
+            public TokenType(string path, string scopes)
             {
                 Path = path;
-                Scopes = string.Join(" ", scopes);
+                Scopes = scopes;
             }
         }
 
@@ -131,13 +150,6 @@ namespace Worldline.Acquiring.Sdk.Authentication
         private readonly TimeSpan _socketTimeout;
         private readonly Proxy _proxy;
 
-        // Only a limited amount of scopes may be sent in one request.
-        // While at the moment all scopes fit in one request, keep this code so we can easily add more token types if necessary.
-        // The empty path will ensure that all paths will match, as each full path ends with an empty string.
-        private readonly List<TokenType> _accessTokens = new List<TokenType> {
-            new TokenType("", "processing_payment", "processing_refund", "processing_credittransfer",
-                "processing_accountverification", "processing_balanceinquiry", "processing_operation_reverse",
-                "processing_dcc_rate", "services_ping")
-        };
+        private readonly Func<string, TokenType> _pathToTokenTypeMapper;
     }
 }

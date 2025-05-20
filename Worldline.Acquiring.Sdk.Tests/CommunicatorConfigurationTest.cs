@@ -19,6 +19,7 @@ namespace Worldline.Acquiring.Sdk
             Assert.AreEqual(CommunicatorConfiguration.DefaultMaxConnections, configuration.MaxConnections);
             Assert.Null(configuration.AuthorizationId);
             Assert.Null(configuration.AuthorizationSecret);
+            Assert.Null(configuration.OAuth2Scopes);
 
             Assert.Null(configuration.Proxy);
             Assert.Null(configuration.ProxyUri);
@@ -36,6 +37,7 @@ namespace Worldline.Acquiring.Sdk
             Assert.AreEqual(CommunicatorConfiguration.DefaultMaxConnections, configuration.MaxConnections);
             Assert.Null(configuration.AuthorizationId);
             Assert.Null(configuration.AuthorizationSecret);
+            Assert.Null(configuration.OAuth2Scopes);
 
             var proxy = configuration.Proxy;
             Assert.NotNull(proxy);
@@ -56,6 +58,7 @@ namespace Worldline.Acquiring.Sdk
             Assert.AreEqual(CommunicatorConfiguration.DefaultMaxConnections, configuration.MaxConnections);
             Assert.Null(configuration.AuthorizationId);
             Assert.Null(configuration.AuthorizationSecret);
+            Assert.Null(configuration.OAuth2Scopes);
 
             var proxy = configuration.Proxy;
             Assert.NotNull(proxy);
@@ -74,6 +77,7 @@ namespace Worldline.Acquiring.Sdk
             Assert.AreEqual(100, configuration.MaxConnections);
             Assert.Null(configuration.AuthorizationId);
             Assert.Null(configuration.AuthorizationSecret);
+            Assert.Null(configuration.OAuth2Scopes);
 
             // In original tests was null, but not anymore, because of app config configuration
             //Assert.Null(configuration.ProxyConfiguration);
@@ -145,6 +149,25 @@ namespace Worldline.Acquiring.Sdk
             var configuration = new CommunicatorConfiguration(properties);
 
             Assert.AreEqual(new Uri("https://[::1]"), configuration.ApiEndpoint);
+        }
+
+        [TestCase]
+        public void TestCustomOAuth2Scopes()
+        {
+            var properties = new Dictionary<string, string>
+            {
+                ["acquiring.api.endpoint.port"] = "8080",
+                ["acquiring.api.endpoint.host"] = "api.preprod.acquiring.worldline-solutions.com",
+                ["acquiring.api.endpoint.scheme"] = "http",
+                ["acquiring.api.authorizationType"] = AuthType,
+                ["acquiring.api.oauth2.scopes"] = "processing_dcc_rate invalid_scope",
+                ["acquiring.api.connectTimeout"] = "20000",
+                ["acquiring.api.socketTimeout"] = "10000"
+            };
+
+            var configuration = new CommunicatorConfiguration(properties);
+
+            Assert.AreEqual("processing_dcc_rate invalid_scope", configuration.OAuth2Scopes);
         }
 
         private static CommunicatorConfiguration CreateBasicConfiguration()

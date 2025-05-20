@@ -80,6 +80,11 @@ namespace Worldline.Acquiring.Sdk
         public string OAuth2TokenUri { get; set; }
 
         /// <summary>
+        /// Gets or sets the OAuth2 scopes. Leave empty to let the SDK provide a set of defaults.
+        /// </summary>
+        public string OAuth2Scopes { get; set; }
+
+        /// <summary>
         /// Gets the proxy object
         /// </summary>
         public Proxy Proxy => ProxyUri != null ? new Proxy { Username = ProxyUserName, Password = ProxyPassword, Uri = ProxyUri } : null;
@@ -126,6 +131,7 @@ namespace Worldline.Acquiring.Sdk
                 ApiEndpoint = GetApiEndpoint(properties);
                 AuthorizationType = AuthorizationType.GetValueOf(GetProperty(properties, "acquiring.api.authorizationType"));
                 OAuth2TokenUri = GetProperty(properties, "acquiring.api.oauth2.tokenUri");
+                OAuth2Scopes = GetProperty(properties, "acquiring.api.oauth2.scopes");
 
                 var connectTimeout = int.Parse(GetProperty(properties, "acquiring.api.connectTimeout"));
                 ConnectTimeout = connectTimeout >= 0 ? (TimeSpan?)TimeSpan.FromMilliseconds(connectTimeout) : null;
@@ -159,6 +165,7 @@ namespace Worldline.Acquiring.Sdk
             AuthorizationId = section.AuthorizationId;
             AuthorizationSecret = section.AuthorizationSecret;
             OAuth2TokenUri = section.OAuth2TokenUri;
+            OAuth2Scopes = section.OAuth2Scopes;
 
             ProxyUri = section.ProxyConfiguration.Uri;
             ProxyUserName = section.ProxyConfiguration.Username;
@@ -231,6 +238,17 @@ namespace Worldline.Acquiring.Sdk
         public CommunicatorConfiguration WithOAuth2TokenUri(string oauth2TokenUri)
         {
             OAuth2TokenUri = oauth2TokenUri;
+            return this;
+        }
+
+        /// <summary>
+        /// Returns this with the OAuth2 scopes assigned.
+        /// </summary>
+        /// <param name="oauth2Scopes">The OAuth2 scopes</param>
+        /// <returns>This.</returns>
+        public CommunicatorConfiguration WithOAuth2Scopes(string oauth2Scopes)
+        {
+            OAuth2Scopes = oauth2Scopes;
             return this;
         }
 

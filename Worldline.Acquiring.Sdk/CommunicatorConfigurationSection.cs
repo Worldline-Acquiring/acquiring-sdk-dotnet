@@ -41,6 +41,9 @@ namespace Worldline.Acquiring.Sdk
         [ConfigurationProperty("oauth2TokenUri", IsRequired = false)]
         public string OAuth2TokenUri => ((string)this["oauth2TokenUri"]).NullIfEmpty();
 
+        [ConfigurationProperty("oauth2Scopes", IsRequired = false)]
+        public string OAuth2Scopes => ((string)this["oauth2Scopes"]).NullIfEmpty();
+
         [ConfigurationProperty("integrator", IsRequired = true)]
         public string Integrator => ((string)this["integrator"]).NullIfEmpty();
 

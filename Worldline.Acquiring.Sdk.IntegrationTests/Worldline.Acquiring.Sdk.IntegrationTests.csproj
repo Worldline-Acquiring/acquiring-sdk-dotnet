@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>Worldline.Acquiring.Sdk</RootNamespace>
-    <AssemblyVersion>1.2.0</AssemblyVersion>
-    <Version>1.2.0</Version>
+    <AssemblyVersion>1.3.0</AssemblyVersion>
+    <Version>1.3.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Worldline</Company>
     <Product>Worldline Acquiring .NET SDK integration tests</Product>
