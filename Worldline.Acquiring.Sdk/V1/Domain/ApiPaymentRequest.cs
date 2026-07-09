@@ -13,6 +13,14 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public AmountData Amount { get; set; }
 
         /// <summary>
+        /// Additional data regarding the breakdown of the transaction amount. This can include amounts
+        /// such as tip or cashback.
+        /// The amounts specified are included in the total transaction <c>amount</c>, the information is provided
+        /// for data enrichment and reconciliation purposes.
+        /// </summary>
+        public AmountBreakdownData AmountBreakdownData { get; set; }
+
+        /// <summary>
         /// The type of authorization
         /// </summary>
         public string AuthorizationType { get; set; }

@@ -12,9 +12,10 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string DynamicDescriptor { get; set; }
 
         /// <summary>
-        /// Reference for the transaction to allow the merchant to reconcile their payments in our report files.<br />
+        /// Reference for the transaction to allow the merchant to reconcile their payments in our report files
+        /// and in their disputes.<br />
         /// It is advised to submit a unique value per transaction.<br />
-        /// The value provided here is returned in the baseTrxType/addlMercData element of the MRX file.
+        /// The value is returned in the baseTrxType/addlMercData element of the MRX file.
         /// </summary>
         public string MerchantReference { get; set; }
     }

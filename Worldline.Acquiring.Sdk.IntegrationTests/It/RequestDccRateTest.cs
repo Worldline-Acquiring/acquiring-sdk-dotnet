@@ -1,9 +1,5 @@
 using NUnit.Framework;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
-using Worldline.Acquiring.Sdk.Communication;
-using Worldline.Acquiring.Sdk.Util;
 
 namespace Worldline.Acquiring.Sdk.It
 {

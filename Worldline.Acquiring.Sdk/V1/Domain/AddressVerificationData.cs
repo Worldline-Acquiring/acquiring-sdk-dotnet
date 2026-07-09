@@ -11,7 +11,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string CardholderAddress { get; set; }
 
         /// <summary>
-        /// Cardholder postal code, should be provided without spaces
+        /// Cardholder postal code
         /// </summary>
         public string CardholderPostalCode { get; set; }
     }

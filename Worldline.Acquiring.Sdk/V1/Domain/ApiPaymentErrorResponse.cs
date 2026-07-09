@@ -19,6 +19,11 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public string Instance { get; set; }
 
         /// <summary>
+        /// The unique Worldline identifier for the request that resulted in this response.
+        /// </summary>
+        public string RequestId { get; set; }
+
+        /// <summary>
         /// The HTTP status code of this error response.<br />
         /// Included to aid those frameworks that have a hard time working with anything other than
         /// the body of an HTTP response.

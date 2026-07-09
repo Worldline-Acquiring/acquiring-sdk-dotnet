@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 using Worldline.Acquiring.Sdk.Communication;
 using Worldline.Acquiring.Sdk.V1.Domain;
 
-namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds
+namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
 {
     /// <summary>
-    /// Refunds client. Thread-safe.
+    /// CardRefunds client. Thread-safe.
     /// </summary>
-    public class RefundsClient : ApiResource
+    public class CardRefundsClient : ApiResource
     {
-        public RefundsClient(ApiResource parent, IDictionary<string, string> pathContext) :
+        public CardRefundsClient(ApiResource parent, IDictionary<string, string> pathContext) :
             base(parent, pathContext)
         {
         }
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Refunds/operation/processStandaloneRefund">Create standalone refund</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/processStandaloneRefund">Create standalone card refund</a>
         /// </summary>
         /// <param name="body">ApiRefundRequest</param>
         /// <param name="context">CallContext</param>
@@ -54,7 +54,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Refunds/operation/getRefund">Retrieve refund</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/getRefund">Retrieve card refund</a>
         /// </summary>
         /// <param name="refundId">string</param>
         /// <param name="query">GetRefundParams</param>
@@ -92,7 +92,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/captures
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Refunds/operation/captureRefund">Capture refund</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/captureRefund">Capture refund</a>
         /// </summary>
         /// <param name="refundId">string</param>
         /// <param name="body">ApiCaptureRequestForRefund</param>
@@ -131,7 +131,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/authorization-reversals
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Refunds/operation/reverseRefundAuthorization">Reverse refund authorization</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/reverseRefundAuthorization">Reverse refund authorization</a>
         /// </summary>
         /// <param name="refundId">string</param>
         /// <param name="body">ApiRefundReversalRequest</param>

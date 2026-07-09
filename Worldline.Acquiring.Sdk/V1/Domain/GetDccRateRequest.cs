@@ -3,7 +3,7 @@
  */
 namespace Worldline.Acquiring.Sdk.V1.Domain
 {
-    public class GetDCCRateRequest
+    public class GetDccRateRequest
     {
         public CardDataForDcc CardPaymentData { get; set; }
 

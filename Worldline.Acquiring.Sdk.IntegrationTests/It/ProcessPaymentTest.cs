@@ -1,10 +1,6 @@
 using NUnit.Framework;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
-using Worldline.Acquiring.Sdk.Communication;
-using Worldline.Acquiring.Sdk.Util;
-using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments;
+using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments;
 
 namespace Worldline.Acquiring.Sdk.It
 {
@@ -18,7 +14,7 @@ namespace Worldline.Acquiring.Sdk.It
         {
             using (var client = GetClient())
             {
-                var paymentsClient = client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).Payments;
+                var paymentsClient = client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).CardPayments;
 
                 var request = GetApiPaymentRequest();
                 var response = await paymentsClient.ProcessPayment(request);

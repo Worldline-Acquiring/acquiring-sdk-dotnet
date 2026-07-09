@@ -4,11 +4,11 @@
 using System.Collections.Generic;
 using Worldline.Acquiring.Sdk.Communication;
 
-namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds
+namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
 {
     /// <summary>
     /// Query parameters for
-    /// <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Refunds/operation/getRefund">Retrieve refund</a>
+    /// <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/getRefund">Retrieve card refund</a>
     /// </summary>
     public class GetRefundParams : AbstractParamRequest
     {

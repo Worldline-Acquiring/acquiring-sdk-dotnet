@@ -19,7 +19,8 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// When you are using stored card you need to again specify the <c>transactionType</c>. All values are supported when the MERCHANT is
         /// the initiator of the transaction. When the CARDHOLDER is the initiator of the transaction, only <c>UNSCHEDULED_CARD_ON_FILE</c> is
         /// supported. For all cases when the MERCHANT is the initiator of the transaction, the <c>initialSchemeTransactionId</c> property
-        /// is mandatory.
+        /// is mandatory. In case of MASTERCARD transactions, the <c>initialSchemeTransactionLinkId</c> should also be provided to support
+        /// better linking of related transaction activity.
         /// </summary>
         public SubsequentCardOnFileData SubsequentCardOnFileData { get; set; }
     }

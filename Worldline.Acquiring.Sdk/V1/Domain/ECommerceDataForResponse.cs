@@ -10,13 +10,12 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// Possible values:
         /// <list type="bullet">
         ///   <item><description>MATCH</description></item>
-        ///   <item><description>ADDRESS_MATCH_POSTAL_CODE_MISMATCH</description></item>
-        ///   <item><description>ADDRESS_MISMATCH_POSTAL_CODE_MATCH</description></item>
-        ///   <item><description>ADDRESS_MATCH_POSTAL_CODE_NOT_VERIFIED</description></item>
-        ///   <item><description>ADDRESS_NOT_VERIFIED_POSTAL_CODE_MATCH</description></item>
+        ///   <item><description>ADDRESS_MATCH</description></item>
+        ///   <item><description>POSTAL_CODE_MATCH</description></item>
         ///   <item><description>MISMATCH</description></item>
-        ///   <item><description>ERROR</description></item>
         ///   <item><description>NOT_VERIFIED</description></item>
+        ///   <item><description>OTHER</description></item>
+        ///   <item><description>ERROR</description></item>
         /// </list>
         /// </summary>
         public string AddressVerificationResult { get; set; }

@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 using Worldline.Acquiring.Sdk.Communication;
 using Worldline.Acquiring.Sdk.V1.Domain;
 
-namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments
+namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments
 {
     /// <summary>
-    /// Payments client. Thread-safe.
+    /// CardPayments client. Thread-safe.
     /// </summary>
-    public class PaymentsClient : ApiResource
+    public class CardPaymentsClient : ApiResource
     {
-        public PaymentsClient(ApiResource parent, IDictionary<string, string> pathContext) :
+        public CardPaymentsClient(ApiResource parent, IDictionary<string, string> pathContext) :
             base(parent, pathContext)
         {
         }
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/payments
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/processPayment">Create payment</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/processPayment">Create payment</a>
         /// </summary>
         /// <param name="body">ApiPaymentRequest</param>
         /// <param name="context">CallContext</param>
@@ -54,7 +54,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/getPaymentStatus">Retrieve payment</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/getPaymentStatus">Retrieve payment</a>
         /// </summary>
         /// <param name="paymentId">string</param>
         /// <param name="query">GetPaymentStatusParams</param>
@@ -92,7 +92,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/captures
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/simpleCaptureOfPayment">Capture payment</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/simpleCaptureOfPayment">Capture payment</a>
         /// </summary>
         /// <param name="paymentId">string</param>
         /// <param name="body">ApiCaptureRequest</param>
@@ -131,7 +131,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/authorization-reversals
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/reverseAuthorization">Reverse authorization</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/reverseAuthorization">Reverse authorization</a>
         /// </summary>
         /// <param name="paymentId">string</param>
         /// <param name="body">ApiPaymentReversalRequest</param>
@@ -170,7 +170,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/increments
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/incrementPayment">Increment authorization</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/incrementPayment">Increment authorization</a>
         /// </summary>
         /// <param name="paymentId">string</param>
         /// <param name="body">ApiIncrementRequest</param>
@@ -209,7 +209,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/refunds
-        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/createRefund">Refund payment</a>
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/createRefund">Refund card payment</a>
         /// </summary>
         /// <param name="paymentId">string</param>
         /// <param name="body">ApiPaymentRefundRequest</param>

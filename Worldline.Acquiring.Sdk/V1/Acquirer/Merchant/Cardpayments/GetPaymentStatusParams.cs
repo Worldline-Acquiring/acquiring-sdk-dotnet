@@ -4,11 +4,11 @@
 using System.Collections.Generic;
 using Worldline.Acquiring.Sdk.Communication;
 
-namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments
+namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments
 {
     /// <summary>
     /// Query parameters for
-    /// <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Payments/operation/getPaymentStatus">Retrieve payment</a>
+    /// <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/getPaymentStatus">Retrieve payment</a>
     /// </summary>
     public class GetPaymentStatusParams : AbstractParamRequest
     {

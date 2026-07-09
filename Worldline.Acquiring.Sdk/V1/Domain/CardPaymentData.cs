@@ -41,7 +41,16 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public CardOnFileData CardOnFileData { get; set; }
 
         /// <summary>
-        /// Cardholder verification method used in the transaction
+        /// Method used by the terminal or the e-commerce website to verify that the customer is the legitimate cardholder (a.k.a. CVM)
+        /// <list type="bullet">
+        ///   <item><description>NONE: no cardholder verification performed</description></item>
+        ///   <item><description>CARD_SECURITY_CODE: the customer provided the card verification value (3 or 4 digits)</description></item>
+        ///   <item><description>THREE_DS: the customer completed an additional verification step with the card issuer</description></item>
+        ///   <item><description>SIGNATURE: the terminal prompted for a signature</description></item>
+        ///   <item><description>ONLINE_PIN: the terminal verifies the PIN online with the card issuer</description></item>
+        ///   <item><description>OFFLINE_PIN: the terminal verified the PIN with the EMV chip on the card</description></item>
+        ///   <item><description>CARDHOLDER_DEVICE: the cardholder device prompted the cardholder for authentication (a.k.a. CDCVM). Mainly used in transactions where digital wallets are involved</description></item>
+        /// </list>
         /// </summary>
         public string CardholderVerificationMethod { get; set; }
 

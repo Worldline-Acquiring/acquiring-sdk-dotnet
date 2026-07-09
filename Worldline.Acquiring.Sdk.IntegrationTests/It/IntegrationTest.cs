@@ -1,5 +1,4 @@
 using System;
-using System.Globalization;
 using NUnit.Framework;
 using Worldline.Acquiring.Sdk.V1.Domain;
 
@@ -110,9 +109,9 @@ namespace Worldline.Acquiring.Sdk.It
             Assert.AreEqual("AUTHORIZED", response.Status);
         }
 
-        protected static GetDCCRateRequest GetDCCRateRequest(long amount = 200)
+        protected static GetDccRateRequest GetDCCRateRequest(long amount = 200)
         {
-            var body = new GetDCCRateRequest
+            var body = new GetDccRateRequest
             {
                 OperationId = Guid.NewGuid().ToString(),
                 TargetCurrency = "EUR",
@@ -140,7 +139,7 @@ namespace Worldline.Acquiring.Sdk.It
             return body;
         }
 
-        protected static void AssertDccRateResponse(GetDCCRateRequest body, GetDccRateResponse response)
+        protected static void AssertDccRateResponse(GetDccRateRequest body, GetDccRateResponse response)
         {
             Assert.NotNull(response.Proposal);
             Assert.NotNull(response.Proposal.OriginalAmount);

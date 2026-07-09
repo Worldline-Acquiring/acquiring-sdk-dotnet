@@ -94,7 +94,7 @@ namespace Worldline.Acquiring.Sdk.Communication
             .Append(Environment.Version)
             .ToString();
 
-        private const string SdkVersion = "1.3.0";
+        private const string SdkVersion = "2.0.0";
 
         private const string ServerMetaInfoHeader = "X-WL-ServerMetaInfo";
 

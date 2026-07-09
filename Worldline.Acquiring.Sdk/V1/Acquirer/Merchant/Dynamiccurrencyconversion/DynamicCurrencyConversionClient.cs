@@ -22,7 +22,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion
         /// Resource /services/v1/{acquirerId}/{merchantId}/dcc-rates
         /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Dynamic-Currency-Conversion/operation/requestDccRate">Request DCC rate</a>
         /// </summary>
-        /// <param name="body">GetDCCRateRequest</param>
+        /// <param name="body">GetDccRateRequest</param>
         /// <param name="context">CallContext</param>
         /// <returns>GetDccRateResponse</returns>
         /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
@@ -33,7 +33,7 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task<GetDccRateResponse> RequestDccRate(GetDCCRateRequest body, CallContext context = null)
+        public async Task<GetDccRateResponse> RequestDccRate(GetDccRateRequest body, CallContext context = null)
         {
             var uri = InstantiateUri("/services/v1/{acquirerId}/{merchantId}/dcc-rates", null);
             try

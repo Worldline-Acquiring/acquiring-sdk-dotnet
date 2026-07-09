@@ -4,9 +4,9 @@
 using System.Collections.Generic;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries;
+using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments;
+using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion;
-using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Payments;
-using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Refunds;
 using Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals;
 
 namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant
@@ -24,14 +24,14 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/payments
         /// </summary>
-        /// <returns>PaymentsClient</returns>
-        public PaymentsClient Payments => new PaymentsClient(this, null);
+        /// <returns>CardPaymentsClient</returns>
+        public CardPaymentsClient CardPayments => new CardPaymentsClient(this, null);
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds
         /// </summary>
-        /// <returns>RefundsClient</returns>
-        public RefundsClient Refunds => new RefundsClient(this, null);
+        /// <returns>CardRefundsClient</returns>
+        public CardRefundsClient CardRefunds => new CardRefundsClient(this, null);
 
         /// <summary>
         /// Resource /processing/v1/{acquirerId}/{merchantId}/account-verifications
