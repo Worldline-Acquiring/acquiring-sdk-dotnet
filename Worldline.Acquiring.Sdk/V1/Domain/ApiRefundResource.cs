@@ -50,7 +50,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// <summary>
         /// Timestamp of the status in format yyyy-MM-ddTHH:mm:ssZ
         /// </summary>
-        public DateTimeOffset StatusTimestamp { get; set; }
+        public DateTimeOffset? StatusTimestamp { get; set; }
 
         /// <summary>
         /// Amount for the operation.

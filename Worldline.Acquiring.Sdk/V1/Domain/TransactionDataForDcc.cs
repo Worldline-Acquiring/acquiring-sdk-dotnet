@@ -15,7 +15,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// <summary>
         /// The date and time of the transaction
         /// </summary>
-        public DateTimeOffset TransactionTimestamp { get; set; }
+        public DateTimeOffset? TransactionTimestamp { get; set; }
 
         /// <summary>
         /// The transaction type

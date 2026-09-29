@@ -47,6 +47,11 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public NetworkTokenData NetworkTokenData { get; set; }
 
         /// <summary>
+        /// References to the original transaction
+        /// </summary>
+        public OriginalTransactionReferences OriginalTransactionReferences { get; set; }
+
+        /// <summary>
         /// Request data for Point Of Sale (POS) or &quot;in person&quot; Transaction
         /// </summary>
         public PointOfSaleData PointOfSaleData { get; set; }

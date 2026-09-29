@@ -44,6 +44,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// It can be expressed in merchant time zone (ex: 2023-10-10T08:00+02:00)
         /// or in UTC (ex: 2023-10-10T08:00Z)
         /// </summary>
-        public DateTimeOffset TransactionTimestamp { get; set; }
+        public DateTimeOffset? TransactionTimestamp { get; set; }
     }
 }

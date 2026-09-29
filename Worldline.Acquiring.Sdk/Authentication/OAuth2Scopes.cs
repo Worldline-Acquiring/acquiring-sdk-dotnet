@@ -47,7 +47,21 @@ namespace Worldline.Acquiring.Sdk.Authentication
                                 new KeyValuePair<string, IImmutableSet<string>>("requestDccRate",
                                     ImmutableHashSet.Create("processing_dcc_rate")),
                                 new KeyValuePair<string, IImmutableSet<string>>("ping",
-                                    ImmutableHashSet.Create("services_ping"))
+                                    ImmutableHashSet.Create("services_ping")),
+                                new KeyValuePair<string, IImmutableSet<string>>("searchDisputes",
+                                    ImmutableHashSet.Create("disputes_retrieve")),
+                                new KeyValuePair<string, IImmutableSet<string>>("getDispute",
+                                    ImmutableHashSet.Create("disputes_retrieve")),
+                                new KeyValuePair<string, IImmutableSet<string>>("acceptDisputeLiability",
+                                    ImmutableHashSet.Create("disputes_manage")),
+                                new KeyValuePair<string, IImmutableSet<string>>("submitEvidence",
+                                    ImmutableHashSet.Create("disputes_manage")),
+                                new KeyValuePair<string, IImmutableSet<string>>("uploadDisputeDocument",
+                                    ImmutableHashSet.Create("disputes_manage")),
+                                new KeyValuePair<string, IImmutableSet<string>>("getDisputeDocument",
+                                    ImmutableHashSet.Create("disputes_retrieve")),
+                                new KeyValuePair<string, IImmutableSet<string>>("searchDisputeEntries",
+                                    ImmutableHashSet.Create("disputes_retrieve"))
                             }))
                 });
 

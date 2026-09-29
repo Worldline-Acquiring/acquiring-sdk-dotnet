@@ -32,7 +32,7 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// or in UTC (ex: 2023-10-10T08:00Z)
         /// yyyy-MM-ddTHH:mm:ssZ
         /// </summary>
-        public DateTimeOffset OperationTimestamp { get; set; }
+        public DateTimeOffset? OperationTimestamp { get; set; }
 
         /// <summary>
         /// The kind of operation.<br />

@@ -33,6 +33,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// <summary>
         /// The date and time of the quotation
         /// </summary>
-        public DateTimeOffset QuotationDateTime { get; set; }
+        public DateTimeOffset? QuotationDateTime { get; set; }
     }
 }

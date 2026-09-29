@@ -14,11 +14,6 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public IList<EmvDataItem> EmvData { get; set; }
 
         /// <summary>
-        /// Encrypted data containing a PIN
-        /// </summary>
-        public string EncryptedPinBlock { get; set; }
-
-        /// <summary>
         /// Indicate whether the request is made after a first one that resulted in a PIN request
         /// </summary>
         public bool? IsResponseToPinRequest { get; set; }
@@ -29,9 +24,12 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public bool? IsRetryWithTheSameOperationId { get; set; }
 
         /// <summary>
-        /// Reference to the master key used to encrypt the PIN
+        /// In case of online PIN verification, send this object with the appropriate values.
+        /// <p />
+        /// Depending on the acquirer, different PIN encryption types are supported. Please check with your
+        /// Worldline contact which encryption type is supported for your account.
         /// </summary>
-        public string PinMasterKeyReference { get; set; }
+        public OnlinePinData OnlinePinData { get; set; }
 
         /// <summary>
         /// Track 2 data from the card<br />

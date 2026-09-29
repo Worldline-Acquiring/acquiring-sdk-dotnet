@@ -3,6 +3,9 @@
  */
 using System.Collections.Generic;
 using Worldline.Acquiring.Sdk.V1.Acquirer;
+using Worldline.Acquiring.Sdk.V1.Disputedocuments;
+using Worldline.Acquiring.Sdk.V1.Disputeentries;
+using Worldline.Acquiring.Sdk.V1.Disputemanagement;
 using Worldline.Acquiring.Sdk.V1.Ping;
 
 namespace Worldline.Acquiring.Sdk.V1
@@ -36,5 +39,23 @@ namespace Worldline.Acquiring.Sdk.V1
         /// </summary>
         /// <returns>PingClient</returns>
         public PingClient Ping => new PingClient(this, null);
+
+        /// <summary>
+        /// Resource /dispute-management/v1/disputes/search
+        /// </summary>
+        /// <returns>DisputeManagementClient</returns>
+        public DisputeManagementClient DisputeManagement => new DisputeManagementClient(this, null);
+
+        /// <summary>
+        /// Resource /dispute-management/v1/documents
+        /// </summary>
+        /// <returns>DisputeDocumentsClient</returns>
+        public DisputeDocumentsClient DisputeDocuments => new DisputeDocumentsClient(this, null);
+
+        /// <summary>
+        /// Resource /dispute-management/v1/dispute-entries/search
+        /// </summary>
+        /// <returns>DisputeEntriesClient</returns>
+        public DisputeEntriesClient DisputeEntries => new DisputeEntriesClient(this, null);
     }
 }
