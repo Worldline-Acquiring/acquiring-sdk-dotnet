@@ -173,6 +173,34 @@ technical reversals.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_OriginalPaymentDate_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_OriginalPaymentDate" data-uid="Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate">OriginalPaymentDate</h4>
+  <div class="markdown level1 summary"><p>The date of the original payment.
+Our system will try to return the original rate associated with the provided <code>originalPaymentDate</code>, but
+it may not always be possible to retrieve the exact original rate. If possible you should use
+<code>rateReferenceId</code> instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonConverter(typeof(DateOnlyConverter))]
+public DateTime? OriginalPaymentDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_PointOfSaleData_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.PointOfSaleData*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_PointOfSaleData" data-uid="Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.PointOfSaleData">PointOfSaleData</h4>
   <div class="markdown level1 summary"></div>
@@ -199,8 +227,13 @@ technical reversals.</p>
   <a id="Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_RateReferenceId_" data-uid="Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.RateReferenceId*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_RateReferenceId" data-uid="Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.RateReferenceId">RateReferenceId</h4>
   <div class="markdown level1 summary"><p>The reference of a previously used rate<br>
-This can be used in case of refund if you want to use the same rate
-as the original transaction.</p>
+This can be used in case of any follow-up action for which you want to reference the original rate.
+Our system will try to return the original rate associated with the provided <code>rateReferenceId</code>.</p>
+<p></p>
+Alternatively you can provide <code>originalPaymentDate</code> to reference the date of the original payment.
+Our system will try to return the original rate associated with the provided <code>originalPaymentDate</code>, but
+it may not always be possible to retrieve the exact original rate. If possible you should use
+<code>rateReferenceId</code> instead.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>

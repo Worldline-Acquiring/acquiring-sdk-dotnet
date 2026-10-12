@@ -9763,6 +9763,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OperationId
   nameWithType: GetDccRateRequest.OperationId
+- uid: Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate
+  name: OriginalPaymentDate
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.html#Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_OriginalPaymentDate
+  commentId: P:Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate
+  nameWithType: GetDccRateRequest.OriginalPaymentDate
+- uid: Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate*
+  name: OriginalPaymentDate
+  href: api/Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.html#Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_OriginalPaymentDate_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.OriginalPaymentDate
+  nameWithType: GetDccRateRequest.OriginalPaymentDate
 - uid: Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.PointOfSaleData
   name: PointOfSaleData
   href: api/Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest.html#Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_PointOfSaleData
