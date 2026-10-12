@@ -33,8 +33,12 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         public DccData DynamicCurrencyConversion { get; set; }
 
         /// <summary>
-        /// Indicates whether this partial capture is the final one.<br />
-        /// Not needed for full capture.
+        /// Indicates whether this partial capture is the final one. When set to
+        /// <c>true</c>, the part of the authorization that was not captured is released.
+        /// Not needed for a full capture.
+        /// <p />
+        /// Note: the default value of <c>false</c> is not intuitive. Please send always a
+        /// value and don't rely on the default, it might change with the next major API version
         /// </summary>
         public bool? IsFinal { get; set; }
 

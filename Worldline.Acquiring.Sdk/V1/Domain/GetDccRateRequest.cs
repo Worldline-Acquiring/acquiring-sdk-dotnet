@@ -1,6 +1,10 @@
 /*
  * This file was automatically generated.
  */
+using System;
+using Newtonsoft.Json;
+using Worldline.Acquiring.Sdk.Json;
+
 namespace Worldline.Acquiring.Sdk.V1.Domain
 {
     public class GetDccRateRequest
@@ -16,12 +20,26 @@ namespace Worldline.Acquiring.Sdk.V1.Domain
         /// </summary>
         public string OperationId { get; set; }
 
+        /// <summary>
+        /// The date of the original payment.
+        /// Our system will try to return the original rate associated with the provided <c>originalPaymentDate</c>, but
+        /// it may not always be possible to retrieve the exact original rate. If possible you should use
+        /// <c>rateReferenceId</c> instead.
+        /// </summary>
+        [JsonConverter(typeof(DateOnlyConverter))]
+        public DateTime? OriginalPaymentDate { get; set; }
+
         public PointOfSaleDataForDcc PointOfSaleData { get; set; }
 
         /// <summary>
         /// The reference of a previously used rate<br />
-        /// This can be used in case of refund if you want to use the same rate
-        /// as the original transaction.
+        /// This can be used in case of any follow-up action for which you want to reference the original rate.
+        /// Our system will try to return the original rate associated with the provided <c>rateReferenceId</c>.
+        /// <p />
+        /// Alternatively you can provide <c>originalPaymentDate</c> to reference the date of the original payment.
+        /// Our system will try to return the original rate associated with the provided <c>originalPaymentDate</c>, but
+        /// it may not always be possible to retrieve the exact original rate. If possible you should use
+        /// <c>rateReferenceId</c> instead.
         /// </summary>
         public string RateReferenceId { get; set; }
 
