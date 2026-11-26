@@ -1,10 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>Worldline.Acquiring.Sdk</RootNamespace>
-    <AssemblyVersion>3.1.0</AssemblyVersion>
-    <Version>3.1.0</Version>
+    <AssemblyVersion>3.2.0</AssemblyVersion>
+    <Version>3.2.0</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company>Worldline</Company>
     <Product>Worldline Acquiring .NET SDK unit tests</Product>
@@ -27,11 +27,11 @@
 
   <ItemGroup>
     <PackageReference Include="AP.MockHttpServer" Version="1.5.0.1061" />
-    <PackageReference Include="Moq" Version="4.20.70" />
-    <PackageReference Include="NUnit" Version="3.14.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.10.0" />
-    <PackageReference Include="NunitXml.TestLogger" Version="3.1.20" />
+    <PackageReference Include="Moq" Version="4.21.0" />
+    <PackageReference Include="NUnit" Version="4.6.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="6.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageReference Include="NunitXml.TestLogger" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>

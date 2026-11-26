@@ -1,7 +1,9 @@
 /*
  * This file was automatically generated.
  */
+using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Worldline.Acquiring.Sdk.Communication;
 using Worldline.Acquiring.Sdk.V1.Domain;
@@ -31,7 +33,28 @@ namespace Worldline.Acquiring.Sdk.V1.Ping
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task Ping(CallContext context = null)
+        [Obsolete("Use PingAsync instead. This method will be removed in a future major version.")]
+        public Task Ping(CallContext context = null)
+        {
+            return PingAsync(context, CancellationToken.None);
+        }
+
+        /// <summary>
+        /// Resource /services/v1/ping
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Ping/operation/ping">Check API connection</a>
+        /// </summary>
+        /// <param name="context">CallContext</param>
+        /// <param name="cancellationToken">A token to cancel the call</param>
+        /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
+        /// <exception cref="AuthorizationException">if the request was not allowed (HTTP status code 403)</exception>
+        /// <exception cref="ReferenceException">if an object was attempted to be referenced that doesn't exist or has been removed,
+        ///            or there was a conflict (HTTP status code 404, 409 or 410)</exception>
+        /// <exception cref="PlatformException">if something went wrong at the Worldline Acquiring platform,
+        ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+        ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
+        /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
+        /// <exception cref="OperationCanceledException">when the cancellation token was cancelled</exception>
+        public async Task PingAsync(CallContext context = null, CancellationToken cancellationToken = default)
         {
             var uri = InstantiateUri("/services/v1/ping", null);
             try
@@ -40,7 +63,8 @@ namespace Worldline.Acquiring.Sdk.V1.Ping
                         uri,
                         null,
                         null,
-                        context).ConfigureAwait(false);
+                        context,
+                        cancellationToken).ConfigureAwait(false);
             }
             catch (ResponseException e)
             {

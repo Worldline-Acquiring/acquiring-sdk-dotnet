@@ -39,7 +39,7 @@ namespace Worldline.Acquiring.Sdk.Logging
 
         public void Log(string message, Exception exception)
         {
-            _logger.Log(_errorLogLevel, message, exception, Array.Empty<object>());
+            _logger.Log(_errorLogLevel, exception, message);
         }
         #endregion
 

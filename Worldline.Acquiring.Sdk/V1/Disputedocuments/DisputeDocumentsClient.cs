@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using Worldline.Acquiring.Sdk.Communication;
 using Worldline.Acquiring.Sdk.V1.Domain;
@@ -35,7 +36,30 @@ namespace Worldline.Acquiring.Sdk.V1.Disputedocuments
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task<UploadDocumentResponse> UploadDisputeDocument(UploadDisputeDocumentRequest body, CallContext context = null)
+        [Obsolete("Use UploadDisputeDocumentAsync instead. This method will be removed in a future major version.")]
+        public Task<UploadDocumentResponse> UploadDisputeDocument(UploadDisputeDocumentRequest body, CallContext context = null)
+        {
+            return UploadDisputeDocumentAsync(body, context, CancellationToken.None);
+        }
+
+        /// <summary>
+        /// Resource /dispute-management/v1/documents
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Dispute-Documents/operation/uploadDisputeDocument">Upload Dispute Document</a>
+        /// </summary>
+        /// <param name="body">UploadDisputeDocumentRequest</param>
+        /// <param name="context">CallContext</param>
+        /// <param name="cancellationToken">A token to cancel the call</param>
+        /// <returns>UploadDocumentResponse</returns>
+        /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
+        /// <exception cref="AuthorizationException">if the request was not allowed (HTTP status code 403)</exception>
+        /// <exception cref="ReferenceException">if an object was attempted to be referenced that doesn't exist or has been removed,
+        ///            or there was a conflict (HTTP status code 404, 409 or 410)</exception>
+        /// <exception cref="PlatformException">if something went wrong at the Worldline Acquiring platform,
+        ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+        ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
+        /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
+        /// <exception cref="OperationCanceledException">when the cancellation token was cancelled</exception>
+        public async Task<UploadDocumentResponse> UploadDisputeDocumentAsync(UploadDisputeDocumentRequest body, CallContext context = null, CancellationToken cancellationToken = default)
         {
             var uri = InstantiateUri("/dispute-management/v1/documents", null);
             try
@@ -45,7 +69,8 @@ namespace Worldline.Acquiring.Sdk.V1.Disputedocuments
                         null,
                         null,
                         body,
-                        context).ConfigureAwait(false);
+                        context,
+                        cancellationToken).ConfigureAwait(false);
             }
             catch (ResponseException e)
             {
@@ -70,7 +95,31 @@ namespace Worldline.Acquiring.Sdk.V1.Disputedocuments
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task GetDisputeDocument(string disputeId, string documentId, Action<Stream, IEnumerable<IResponseHeader>> bodyHandler, CallContext context = null)
+        [Obsolete("Use GetDisputeDocumentAsync instead. This method will be removed in a future major version.")]
+        public Task GetDisputeDocument(string disputeId, string documentId, Action<Stream, IEnumerable<IResponseHeader>> bodyHandler, CallContext context = null)
+        {
+            return GetDisputeDocumentAsync(disputeId, documentId, bodyHandler == null ? (Func<Stream, IEnumerable<IResponseHeader>, Task>) null : (bodyStream, bodyHeaders) => { bodyHandler(bodyStream, bodyHeaders); return Task.CompletedTask; }, context, CancellationToken.None);
+        }
+
+        /// <summary>
+        /// Resource /dispute-management/v1/disputes/{disputeId}/documents/{documentId}
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Dispute-Documents/operation/getDisputeDocument">Retrieve Dispute Document</a>
+        /// </summary>
+        /// <param name="disputeId">string</param>
+        /// <param name="documentId">string</param>
+        /// <param name="bodyHandler">An asynchronous callback that receives the contents of the body as a stream. The response stays open until it has completed</param>
+        /// <param name="context">CallContext</param>
+        /// <param name="cancellationToken">A token to cancel the call</param>
+        /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
+        /// <exception cref="AuthorizationException">if the request was not allowed (HTTP status code 403)</exception>
+        /// <exception cref="ReferenceException">if an object was attempted to be referenced that doesn't exist or has been removed,
+        ///            or there was a conflict (HTTP status code 404, 409 or 410)</exception>
+        /// <exception cref="PlatformException">if something went wrong at the Worldline Acquiring platform,
+        ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+        ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
+        /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
+        /// <exception cref="OperationCanceledException">when the cancellation token was cancelled</exception>
+        public async Task GetDisputeDocumentAsync(string disputeId, string documentId, Func<Stream, IEnumerable<IResponseHeader>, Task> bodyHandler, CallContext context = null, CancellationToken cancellationToken = default)
         {
             var pathContext = new Dictionary<string, string>
             {
@@ -85,7 +134,8 @@ namespace Worldline.Acquiring.Sdk.V1.Disputedocuments
                         null,
                         null,
                         bodyHandler,
-                        context).ConfigureAwait(false);
+                        context,
+                        cancellationToken).ConfigureAwait(false);
             }
             catch (ResponseException e)
             {

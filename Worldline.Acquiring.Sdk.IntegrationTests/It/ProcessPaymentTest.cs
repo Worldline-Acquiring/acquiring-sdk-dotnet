@@ -17,7 +17,7 @@ namespace Worldline.Acquiring.Sdk.It
                 var paymentsClient = client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).CardPayments;
 
                 var request = GetApiPaymentRequest();
-                var response = await paymentsClient.ProcessPayment(request);
+                var response = await paymentsClient.ProcessPaymentAsync(request);
                 AssertProcessPaymentResponse(request, response);
 
                 var paymentId = response.PaymentId;
@@ -27,7 +27,7 @@ namespace Worldline.Acquiring.Sdk.It
                     ReturnOperations = true
                 };
 
-                var status = await paymentsClient.GetPaymentStatus(paymentId, query);
+                var status = await paymentsClient.GetPaymentStatusAsync(paymentId, query);
                 AssertPaymentStatusResponse(paymentId, status);
             }
         }

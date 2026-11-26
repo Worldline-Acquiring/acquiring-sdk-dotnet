@@ -16,15 +16,15 @@ namespace Worldline.Acquiring.Sdk
             var configuration = CreateBasicConfiguration();
 
             AssertBasicConfigurationSettings(configuration);
-            Assert.AreEqual(CommunicatorConfiguration.DefaultMaxConnections, configuration.MaxConnections);
-            Assert.Null(configuration.AuthorizationId);
-            Assert.Null(configuration.AuthorizationSecret);
-            Assert.Null(configuration.OAuth2Scopes);
+            Assert.That(configuration.MaxConnections, Is.EqualTo(CommunicatorConfiguration.DefaultMaxConnections));
+            Assert.That(configuration.AuthorizationId, Is.Null);
+            Assert.That(configuration.AuthorizationSecret, Is.Null);
+            Assert.That(configuration.OAuth2Scopes, Is.Null);
 
-            Assert.Null(configuration.Proxy);
-            Assert.Null(configuration.ProxyUri);
-            Assert.Null(configuration.ProxyUserName);
-            Assert.Null(configuration.ProxyPassword);
+            Assert.That(configuration.Proxy, Is.Null);
+            Assert.That(configuration.ProxyUri, Is.Null);
+            Assert.That(configuration.ProxyUserName, Is.Null);
+            Assert.That(configuration.ProxyPassword, Is.Null);
         }
 
         [TestCase]
@@ -34,16 +34,16 @@ namespace Worldline.Acquiring.Sdk
                 .WithProxyUri(new Uri("http://proxy.example.org:3128"));
 
             AssertBasicConfigurationSettings(configuration);
-            Assert.AreEqual(CommunicatorConfiguration.DefaultMaxConnections, configuration.MaxConnections);
-            Assert.Null(configuration.AuthorizationId);
-            Assert.Null(configuration.AuthorizationSecret);
-            Assert.Null(configuration.OAuth2Scopes);
+            Assert.That(configuration.MaxConnections, Is.EqualTo(CommunicatorConfiguration.DefaultMaxConnections));
+            Assert.That(configuration.AuthorizationId, Is.Null);
+            Assert.That(configuration.AuthorizationSecret, Is.Null);
+            Assert.That(configuration.OAuth2Scopes, Is.Null);
 
             var proxy = configuration.Proxy;
-            Assert.NotNull(proxy);
+            Assert.That(proxy, Is.Not.Null);
             AssertBasicProxySettings(proxy);
-            Assert.Null(proxy.Username);
-            Assert.Null(proxy.Password);
+            Assert.That(proxy.Username, Is.Null);
+            Assert.That(proxy.Password, Is.Null);
         }
 
         [TestCase]
@@ -55,16 +55,16 @@ namespace Worldline.Acquiring.Sdk
                 .WithProxyPassword("proxy-password");
 
             AssertBasicConfigurationSettings(configuration);
-            Assert.AreEqual(CommunicatorConfiguration.DefaultMaxConnections, configuration.MaxConnections);
-            Assert.Null(configuration.AuthorizationId);
-            Assert.Null(configuration.AuthorizationSecret);
-            Assert.Null(configuration.OAuth2Scopes);
+            Assert.That(configuration.MaxConnections, Is.EqualTo(CommunicatorConfiguration.DefaultMaxConnections));
+            Assert.That(configuration.AuthorizationId, Is.Null);
+            Assert.That(configuration.AuthorizationSecret, Is.Null);
+            Assert.That(configuration.OAuth2Scopes, Is.Null);
 
             var proxy = configuration.Proxy;
-            Assert.NotNull(proxy);
+            Assert.That(proxy, Is.Not.Null);
             AssertBasicProxySettings(proxy);
-            Assert.AreEqual("proxy-username", proxy.Username);
-            Assert.AreEqual("proxy-password", proxy.Password);
+            Assert.That(proxy.Username, Is.EqualTo("proxy-username"));
+            Assert.That(proxy.Password, Is.EqualTo("proxy-password"));
         }
 
         [TestCase]
@@ -74,13 +74,10 @@ namespace Worldline.Acquiring.Sdk
                 .WithMaxConnections(100);
 
             AssertBasicConfigurationSettings(configuration);
-            Assert.AreEqual(100, configuration.MaxConnections);
-            Assert.Null(configuration.AuthorizationId);
-            Assert.Null(configuration.AuthorizationSecret);
-            Assert.Null(configuration.OAuth2Scopes);
-
-            // In original tests was null, but not anymore, because of app config configuration
-            //Assert.Null(configuration.ProxyConfiguration);
+            Assert.That(configuration.MaxConnections, Is.EqualTo(100));
+            Assert.That(configuration.AuthorizationId, Is.Null);
+            Assert.That(configuration.AuthorizationSecret, Is.Null);
+            Assert.That(configuration.OAuth2Scopes, Is.Null);
         }
 
         [TestCase]
@@ -97,7 +94,7 @@ namespace Worldline.Acquiring.Sdk
 
             var configuration = new CommunicatorConfiguration(properties);
 
-            Assert.AreEqual(new Uri("http://api.preprod.acquiring.worldline-solutions.com"), configuration.ApiEndpoint);
+            Assert.That(configuration.ApiEndpoint, Is.EqualTo(new Uri("http://api.preprod.acquiring.worldline-solutions.com")));
         }
 
         [TestCase]
@@ -114,7 +111,7 @@ namespace Worldline.Acquiring.Sdk
 
             var configuration = new CommunicatorConfiguration(properties);
 
-            Assert.AreEqual(new Uri("https://api.preprod.acquiring.worldline-solutions.com:8443"), configuration.ApiEndpoint);
+            Assert.That(configuration.ApiEndpoint, Is.EqualTo(new Uri("https://api.preprod.acquiring.worldline-solutions.com:8443")));
         }
 
         [TestCase]
@@ -132,7 +129,7 @@ namespace Worldline.Acquiring.Sdk
 
             var configuration = new CommunicatorConfiguration(properties);
 
-            Assert.AreEqual(new Uri("http://api.preprod.acquiring.worldline-solutions.com:8080"), configuration.ApiEndpoint);
+            Assert.That(configuration.ApiEndpoint, Is.EqualTo(new Uri("http://api.preprod.acquiring.worldline-solutions.com:8080")));
         }
 
         [TestCase]
@@ -148,7 +145,7 @@ namespace Worldline.Acquiring.Sdk
 
             var configuration = new CommunicatorConfiguration(properties);
 
-            Assert.AreEqual(new Uri("https://[::1]"), configuration.ApiEndpoint);
+            Assert.That(configuration.ApiEndpoint, Is.EqualTo(new Uri("https://[::1]")));
         }
 
         [TestCase]
@@ -167,7 +164,7 @@ namespace Worldline.Acquiring.Sdk
 
             var configuration = new CommunicatorConfiguration(properties);
 
-            Assert.AreEqual("processing_dcc_rate invalid_scope", configuration.OAuth2Scopes);
+            Assert.That(configuration.OAuth2Scopes, Is.EqualTo("processing_dcc_rate invalid_scope"));
         }
 
         private static CommunicatorConfiguration CreateBasicConfiguration()
@@ -181,10 +178,10 @@ namespace Worldline.Acquiring.Sdk
 
         private static void AssertBasicConfigurationSettings(CommunicatorConfiguration configuration)
         {
-            Assert.AreEqual(new Uri("https://api.preprod.acquiring.worldline-solutions.com"), configuration.ApiEndpoint);
-            Assert.AreEqual(AuthorizationType.OAuth2, configuration.AuthorizationType);
-            Assert.AreEqual(20000, configuration.ConnectTimeout?.TotalMilliseconds);
-            Assert.AreEqual(10000, configuration.SocketTimeout?.TotalMilliseconds);
+            Assert.That(configuration.ApiEndpoint, Is.EqualTo(new Uri("https://api.preprod.acquiring.worldline-solutions.com")));
+            Assert.That(configuration.AuthorizationType, Is.EqualTo(AuthorizationType.OAuth2));
+            Assert.That(configuration.ConnectTimeout?.TotalMilliseconds, Is.EqualTo(20000));
+            Assert.That(configuration.SocketTimeout?.TotalMilliseconds, Is.EqualTo(10000));
         }
 
         /// <summary>
@@ -193,9 +190,9 @@ namespace Worldline.Acquiring.Sdk
         /// <param name="proxy">Proxy.</param>
         private static void AssertBasicProxySettings(Proxy proxy)
         {
-            Assert.AreEqual("http", proxy.Uri.Scheme);
-            Assert.AreEqual("proxy.example.org", proxy.Uri.Host);
-            Assert.AreEqual(3128, proxy.Uri.Port);
+            Assert.That(proxy.Uri.Scheme, Is.EqualTo("http"));
+            Assert.That(proxy.Uri.Host, Is.EqualTo("proxy.example.org"));
+            Assert.That(proxy.Uri.Port, Is.EqualTo(3128));
         }
     }
 }

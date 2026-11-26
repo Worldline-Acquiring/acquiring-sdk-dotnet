@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Worldline.Acquiring.Sdk
 {
     [Serializable]
-    internal class BodyHandlerException : Exception
+    public class BodyHandlerException : Exception
     {
         public BodyHandlerException(string message) : base(message)
         {

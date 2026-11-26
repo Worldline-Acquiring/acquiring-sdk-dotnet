@@ -1,7 +1,9 @@
 /*
  * This file was automatically generated.
  */
+using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using Worldline.Acquiring.Sdk.Communication;
 using Worldline.Acquiring.Sdk.V1.Domain;
@@ -33,7 +35,30 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task<ApiRefundResponse> ProcessStandaloneRefund(ApiRefundRequest body, CallContext context = null)
+        [Obsolete("Use ProcessStandaloneRefundAsync instead. This method will be removed in a future major version.")]
+        public Task<ApiRefundResponse> ProcessStandaloneRefund(ApiRefundRequest body, CallContext context = null)
+        {
+            return ProcessStandaloneRefundAsync(body, context, CancellationToken.None);
+        }
+
+        /// <summary>
+        /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/processStandaloneRefund">Create standalone card refund</a>
+        /// </summary>
+        /// <param name="body">ApiRefundRequest</param>
+        /// <param name="context">CallContext</param>
+        /// <param name="cancellationToken">A token to cancel the call</param>
+        /// <returns>ApiRefundResponse</returns>
+        /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
+        /// <exception cref="AuthorizationException">if the request was not allowed (HTTP status code 403)</exception>
+        /// <exception cref="ReferenceException">if an object was attempted to be referenced that doesn't exist or has been removed,
+        ///            or there was a conflict (HTTP status code 404, 409 or 410)</exception>
+        /// <exception cref="PlatformException">if something went wrong at the Worldline Acquiring platform,
+        ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+        ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
+        /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
+        /// <exception cref="OperationCanceledException">when the cancellation token was cancelled</exception>
+        public async Task<ApiRefundResponse> ProcessStandaloneRefundAsync(ApiRefundRequest body, CallContext context = null, CancellationToken cancellationToken = default)
         {
             var uri = InstantiateUri("/processing/v1/{acquirerId}/{merchantId}/refunds", null);
             try
@@ -43,7 +68,8 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
                         null,
                         null,
                         body,
-                        context).ConfigureAwait(false);
+                        context,
+                        cancellationToken).ConfigureAwait(false);
             }
             catch (ResponseException e)
             {
@@ -68,7 +94,31 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task<ApiRefundResource> GetRefund(string refundId, GetRefundParams query, CallContext context = null)
+        [Obsolete("Use GetRefundAsync instead. This method will be removed in a future major version.")]
+        public Task<ApiRefundResource> GetRefund(string refundId, GetRefundParams query, CallContext context = null)
+        {
+            return GetRefundAsync(refundId, query, context, CancellationToken.None);
+        }
+
+        /// <summary>
+        /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/getRefund">Retrieve card refund</a>
+        /// </summary>
+        /// <param name="refundId">string</param>
+        /// <param name="query">GetRefundParams</param>
+        /// <param name="context">CallContext</param>
+        /// <param name="cancellationToken">A token to cancel the call</param>
+        /// <returns>ApiRefundResource</returns>
+        /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
+        /// <exception cref="AuthorizationException">if the request was not allowed (HTTP status code 403)</exception>
+        /// <exception cref="ReferenceException">if an object was attempted to be referenced that doesn't exist or has been removed,
+        ///            or there was a conflict (HTTP status code 404, 409 or 410)</exception>
+        /// <exception cref="PlatformException">if something went wrong at the Worldline Acquiring platform,
+        ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+        ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
+        /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
+        /// <exception cref="OperationCanceledException">when the cancellation token was cancelled</exception>
+        public async Task<ApiRefundResource> GetRefundAsync(string refundId, GetRefundParams query, CallContext context = null, CancellationToken cancellationToken = default)
         {
             var pathContext = new Dictionary<string, string>
             {
@@ -81,7 +131,8 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
                         uri,
                         null,
                         query,
-                        context).ConfigureAwait(false);
+                        context,
+                        cancellationToken).ConfigureAwait(false);
             }
             catch (ResponseException e)
             {
@@ -106,7 +157,31 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task<ApiActionResponseForRefund> CaptureRefund(string refundId, ApiCaptureRequestForRefund body, CallContext context = null)
+        [Obsolete("Use CaptureRefundAsync instead. This method will be removed in a future major version.")]
+        public Task<ApiActionResponseForRefund> CaptureRefund(string refundId, ApiCaptureRequestForRefund body, CallContext context = null)
+        {
+            return CaptureRefundAsync(refundId, body, context, CancellationToken.None);
+        }
+
+        /// <summary>
+        /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/captures
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/captureRefund">Capture refund</a>
+        /// </summary>
+        /// <param name="refundId">string</param>
+        /// <param name="body">ApiCaptureRequestForRefund</param>
+        /// <param name="context">CallContext</param>
+        /// <param name="cancellationToken">A token to cancel the call</param>
+        /// <returns>ApiActionResponseForRefund</returns>
+        /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
+        /// <exception cref="AuthorizationException">if the request was not allowed (HTTP status code 403)</exception>
+        /// <exception cref="ReferenceException">if an object was attempted to be referenced that doesn't exist or has been removed,
+        ///            or there was a conflict (HTTP status code 404, 409 or 410)</exception>
+        /// <exception cref="PlatformException">if something went wrong at the Worldline Acquiring platform,
+        ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+        ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
+        /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
+        /// <exception cref="OperationCanceledException">when the cancellation token was cancelled</exception>
+        public async Task<ApiActionResponseForRefund> CaptureRefundAsync(string refundId, ApiCaptureRequestForRefund body, CallContext context = null, CancellationToken cancellationToken = default)
         {
             var pathContext = new Dictionary<string, string>
             {
@@ -120,7 +195,8 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
                         null,
                         null,
                         body,
-                        context).ConfigureAwait(false);
+                        context,
+                        cancellationToken).ConfigureAwait(false);
             }
             catch (ResponseException e)
             {
@@ -145,7 +221,31 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
         ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
         ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
         /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
-        public async Task<ApiActionResponseForRefund> ReverseRefundAuthorization(string refundId, ApiRefundReversalRequest body, CallContext context = null)
+        [Obsolete("Use ReverseRefundAuthorizationAsync instead. This method will be removed in a future major version.")]
+        public Task<ApiActionResponseForRefund> ReverseRefundAuthorization(string refundId, ApiRefundReversalRequest body, CallContext context = null)
+        {
+            return ReverseRefundAuthorizationAsync(refundId, body, context, CancellationToken.None);
+        }
+
+        /// <summary>
+        /// Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/authorization-reversals
+        /// - <a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/reverseRefundAuthorization">Reverse refund authorization</a>
+        /// </summary>
+        /// <param name="refundId">string</param>
+        /// <param name="body">ApiRefundReversalRequest</param>
+        /// <param name="context">CallContext</param>
+        /// <param name="cancellationToken">A token to cancel the call</param>
+        /// <returns>ApiActionResponseForRefund</returns>
+        /// <exception cref="ValidationException">if the request was not correct and couldn't be processed (HTTP status code 400)</exception>
+        /// <exception cref="AuthorizationException">if the request was not allowed (HTTP status code 403)</exception>
+        /// <exception cref="ReferenceException">if an object was attempted to be referenced that doesn't exist or has been removed,
+        ///            or there was a conflict (HTTP status code 404, 409 or 410)</exception>
+        /// <exception cref="PlatformException">if something went wrong at the Worldline Acquiring platform,
+        ///            the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+        ///            or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</exception>
+        /// <exception cref="ApiException">if the Worldline Acquiring platform returned any other error</exception>
+        /// <exception cref="OperationCanceledException">when the cancellation token was cancelled</exception>
+        public async Task<ApiActionResponseForRefund> ReverseRefundAuthorizationAsync(string refundId, ApiRefundReversalRequest body, CallContext context = null, CancellationToken cancellationToken = default)
         {
             var pathContext = new Dictionary<string, string>
             {
@@ -159,7 +259,8 @@ namespace Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds
                         null,
                         null,
                         body,
-                        context).ConfigureAwait(false);
+                        context,
+                        cancellationToken).ConfigureAwait(false);
             }
             catch (ResponseException e)
             {

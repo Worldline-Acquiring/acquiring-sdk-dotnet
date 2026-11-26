@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Threading;
 using System.Threading.Tasks;
 using Worldline.Acquiring.Sdk.Logging;
 
@@ -13,7 +14,7 @@ namespace Worldline.Acquiring.Sdk.Communication
     /// <summary>
     /// The default implementation for the connection interface. Supports Pooling, and is thread safe.
     /// </summary>
-    public class DefaultConnection : IPooledConnection
+    public class DefaultConnection : IPooledConnection, ICancellableConnection
     {
         public DefaultConnection(TimeSpan? socketTimeout, int maxConnections = 2, Proxy proxy = null, HttpClientHandler httpClientHandler = null)
         {
@@ -70,13 +71,13 @@ namespace Worldline.Acquiring.Sdk.Communication
             _disposeAction = disposeAction ?? (() => { });
         }
 
-        private async Task<T> SendHttpMessage<T>(HttpMethod method, Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>responseHandler, string body = null)
+        private async Task<T> SendHttpMessage<T>(HttpMethod method, Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, CancellationToken cancellationToken, string body = null)
         {
             var content = body == null ? null : new StringContent(body);
-            return await SendHttpMessage(method, uri, requestHeaders, responseHandler, content, body).ConfigureAwait(false);
+            return await SendHttpMessage(method, uri, requestHeaders, responseHandler, content, body, cancellationToken).ConfigureAwait(false);
         }
 
-        private async Task<T> SendHttpMessage<T>(HttpMethod method, Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler, MultipartFormDataObject multipart)
+        private async Task<T> SendHttpMessage<T>(HttpMethod method, Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, MultipartFormDataObject multipart, CancellationToken cancellationToken)
         {
             var content = new MultipartFormDataContent(multipart.Boundary);
             content.Headers.ContentType = MediaTypeHeaderValue.Parse(multipart.ContentType);
@@ -102,11 +103,13 @@ namespace Worldline.Acquiring.Sdk.Communication
                 throw new InvalidOperationException("MultipartFormDataContent did not create the expected content type" + contentType);
             }
 
-            return await SendHttpMessage(method, uri, requestHeaders, responseHandler, content, "<binary content>").ConfigureAwait(false);
+            return await SendHttpMessage(method, uri, requestHeaders, responseHandler, content, "<binary content>", cancellationToken).ConfigureAwait(false);
         }
 
-        private async Task<T> SendHttpMessage<T>(HttpMethod method, Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler, HttpContent content, string contentString)
+        private async Task<T> SendHttpMessage<T>(HttpMethod method, Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, HttpContent content, string contentString, CancellationToken cancellationToken)
         {
+            cancellationToken.ThrowIfCancellationRequested();
+
             var guid = Guid.NewGuid();
             try
             {
@@ -139,7 +142,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                     var httpClient = _httpClientProvider();
                     try
                     {
-                        using (var httpResponse = await httpClient.SendAsync(message).ConfigureAwait(false))
+                        using (var httpResponse = await httpClient.SendAsync(message, cancellationToken).ConfigureAwait(false))
                         {
                             var headers = from header in httpResponse.Headers
                                           from value in header.Value
@@ -157,7 +160,9 @@ namespace Worldline.Acquiring.Sdk.Communication
                                                       from value in header.Value
                                                       select new EntityHeader(header.Key, value);
 
-                            return responseHandler(httpResponse.StatusCode, responseBody, headers.Cast<IResponseHeader>().Union(responseBodyHeaders));
+                            // The token is deliberately not checked here: the response has arrived, so the platform has already processed the request,
+                            // and throwing it away would hide the outcome from the caller. An asynchronous response handler can still honour the token itself.
+                            return await responseHandler(httpResponse.StatusCode, responseBody, headers.Cast<IResponseHeader>().Union(responseBodyHeaders)).ConfigureAwait(false);
                         }
                     }
                     finally
@@ -171,10 +176,15 @@ namespace Worldline.Acquiring.Sdk.Communication
                 LogException(guid, exception);
                 throw new CommunicationException(exception);
             }
-            catch (TaskCanceledException exception)
+            catch (TaskCanceledException exception) when (!cancellationToken.IsCancellationRequested)
             {
                 LogException(guid, exception);
                 throw new CommunicationException(exception);
+            }
+            catch (OperationCanceledException exception) when (cancellationToken.IsCancellationRequested)
+            {
+                LogException(guid, exception);
+                throw;
             }
             catch (WebException exception)
             {
@@ -186,6 +196,11 @@ namespace Worldline.Acquiring.Sdk.Communication
                 LogException(guid, exception);
                 throw;
             }
+        }
+
+        private static Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> ToAsyncResponseHandler<T>(Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler)
+        {
+            return (status, body, headers) => Task.FromResult(responseHandler(status, body, headers));
         }
 
         #region IPooledConnection implementation
@@ -203,32 +218,64 @@ namespace Worldline.Acquiring.Sdk.Communication
         #region IConnection implementation
         public async Task<T> Get<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler)
         {
-            return await SendHttpMessage(HttpMethod.Get, uri, requestHeaders,  responseHandler).ConfigureAwait(false);
+            return await SendHttpMessage(HttpMethod.Get, uri, requestHeaders, ToAsyncResponseHandler(responseHandler), CancellationToken.None).ConfigureAwait(false);
         }
 
         public async Task<T> Delete<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler)
         {
-            return await SendHttpMessage(HttpMethod.Delete, uri, requestHeaders,  responseHandler).ConfigureAwait(false);
+            return await SendHttpMessage(HttpMethod.Delete, uri, requestHeaders, ToAsyncResponseHandler(responseHandler), CancellationToken.None).ConfigureAwait(false);
         }
 
         public async Task<T> Post<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, string body, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler)
         {
-            return await SendHttpMessage(HttpMethod.Post, uri, requestHeaders, responseHandler, body).ConfigureAwait(false);
+            return await SendHttpMessage(HttpMethod.Post, uri, requestHeaders, ToAsyncResponseHandler(responseHandler), CancellationToken.None, body).ConfigureAwait(false);
         }
 
         public async Task<T> Post<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, MultipartFormDataObject multipart, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler)
         {
-            return await SendHttpMessage(HttpMethod.Post, uri, requestHeaders, responseHandler, multipart).ConfigureAwait(false);
+            return await SendHttpMessage(HttpMethod.Post, uri, requestHeaders, ToAsyncResponseHandler(responseHandler), multipart, CancellationToken.None).ConfigureAwait(false);
         }
 
         public async Task<T> Put<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, string body, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler)
         {
-            return await SendHttpMessage(HttpMethod.Put, uri, requestHeaders,  responseHandler, body).ConfigureAwait(false);
+            return await SendHttpMessage(HttpMethod.Put, uri, requestHeaders, ToAsyncResponseHandler(responseHandler), CancellationToken.None, body).ConfigureAwait(false);
         }
 
         public async Task<T> Put<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, MultipartFormDataObject multipart, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T> responseHandler)
         {
-            return await SendHttpMessage(HttpMethod.Put, uri, requestHeaders, responseHandler, multipart).ConfigureAwait(false);
+            return await SendHttpMessage(HttpMethod.Put, uri, requestHeaders, ToAsyncResponseHandler(responseHandler), multipart, CancellationToken.None).ConfigureAwait(false);
+        }
+        #endregion
+
+        #region ICancellableConnection implementation
+        public async Task<T> Get<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, CancellationToken cancellationToken)
+        {
+            return await SendHttpMessage(HttpMethod.Get, uri, requestHeaders, responseHandler, cancellationToken).ConfigureAwait(false);
+        }
+
+        public async Task<T> Delete<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, CancellationToken cancellationToken)
+        {
+            return await SendHttpMessage(HttpMethod.Delete, uri, requestHeaders, responseHandler, cancellationToken).ConfigureAwait(false);
+        }
+
+        public async Task<T> Post<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, string body, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, CancellationToken cancellationToken)
+        {
+            return await SendHttpMessage(HttpMethod.Post, uri, requestHeaders, responseHandler, cancellationToken, body).ConfigureAwait(false);
+        }
+
+        public async Task<T> Post<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, MultipartFormDataObject multipart, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, CancellationToken cancellationToken)
+        {
+            return await SendHttpMessage(HttpMethod.Post, uri, requestHeaders, responseHandler, multipart, cancellationToken).ConfigureAwait(false);
+        }
+
+        public async Task<T> Put<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, string body, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, CancellationToken cancellationToken)
+        {
+            return await SendHttpMessage(HttpMethod.Put, uri, requestHeaders, responseHandler, cancellationToken, body).ConfigureAwait(false);
+        }
+
+        public async Task<T> Put<T>(Uri uri, IEnumerable<IRequestHeader> requestHeaders, MultipartFormDataObject multipart, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>> responseHandler, CancellationToken cancellationToken)
+        {
+            return await SendHttpMessage(HttpMethod.Put, uri, requestHeaders, responseHandler, multipart, cancellationToken).ConfigureAwait(false);
         }
         #endregion
 

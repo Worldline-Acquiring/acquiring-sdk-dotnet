@@ -28,7 +28,7 @@ namespace Worldline.Acquiring.Sdk.It
                                               .WithNewAcquirer(GetAcquirerId())
                                               .WithNewMerchant(GetMerchantId())
                                               .DynamicCurrencyConversion
-                                              .RequestDccRate(GetDCCRateRequest(200 * requestNum))
+                                              .RequestDccRateAsync(GetDCCRateRequest(200 * requestNum))
                                      ).ToList()
                               );
         }

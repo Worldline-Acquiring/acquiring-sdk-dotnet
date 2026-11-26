@@ -6,6 +6,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using MockHttpServer;
 using System.Net;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
 using Newtonsoft.Json.Linq;
@@ -185,7 +186,7 @@ namespace Worldline.Acquiring.Sdk.Communication
             {
                 communicator.EnableLogging(logger);
 
-                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), null, null);
+                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), null, null, CancellationToken.None);
 
                 Assert.That(response, Is.Not.Null);
                 Assert.That(new JValue("OK"), Is.EqualTo(response["result"]));
@@ -225,7 +226,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                     new RequestParam("target", "USD"),
                     new RequestParam("amount", "1000")
                 );
-                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), query, null);
+                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), query, null, CancellationToken.None);
 
                 Assert.NotNull(response);
                 Assert.AreEqual(new JValue(4547504), response["convertedAmount"]);
@@ -259,7 +260,7 @@ namespace Worldline.Acquiring.Sdk.Communication
             using (var communicator = CreateCommunicator())
             {
                 communicator.EnableLogging(logger);
-                await communicator.Delete<object>("v1/void", new List<IRequestHeader>(), null, null);
+                await communicator.Delete<object>("v1/void", new List<IRequestHeader>(), null, null, CancellationToken.None);
             }
             Assert.That(logger.Entries, Has.Count.EqualTo(2));
 
@@ -303,7 +304,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                     { "card", card }
                 };
 
-                var response = await communicator.Post<JObject>("v1/created", new List<IRequestHeader>(), null, request, null);
+                var response = await communicator.Post<JObject>("v1/created", new List<IRequestHeader>(), null, request, null, CancellationToken.None);
 
                 Assert.NotNull(response);
                 Assert.IsInstanceOf(typeof(JObject), response["payment"]);
@@ -357,7 +358,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                 };
 
                 Assert.CatchAsync(typeof(ResponseException),
-                    async () => await communicator.Post<object>("v1/bad-request", new List<IRequestHeader>(), null, request, null));
+                    async () => await communicator.Post<object>("v1/bad-request", new List<IRequestHeader>(), null, request, null, CancellationToken.None));
             }
             Assert.That(logger.Entries, Has.Count.EqualTo(2));
 
@@ -395,7 +396,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                 var multipart = new MultipartFormDataObject();
                 multipart.AddFile("file", file);
 
-                await communicator.Post<object>("/binaryRequest", new List<IRequestHeader>(), null, multipart, null);
+                await communicator.Post<object>("/binaryRequest", new List<IRequestHeader>(), null, multipart, null, CancellationToken.None);
             }
             Assert.That(logger.Entries, Has.Count.EqualTo(2));
 
@@ -433,7 +434,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                 var multipart = new MultipartFormDataObject();
                 multipart.AddFile("file", file);
 
-                await communicator.Post<object>("/binaryRequest", new List<IRequestHeader>(), null, multipart, null);
+                await communicator.Post<object>("/binaryRequest", new List<IRequestHeader>(), null, multipart, null, CancellationToken.None);
             }
             Assert.That(logger.Entries, Has.Count.EqualTo(2));
 
@@ -513,7 +514,8 @@ namespace Worldline.Acquiring.Sdk.Communication
 
                 await communicator.Delete("/v1/void", new List<IRequestHeader>(), null, (stream, headers) => {
                     Assert.That(stream.ReadByte(), Is.EqualTo(-1));
-                }, null);
+                    return Task.CompletedTask;
+                }, null, CancellationToken.None);
             }
             Assert.That(logger.Entries, Has.Count.EqualTo(2));
 
@@ -549,7 +551,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                 communicator.EnableLogging(logger);
 
                 Assert.CatchAsync(typeof(ResponseException),
-                    async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null));
+                    async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null, CancellationToken.None));
             }
 
             Assert.That(logger.Entries, Has.Count.EqualTo(2));
@@ -586,7 +588,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                 communicator.EnableLogging(logger);
 
                 Assert.CatchAsync(typeof(NotFoundException),
-                    async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null));
+                    async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null, CancellationToken.None));
             }
             Assert.That(logger.Entries, Has.Count.EqualTo(2));
 
@@ -620,7 +622,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                    }))
             {
                 communicator.EnableLogging(logger);
-                Assert.That(async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null),
+                Assert.That(async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null, CancellationToken.None),
                             Throws.Exception.TypeOf(typeof(CommunicationException))
                             .And.InnerException.TypeOf(typeof(TaskCanceledException)));
 
@@ -657,7 +659,7 @@ namespace Worldline.Acquiring.Sdk.Communication
             {
                 communicator.EnableLogging(logger);
 
-                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), null, null);
+                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), null, null, CancellationToken.None);
 
                 Assert.That(response, Is.Not.Null);
                 Assert.That(new JValue("OK"), Is.EqualTo(response["result"]));
@@ -688,7 +690,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                        return GetWithoutQueryParamsJson;
                    }))
             {
-                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), null, null);
+                var response = await communicator.Get<JObject>("v1/get", new List<IRequestHeader>(), null, null, CancellationToken.None);
 
                 Assert.That(response, Is.Not.Null);
                 Assert.That(new JValue("OK"), Is.EqualTo(response["result"]));
@@ -721,7 +723,7 @@ namespace Worldline.Acquiring.Sdk.Communication
                        return GetWithoutQueryParamsJson;
                    }))
             {
-                Assert.That(async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null),
+                Assert.That(async () => await communicator.Get<object>("v1/get", new List<IRequestHeader>(), null, null, CancellationToken.None),
                             Throws.Exception.TypeOf(typeof(CommunicationException))
                             .And.InnerException.TypeOf(typeof(TaskCanceledException)));
             }

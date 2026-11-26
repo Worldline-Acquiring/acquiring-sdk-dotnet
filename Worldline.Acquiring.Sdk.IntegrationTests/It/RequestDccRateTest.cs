@@ -14,7 +14,7 @@ namespace Worldline.Acquiring.Sdk.It
             using (var client = GetClient())
             {
                 var request = GetDCCRateRequest();
-                var response = await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRate(request);
+                var response = await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRateAsync(request);
                 AssertDccRateResponse(request, response);
             }
         }

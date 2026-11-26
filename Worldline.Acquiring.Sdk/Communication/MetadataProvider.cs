@@ -84,9 +84,9 @@ namespace Worldline.Acquiring.Sdk.Communication
             public ShoppingCartExtension ShoppingCartExtension { get; set; }
         }
 
-        internal string SdkIdentifier => "DotnetServerSDK/v" + SdkVersion;
+        internal static string SdkIdentifier => "DotnetServerSDK/v" + SdkVersion;
 
-        internal string PlatformIdentifier => new StringBuilder()
+        internal static string PlatformIdentifier => new StringBuilder()
             .Append(Environment.OSVersion.Platform)
             .Append("/")
             .Append(Environment.OSVersion.Version)
@@ -94,7 +94,7 @@ namespace Worldline.Acquiring.Sdk.Communication
             .Append(Environment.Version)
             .ToString();
 
-        private const string SdkVersion = "3.1.0";
+        private const string SdkVersion = "3.2.0";
 
         private const string ServerMetaInfoHeader = "X-WL-ServerMetaInfo";
 

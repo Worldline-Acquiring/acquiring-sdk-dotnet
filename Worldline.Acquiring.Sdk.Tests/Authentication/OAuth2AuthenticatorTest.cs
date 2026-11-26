@@ -117,7 +117,6 @@ namespace Worldline.Acquiring.Sdk.Authentication
 
                 for (var i = 0; i < 10; i++)
                 {
-#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                     Task.Factory.StartNew(async () =>
                             {
                                 try
@@ -131,7 +130,6 @@ namespace Worldline.Acquiring.Sdk.Authentication
                                     finishEvent.Signal();
                                 }
                             });
-#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 }
 
                 readyEvent.Wait();
@@ -164,7 +162,6 @@ namespace Worldline.Acquiring.Sdk.Authentication
 
                 for (var i = 0; i < 10; i++)
                 {
-#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                     Task.Factory.StartNew(async () =>
                             {
                                 try
@@ -178,7 +175,6 @@ namespace Worldline.Acquiring.Sdk.Authentication
                                     finishEvent.Signal();
                                 }
                             });
-#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
                 }
 
                 readyEvent.Wait();

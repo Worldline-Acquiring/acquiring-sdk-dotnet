@@ -23,7 +23,7 @@ namespace Worldline.Acquiring.Sdk.It
                 AssertProxyAndAuthentication(GetConnectionFromService(dynamicCurrencyConversionClient), configuration.Proxy);
 
                 var request = GetDCCRateRequest();
-                var response = await dynamicCurrencyConversionClient.RequestDccRate(request);
+                var response = await dynamicCurrencyConversionClient.RequestDccRateAsync(request);
                 AssertDccRateResponse(request, response);
             }
         }

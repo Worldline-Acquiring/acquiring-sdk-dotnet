@@ -12,7 +12,7 @@ namespace Worldline.Acquiring.Sdk.Authentication
     /// <summary>
     /// <see cref="IAuthenticator"/> implementation using OAuth2.
     /// </summary>
-    public class OAuth2Authenticator : IAuthenticator
+    public class OAuth2Authenticator : IAuthenticator, ICancellableAuthenticator
     {
         /// <summary>
         /// Constructs a new OAuth2 authenticator.
@@ -65,13 +65,18 @@ namespace Worldline.Acquiring.Sdk.Authentication
 
         public async Task<string> GetAuthorization(HttpMethod httpMethod, Uri resourceUri, IEnumerable<IRequestHeader> requestHeaders)
         {
+            return await GetAuthorization(httpMethod, resourceUri, requestHeaders, CancellationToken.None).ConfigureAwait(false);
+        }
+
+        public async Task<string> GetAuthorization(HttpMethod httpMethod, Uri resourceUri, IEnumerable<IRequestHeader> requestHeaders, CancellationToken cancellationToken)
+        {
             var tokenType = _pathToTokenTypeMapper(resourceUri.AbsolutePath);
-            await tokenType.Semaphore.WaitAsync().ConfigureAwait(false);
+            await tokenType.Semaphore.WaitAsync(cancellationToken).ConfigureAwait(false);
             try
             {
                 if (IsAccessTokenNullOrExpired(tokenType.AccessToken))
                 {
-                    tokenType.AccessToken = await GetAccessToken(tokenType.Scopes).ConfigureAwait(false);
+                    tokenType.AccessToken = await GetAccessToken(tokenType.Scopes, cancellationToken).ConfigureAwait(false);
                 }
                 return "Bearer " + tokenType.AccessToken.AccessToken;
             }
@@ -86,7 +91,7 @@ namespace Worldline.Acquiring.Sdk.Authentication
             return accessToken == null || accessToken.ExpirationTime < DateTime.Now;
         }
 
-        private async Task<OAuth2AccessToken> GetAccessToken(string scopes)
+        private async Task<OAuth2AccessToken> GetAccessToken(string scopes, CancellationToken cancellationToken)
         {
             using (var connection = new DefaultConnection(_socketTimeout, 1, _proxy))
             {
@@ -107,8 +112,8 @@ namespace Worldline.Acquiring.Sdk.Authentication
                     }
 
                     var accessTokenExpirationTime = startTime.AddSeconds(accessTokenResponse.ExpiresIn.Value);
-                    return new OAuth2AccessToken(accessTokenResponse.AccessToken, accessTokenExpirationTime);
-                }).ConfigureAwait(false);
+                    return Task.FromResult(new OAuth2AccessToken(accessTokenResponse.AccessToken, accessTokenExpirationTime));
+                }, cancellationToken).ConfigureAwait(false);
             }
         }
 

@@ -30,14 +30,14 @@ namespace Worldline.Acquiring.Sdk
         public void TestCreateConfiguration()
         {
             var configuration = Factory.CreateConfiguration(DictOAuth2, AuthorizationId, AuthorizationSecret);
-            Assert.AreEqual(new Uri("https://api.preprod.acquiring.worldline-solutions.com"), configuration.ApiEndpoint);
-            Assert.AreEqual(AuthorizationType.OAuth2, configuration.AuthorizationType);
-            Assert.AreEqual(null, configuration.ConnectTimeout);
-            Assert.AreEqual(new TimeSpan(0, 0, 10), configuration.SocketTimeout);
-            Assert.AreEqual(100, configuration.MaxConnections);
-            Assert.AreEqual(AuthorizationId, configuration.OAuth2ClientId);
-            Assert.AreEqual(AuthorizationSecret, configuration.OAuth2ClientSecret);
-            Assert.AreEqual("https://sso.preprod.acquiring.worldline-solutions.com/auth/realms/acquiring_api/protocol/openid-acquiring/token", configuration.OAuth2TokenUri);
+            Assert.That(configuration.ApiEndpoint, Is.EqualTo(new Uri("https://api.preprod.acquiring.worldline-solutions.com")));
+            Assert.That(configuration.AuthorizationType, Is.EqualTo(AuthorizationType.OAuth2));
+            Assert.That(configuration.ConnectTimeout, Is.Null);
+            Assert.That(configuration.SocketTimeout, Is.EqualTo(new TimeSpan(0, 0, 10)));
+            Assert.That(configuration.MaxConnections, Is.EqualTo(100));
+            Assert.That(configuration.OAuth2ClientId, Is.EqualTo(AuthorizationId));
+            Assert.That(configuration.OAuth2ClientSecret, Is.EqualTo(AuthorizationSecret));
+            Assert.That(configuration.OAuth2TokenUri, Is.EqualTo("https://sso.preprod.acquiring.worldline-solutions.com/auth/realms/acquiring_api/protocol/openid-acquiring/token"));
         }
 
         [TestCase]
@@ -45,23 +45,23 @@ namespace Worldline.Acquiring.Sdk
         {
             var communicator = Factory.CreateCommunicator(DictOAuth2, AuthorizationId, AuthorizationSecret);
 
-            Assert.AreSame(DefaultMarshaller.Instance, communicator.Marshaller);
+            Assert.That(communicator.Marshaller, Is.SameAs(DefaultMarshaller.Instance));
 
             var connection = communicator.Connection;
-            Assert.True(connection is DefaultConnection);
+            Assert.That(connection, Is.InstanceOf<DefaultConnection>());
             //DefaultConnectionTest.assertConnection((DefaultConnection) connection, -1, -1, 100, null);
 
             var authenticator = communicator.Authenticator;
-            Assert.True(authenticator is OAuth2Authenticator);
-            Assert.AreEqual(AuthorizationId, authenticator.GetPrivateField(typeof(OAuth2Authenticator), "_clientId"));
-            Assert.AreEqual(AuthorizationSecret, authenticator.GetPrivateField(typeof(OAuth2Authenticator), "_clientSecret"));
+            Assert.That(authenticator, Is.InstanceOf<OAuth2Authenticator>());
+            Assert.That(authenticator.GetPrivateField(typeof(OAuth2Authenticator), "_clientId"), Is.EqualTo(AuthorizationId));
+            Assert.That(authenticator.GetPrivateField(typeof(OAuth2Authenticator), "_clientSecret"), Is.EqualTo(AuthorizationSecret));
 
             var metadataProvider = communicator.MetadataProvider;
-            Assert.AreEqual(typeof(MetadataProvider), metadataProvider.GetType());
+            Assert.That(metadataProvider.GetType(), Is.EqualTo(typeof(MetadataProvider)));
             var requestHeaders = metadataProvider.ServerMetadataHeaders;
-            Assert.AreEqual(1, requestHeaders.Count());
+            Assert.That(requestHeaders.Count(), Is.EqualTo(1));
             var requestHeader = requestHeaders.ElementAt(0);
-            Assert.AreEqual("X-WL-ServerMetaInfo", requestHeader.Name);
+            Assert.That(requestHeader.Name, Is.EqualTo("X-WL-ServerMetaInfo"));
         }
     }
 }

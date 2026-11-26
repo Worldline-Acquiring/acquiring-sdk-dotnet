@@ -26,7 +26,7 @@ namespace Worldline.Acquiring.Sdk.Communication
             }
             // Replace all sequences of linebreak-whitespace* with a single linebreak-space
             const string pattern = "\r?\n[\\s-[\r\n]]*";
-            var newString = new Regex(pattern, RegexOptions.Multiline | RegexOptions.CultureInvariant).Replace(value, " ").Trim();
+            var newString = new Regex(pattern, RegexOptions.Multiline | RegexOptions.CultureInvariant, TimeSpan.FromSeconds(1)).Replace(value, " ").Trim();
             return newString;
         }
 

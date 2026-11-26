@@ -17,7 +17,7 @@ namespace Worldline.Acquiring.Sdk.It
             using (var client = Factory.CreateClient(configuration))
             {
                 var request = GetDCCRateRequest();
-                var response = await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRate(request);
+                var response = await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRateAsync(request);
                 AssertDccRateResponse(request, response);
             }
         }
@@ -29,7 +29,7 @@ namespace Worldline.Acquiring.Sdk.It
             using (var client = Factory.CreateClient(configuration))
             {
                 var request = GetDCCRateRequest();
-                Assert.That(async () => await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRate(request),
+                Assert.That(async () => await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRateAsync(request),
                     Throws.Exception.TypeOf(typeof(AuthorizationException)));
             }
         }
@@ -41,7 +41,7 @@ namespace Worldline.Acquiring.Sdk.It
             using (var client = Factory.CreateClient(configuration))
             {
                 var request = GetDCCRateRequest();
-                Assert.That(async () => await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRate(request),
+                Assert.That(async () => await client.V1.WithNewAcquirer(GetAcquirerId()).WithNewMerchant(GetMerchantId()).DynamicCurrencyConversion.RequestDccRateAsync(request),
                     Throws.Exception.TypeOf(typeof(OAuth2Exception))
                         .And.Message.StartsWith("There was an error while retrieving the OAuth2 access token: invalid_scope - "));
             }
