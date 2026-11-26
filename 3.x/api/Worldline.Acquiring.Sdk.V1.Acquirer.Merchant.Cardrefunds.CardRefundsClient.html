@@ -172,7 +172,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; CaptureRefund(string refundId, ApiCaptureRequestForRefund body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use CaptureRefundAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiActionResponseForRefund&gt; CaptureRefund(string refundId, ApiCaptureRequestForRefund body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -259,6 +260,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_CaptureRefundAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_CaptureRefundAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiCaptureRequestForRefund_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">CaptureRefundAsync(string, ApiCaptureRequestForRefund, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/captures</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/captureRefund">Capture refund</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; CaptureRefundAsync(string refundId, ApiCaptureRequestForRefund body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">refundId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund.html">ApiCaptureRequestForRefund</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiCaptureRequestForRefund</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html">ApiActionResponseForRefund</a>&gt;</td>
+        <td><p>ApiActionResponseForRefund</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_GetRefund_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefund*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_GetRefund_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_GetRefundParams_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefund(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams,Worldline.Acquiring.Sdk.CallContext)">GetRefund(string, GetRefundParams, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}</p>
@@ -269,7 +378,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiRefundResource&gt; GetRefund(string refundId, GetRefundParams query, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetRefundAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiRefundResource&gt; GetRefund(string refundId, GetRefundParams query, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -356,6 +466,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_GetRefundAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_GetRefundAsync_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_GetRefundParams_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">GetRefundAsync(string, GetRefundParams, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/getRefund">Retrieve card refund</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiRefundResource&gt; GetRefundAsync(string refundId, GetRefundParams query, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">refundId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams.html">GetRefundParams</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>GetRefundParams</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResource.html">ApiRefundResource</a>&gt;</td>
+        <td><p>ApiRefundResource</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ProcessStandaloneRefund_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefund*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ProcessStandaloneRefund_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefund(Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest,Worldline.Acquiring.Sdk.CallContext)">ProcessStandaloneRefund(ApiRefundRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds</p>
@@ -366,7 +584,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiRefundResponse&gt; ProcessStandaloneRefund(ApiRefundRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ProcessStandaloneRefundAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiRefundResponse&gt; ProcessStandaloneRefund(ApiRefundRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -447,6 +666,108 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ProcessStandaloneRefundAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ProcessStandaloneRefundAsync_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">ProcessStandaloneRefundAsync(ApiRefundRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/processStandaloneRefund">Create standalone card refund</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiRefundResponse&gt; ProcessStandaloneRefundAsync(ApiRefundRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest.html">ApiRefundRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiRefundRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiRefundResponse.html">ApiRefundResponse</a>&gt;</td>
+        <td><p>ApiRefundResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ReverseRefundAuthorization_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorization*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ReverseRefundAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext)">ReverseRefundAuthorization(string, ApiRefundReversalRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/authorization-reversals</p>
@@ -457,7 +778,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; ReverseRefundAuthorization(string refundId, ApiRefundReversalRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ReverseRefundAuthorizationAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiActionResponseForRefund&gt; ReverseRefundAuthorization(string refundId, ApiRefundReversalRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -540,6 +862,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       <tr>
         <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
         <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ReverseRefundAuthorizationAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ReverseRefundAuthorizationAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">ReverseRefundAuthorizationAsync(string, ApiRefundReversalRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/refunds/{refundId}/authorization-reversals</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Refunds/operation/reverseRefundAuthorization">Reverse refund authorization</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; ReverseRefundAuthorizationAsync(string refundId, ApiRefundReversalRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">refundId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest.html">ApiRefundReversalRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiRefundReversalRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html">ApiActionResponseForRefund</a>&gt;</td>
+        <td><p>ApiActionResponseForRefund</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>

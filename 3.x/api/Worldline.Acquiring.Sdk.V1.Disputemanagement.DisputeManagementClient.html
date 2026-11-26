@@ -172,7 +172,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DisputeResponse&gt; AcceptDisputeLiability(string disputeId, AcceptDisputeLiabilityRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use AcceptDisputeLiabilityAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;DisputeResponse&gt; AcceptDisputeLiability(string disputeId, AcceptDisputeLiabilityRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -259,6 +260,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_AcceptDisputeLiabilityAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_AcceptDisputeLiabilityAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_AcceptDisputeLiabilityRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.AcceptDisputeLiabilityRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">AcceptDisputeLiabilityAsync(string, AcceptDisputeLiabilityRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /dispute-management/v1/disputes/{disputeId}/accept</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Dispute-Management/operation/acceptDisputeLiability">Accept Liability</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DisputeResponse&gt; AcceptDisputeLiabilityAsync(string disputeId, AcceptDisputeLiabilityRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">disputeId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.AcceptDisputeLiabilityRequest.html">AcceptDisputeLiabilityRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>AcceptDisputeLiabilityRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.DisputeResponse.html">DisputeResponse</a>&gt;</td>
+        <td><p>DisputeResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_GetDispute_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDispute*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_GetDispute_System_String_Worldline_Acquiring_Sdk_V1_Disputemanagement_GetDisputeParams_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDispute(System.String,Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams,Worldline.Acquiring.Sdk.CallContext)">GetDispute(string, GetDisputeParams, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /dispute-management/v1/disputes/{disputeId}</p>
@@ -269,7 +378,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DisputeResponse&gt; GetDispute(string disputeId, GetDisputeParams query, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetDisputeAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;DisputeResponse&gt; GetDispute(string disputeId, GetDisputeParams query, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -356,6 +466,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_GetDisputeAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_GetDisputeAsync_System_String_Worldline_Acquiring_Sdk_V1_Disputemanagement_GetDisputeParams_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync(System.String,Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">GetDisputeAsync(string, GetDisputeParams, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /dispute-management/v1/disputes/{disputeId}</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Dispute-Management/operation/getDispute">Retrieve Dispute</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DisputeResponse&gt; GetDisputeAsync(string disputeId, GetDisputeParams query, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">disputeId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams.html">GetDisputeParams</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>GetDisputeParams</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.DisputeResponse.html">DisputeResponse</a>&gt;</td>
+        <td><p>DisputeResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SearchDisputes_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputes*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SearchDisputes_Worldline_Acquiring_Sdk_V1_Domain_SearchDisputesRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputes(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesRequest,Worldline.Acquiring.Sdk.CallContext)">SearchDisputes(SearchDisputesRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /dispute-management/v1/disputes/search</p>
@@ -366,7 +584,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;SearchDisputesResponse&gt; SearchDisputes(SearchDisputesRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use SearchDisputesAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;SearchDisputesResponse&gt; SearchDisputes(SearchDisputesRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -447,6 +666,108 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SearchDisputesAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SearchDisputesAsync_Worldline_Acquiring_Sdk_V1_Domain_SearchDisputesRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">SearchDisputesAsync(SearchDisputesRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /dispute-management/v1/disputes/search</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Dispute-Management/operation/searchDisputes">Search Disputes</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;SearchDisputesResponse&gt; SearchDisputesAsync(SearchDisputesRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesRequest.html">SearchDisputesRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>SearchDisputesRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesResponse.html">SearchDisputesResponse</a>&gt;</td>
+        <td><p>SearchDisputesResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SubmitEvidence_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidence*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SubmitEvidence_System_String_Worldline_Acquiring_Sdk_V1_Domain_SubmitEvidenceRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidence(System.String,Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest,Worldline.Acquiring.Sdk.CallContext)">SubmitEvidence(string, SubmitEvidenceRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /dispute-management/v1/disputes/{disputeId}/submit-evidence</p>
@@ -457,7 +778,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;DisputeResponse&gt; SubmitEvidence(string disputeId, SubmitEvidenceRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use SubmitEvidenceAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;DisputeResponse&gt; SubmitEvidence(string disputeId, SubmitEvidenceRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -540,6 +862,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       <tr>
         <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
         <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SubmitEvidenceAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SubmitEvidenceAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_SubmitEvidenceRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">SubmitEvidenceAsync(string, SubmitEvidenceRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /dispute-management/v1/disputes/{disputeId}/submit-evidence</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Dispute-Management/operation/submitEvidence">Submit Evidence</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;DisputeResponse&gt; SubmitEvidenceAsync(string disputeId, SubmitEvidenceRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">disputeId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest.html">SubmitEvidenceRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>SubmitEvidenceRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.DisputeResponse.html">DisputeResponse</a>&gt;</td>
+        <td><p>DisputeResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>

@@ -132,6 +132,28 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.Authentication.IAuthenticator.GetAuthorization
   nameWithType: IAuthenticator.GetAuthorization
+- uid: Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator
+  name: ICancellableAuthenticator
+  href: api/Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.html
+  commentId: T:Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator
+  fullName: Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator
+  nameWithType: ICancellableAuthenticator
+- uid: Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.GetAuthorization(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Threading.CancellationToken)
+  name: GetAuthorization(HttpMethod, Uri, IEnumerable<IRequestHeader>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.html#Worldline_Acquiring_Sdk_Authentication_ICancellableAuthenticator_GetAuthorization_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.GetAuthorization(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Threading.CancellationToken)
+  name.vb: GetAuthorization(HttpMethod, Uri, IEnumerable(Of IRequestHeader), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.GetAuthorization(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.GetAuthorization(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Threading.CancellationToken)
+  nameWithType: ICancellableAuthenticator.GetAuthorization(HttpMethod, Uri, IEnumerable<IRequestHeader>, CancellationToken)
+  nameWithType.vb: ICancellableAuthenticator.GetAuthorization(HttpMethod, Uri, IEnumerable(Of IRequestHeader), CancellationToken)
+- uid: Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.GetAuthorization*
+  name: GetAuthorization
+  href: api/Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.html#Worldline_Acquiring_Sdk_Authentication_ICancellableAuthenticator_GetAuthorization_
+  commentId: Overload:Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.GetAuthorization
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.GetAuthorization
+  nameWithType: ICancellableAuthenticator.GetAuthorization
 - uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator
   name: OAuth2Authenticator
   href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.html
@@ -157,6 +179,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.New
   nameWithType: OAuth2Authenticator.OAuth2Authenticator
   nameWithType.vb: OAuth2Authenticator.New
+- uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Threading.CancellationToken)
+  name: GetAuthorization(HttpMethod, Uri, IEnumerable<IRequestHeader>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_GetAuthorization_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Threading.CancellationToken)
+  name.vb: GetAuthorization(HttpMethod, Uri, IEnumerable(Of IRequestHeader), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Threading.CancellationToken)
+  nameWithType: OAuth2Authenticator.GetAuthorization(HttpMethod, Uri, IEnumerable<IRequestHeader>, CancellationToken)
+  nameWithType.vb: OAuth2Authenticator.GetAuthorization(HttpMethod, Uri, IEnumerable(Of IRequestHeader), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader})
   name: GetAuthorization(HttpMethod, Uri, IEnumerable<IRequestHeader>)
   href: api/Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.html#Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_GetAuthorization_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__
@@ -274,6 +305,49 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.Authentication.OAuth2Scopes.ForOperations
   nameWithType: OAuth2Scopes.ForOperations
+- uid: Worldline.Acquiring.Sdk.BodyHandlerException
+  name: BodyHandlerException
+  href: api/Worldline.Acquiring.Sdk.BodyHandlerException.html
+  commentId: T:Worldline.Acquiring.Sdk.BodyHandlerException
+  fullName: Worldline.Acquiring.Sdk.BodyHandlerException
+  nameWithType: BodyHandlerException
+- uid: Worldline.Acquiring.Sdk.BodyHandlerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: BodyHandlerException(SerializationInfo, StreamingContext)
+  href: api/Worldline.Acquiring.Sdk.BodyHandlerException.html#Worldline_Acquiring_Sdk_BodyHandlerException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Worldline.Acquiring.Sdk.BodyHandlerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+  fullName: Worldline.Acquiring.Sdk.BodyHandlerException.BodyHandlerException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  fullName.vb: Worldline.Acquiring.Sdk.BodyHandlerException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: BodyHandlerException.BodyHandlerException(SerializationInfo, StreamingContext)
+  nameWithType.vb: BodyHandlerException.New(SerializationInfo, StreamingContext)
+- uid: Worldline.Acquiring.Sdk.BodyHandlerException.#ctor(System.String,System.Exception)
+  name: BodyHandlerException(string, Exception)
+  href: api/Worldline.Acquiring.Sdk.BodyHandlerException.html#Worldline_Acquiring_Sdk_BodyHandlerException__ctor_System_String_System_Exception_
+  commentId: M:Worldline.Acquiring.Sdk.BodyHandlerException.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: Worldline.Acquiring.Sdk.BodyHandlerException.BodyHandlerException(string, System.Exception)
+  fullName.vb: Worldline.Acquiring.Sdk.BodyHandlerException.New(String, System.Exception)
+  nameWithType: BodyHandlerException.BodyHandlerException(string, Exception)
+  nameWithType.vb: BodyHandlerException.New(String, Exception)
+- uid: Worldline.Acquiring.Sdk.BodyHandlerException.#ctor(System.String)
+  name: BodyHandlerException(string)
+  href: api/Worldline.Acquiring.Sdk.BodyHandlerException.html#Worldline_Acquiring_Sdk_BodyHandlerException__ctor_System_String_
+  commentId: M:Worldline.Acquiring.Sdk.BodyHandlerException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Worldline.Acquiring.Sdk.BodyHandlerException.BodyHandlerException(string)
+  fullName.vb: Worldline.Acquiring.Sdk.BodyHandlerException.New(String)
+  nameWithType: BodyHandlerException.BodyHandlerException(string)
+  nameWithType.vb: BodyHandlerException.New(String)
+- uid: Worldline.Acquiring.Sdk.BodyHandlerException.#ctor*
+  name: BodyHandlerException
+  href: api/Worldline.Acquiring.Sdk.BodyHandlerException.html#Worldline_Acquiring_Sdk_BodyHandlerException__ctor_
+  commentId: Overload:Worldline.Acquiring.Sdk.BodyHandlerException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Worldline.Acquiring.Sdk.BodyHandlerException.BodyHandlerException
+  fullName.vb: Worldline.Acquiring.Sdk.BodyHandlerException.New
+  nameWithType: BodyHandlerException.BodyHandlerException
+  nameWithType.vb: BodyHandlerException.New
 - uid: Worldline.Acquiring.Sdk.CallContext
   name: CallContext
   href: api/Worldline.Acquiring.Sdk.CallContext.html
@@ -557,6 +631,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Delete(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), T))
   nameWithType: DefaultConnection.Delete<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   nameWithType.vb: DefaultConnection.Delete(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), T))
+- uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Delete``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Delete<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Delete__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.DefaultConnection.Delete``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Delete(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Delete<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Delete(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DefaultConnection.Delete<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: DefaultConnection.Delete(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.DisableLogging
   name: DisableLogging()
   href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_DisableLogging
@@ -612,6 +695,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Get(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), T))
   nameWithType: DefaultConnection.Get<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   nameWithType.vb: DefaultConnection.Get(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), T))
+- uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Get``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Get<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Get__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.DefaultConnection.Get``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Get(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Get<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Get(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DefaultConnection.Get<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: DefaultConnection.Get(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.HeaderObfuscator
   name: HeaderObfuscator
   href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_HeaderObfuscator
@@ -641,6 +733,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), String, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), T))
   nameWithType: DefaultConnection.Post<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   nameWithType.vb: DefaultConnection.Post(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), T))
+- uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Post<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Post__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_String_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Post(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, string, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), String, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DefaultConnection.Post<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: DefaultConnection.Post(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},``0})
   name: Post<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Post__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_MultipartFormDataObject_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader____0__
@@ -650,6 +751,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), T))
   nameWithType: DefaultConnection.Post<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   nameWithType.vb: DefaultConnection.Post(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), T))
+- uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Post<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Post__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_MultipartFormDataObject_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Post(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Post(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DefaultConnection.Post<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: DefaultConnection.Post(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put*
   name: Put
   href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Put_
@@ -666,6 +776,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), String, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), T))
   nameWithType: DefaultConnection.Put<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   nameWithType.vb: DefaultConnection.Put(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), T))
+- uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Put<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Put__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_String_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Put(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, string, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), String, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DefaultConnection.Put<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: DefaultConnection.Put(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},``0})
   name: Put<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Put__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_MultipartFormDataObject_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader____0__
@@ -675,6 +794,103 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), T))
   nameWithType: DefaultConnection.Put<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, T>)
   nameWithType.vb: DefaultConnection.Put(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), T))
+- uid: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Put<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html#Worldline_Acquiring_Sdk_Communication_DefaultConnection_Put__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_MultipartFormDataObject_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Put(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.DefaultConnection.Put(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: DefaultConnection.Put<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: DefaultConnection.Put(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection
+  name: ICancellableConnection
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html
+  commentId: T:Worldline.Acquiring.Sdk.Communication.ICancellableConnection
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection
+  nameWithType: ICancellableConnection
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Delete*
+  name: Delete
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Delete_
+  commentId: Overload:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Delete
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Delete
+  nameWithType: ICancellableConnection.Delete
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Delete``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Delete<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Delete__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Delete``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Delete(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Delete<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Delete(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: ICancellableConnection.Delete<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: ICancellableConnection.Delete(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Get*
+  name: Get
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Get_
+  commentId: Overload:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Get
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Get
+  nameWithType: ICancellableConnection.Get
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Get``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Get<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Get__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Get``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Get(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Get<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Get(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: ICancellableConnection.Get<T>(Uri, IEnumerable<IRequestHeader>, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: ICancellableConnection.Get(Of T)(Uri, IEnumerable(Of IRequestHeader), Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post*
+  name: Post
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Post_
+  commentId: Overload:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post
+  nameWithType: ICancellableConnection.Post
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Post<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Post__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_String_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Post(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, string, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), String, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: ICancellableConnection.Post<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: ICancellableConnection.Post(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Post<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Post__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_MultipartFormDataObject_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Post(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Post(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: ICancellableConnection.Post<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: ICancellableConnection.Post(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put*
+  name: Put
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Put_
+  commentId: Overload:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put
+  nameWithType: ICancellableConnection.Put
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Put<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Put__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_String_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.String,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Put(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, string, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), String, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: ICancellableConnection.Put<T>(Uri, IEnumerable<IRequestHeader>, string, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: ICancellableConnection.Put(Of T)(Uri, IEnumerable(Of IRequestHeader), String, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+- uid: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name: Put<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html#Worldline_Acquiring_Sdk_Communication_ICancellableConnection_Put__1_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_MultipartFormDataObject_System_Func_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task___0___System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put``1(System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject,System.Func{System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)
+  name.vb: Put(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put<T>(System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func<System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task<T>>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communication.ICancellableConnection.Put(Of T)(System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.MultipartFormDataObject, System.Func(Of System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task(Of T)), System.Threading.CancellationToken)
+  nameWithType: ICancellableConnection.Put<T>(Uri, IEnumerable<IRequestHeader>, MultipartFormDataObject, Func<HttpStatusCode, Stream, IEnumerable<IResponseHeader>, Task<T>>, CancellationToken)
+  nameWithType.vb: ICancellableConnection.Put(Of T)(Uri, IEnumerable(Of IRequestHeader), MultipartFormDataObject, Func(Of HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), Task(Of T)), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communication.IConnection
   name: IConnection
   href: api/Worldline.Acquiring.Sdk.Communication.IConnection.html
@@ -1686,6 +1902,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communicator.New
   nameWithType: Communicator.Communicator
   nameWithType.vb: Communicator.New
+- uid: Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: AddGenericHeaders(HttpMethod, Uri, IEnumerable<IRequestHeader>, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_AddGenericHeaders_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: AddGenericHeaders(HttpMethod, Uri, IEnumerable(Of IRequestHeader), CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.AddGenericHeaders(HttpMethod, Uri, IEnumerable<IRequestHeader>, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.AddGenericHeaders(HttpMethod, Uri, IEnumerable(Of IRequestHeader), CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.CallContext)
   name: AddGenericHeaders(HttpMethod, Uri, IEnumerable<IRequestHeader>, CallContext)
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_AddGenericHeaders_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_CallContext_
@@ -1750,6 +1975,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communicator.Delete(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, System.Action(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader)), Worldline.Acquiring.Sdk.CallContext)
   nameWithType: Communicator.Delete(string, IEnumerable<IRequestHeader>, AbstractParamRequest, Action<Stream, IEnumerable<IResponseHeader>>, CallContext)
   nameWithType.vb: Communicator.Delete(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Action(Of Stream, IEnumerable(Of IResponseHeader)), CallContext)
+- uid: Worldline.Acquiring.Sdk.Communicator.Delete(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Delete(string, IEnumerable<IRequestHeader>, AbstractParamRequest, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Delete_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Delete(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Delete(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Delete(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, System.Func<System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task>, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Delete(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, System.Func(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task), Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Delete(string, IEnumerable<IRequestHeader>, AbstractParamRequest, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Delete(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Delete*
   name: Delete
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Delete_
@@ -1757,6 +1991,15 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.Communicator.Delete
   nameWithType: Communicator.Delete
+- uid: Worldline.Acquiring.Sdk.Communicator.Delete``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Delete<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Delete__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Delete``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Delete(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Delete<T>(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Delete(Of T)(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Delete<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Delete(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Delete``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext)
   name: Delete<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Delete__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -1814,6 +2057,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communicator.Get(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, System.Action(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader)), Worldline.Acquiring.Sdk.CallContext)
   nameWithType: Communicator.Get(string, IEnumerable<IRequestHeader>, AbstractParamRequest, Action<Stream, IEnumerable<IResponseHeader>>, CallContext)
   nameWithType.vb: Communicator.Get(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Action(Of Stream, IEnumerable(Of IResponseHeader)), CallContext)
+- uid: Worldline.Acquiring.Sdk.Communicator.Get(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Get(string, IEnumerable<IRequestHeader>, AbstractParamRequest, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Get_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Get(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Get(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Get(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, System.Func<System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task>, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Get(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, System.Func(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task), Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Get(string, IEnumerable<IRequestHeader>, AbstractParamRequest, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Get(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Get*
   name: Get
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Get_
@@ -1821,6 +2073,15 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.Communicator.Get
   nameWithType: Communicator.Get
+- uid: Worldline.Acquiring.Sdk.Communicator.Get``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Get<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Get__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Get``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Get(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Get<T>(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Get(Of T)(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Get<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Get(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Get``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext)
   name: Get<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Get__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -1878,6 +2139,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communicator.Post(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Object, System.Action(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader)), Worldline.Acquiring.Sdk.CallContext)
   nameWithType: Communicator.Post(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, Action<Stream, IEnumerable<IResponseHeader>>, CallContext)
   nameWithType.vb: Communicator.Post(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, Action(Of Stream, IEnumerable(Of IResponseHeader)), CallContext)
+- uid: Worldline.Acquiring.Sdk.Communicator.Post(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Post(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Post_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Post(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Post(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Post(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, object, System.Func<System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task>, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Post(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Object, System.Func(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task), Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Post(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Post(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Post*
   name: Post
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Post_
@@ -1885,6 +2155,15 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.Communicator.Post
   nameWithType: Communicator.Post
+- uid: Worldline.Acquiring.Sdk.Communicator.Post``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Post<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Post__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Post``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Post(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Post<T>(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, object, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Post(Of T)(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Object, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Post<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Post(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Post``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext)
   name: Post<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, CallContext)
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Post__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_Worldline_Acquiring_Sdk_CallContext_
@@ -1910,6 +2189,22 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communicator.ProcessResponse(Of T)(System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), String, Worldline.Acquiring.Sdk.CallContext, System.Action(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader)))
   nameWithType: Communicator.ProcessResponse<T>(HttpStatusCode, Stream, IEnumerable<IResponseHeader>, string, CallContext, Action<Stream, IEnumerable<IResponseHeader>>)
   nameWithType.vb: Communicator.ProcessResponse(Of T)(HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), String, CallContext, Action(Of Stream, IEnumerable(Of IResponseHeader)))
+- uid: Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync*
+  name: ProcessResponseAsync
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_ProcessResponseAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync
+  nameWithType: Communicator.ProcessResponseAsync
+- uid: Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync``1(System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.String,Worldline.Acquiring.Sdk.CallContext,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name: ProcessResponseAsync<T>(HttpStatusCode, Stream, IEnumerable<IResponseHeader>, string, CallContext, Func<Stream, IEnumerable<IResponseHeader>, Task>, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_ProcessResponseAsync__1_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_String_Worldline_Acquiring_Sdk_CallContext_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync``1(System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.String,Worldline.Acquiring.Sdk.CallContext,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},System.Threading.CancellationToken)
+  name.vb: ProcessResponseAsync(Of T)(HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), String, CallContext, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync<T>(System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, string, Worldline.Acquiring.Sdk.CallContext, System.Func<System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task>, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync(Of T)(System.Net.HttpStatusCode, System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), String, Worldline.Acquiring.Sdk.CallContext, System.Func(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task), System.Threading.CancellationToken)
+  nameWithType: Communicator.ProcessResponseAsync<T>(HttpStatusCode, Stream, IEnumerable<IResponseHeader>, string, CallContext, Func<Stream, IEnumerable<IResponseHeader>, Task>, CancellationToken)
+  nameWithType.vb: Communicator.ProcessResponseAsync(Of T)(HttpStatusCode, Stream, IEnumerable(Of IResponseHeader), String, CallContext, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Put(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Action{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader}},Worldline.Acquiring.Sdk.CallContext)
   name: Put(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, Action<Stream, IEnumerable<IResponseHeader>>, CallContext)
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Put_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_System_Action_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader___Worldline_Acquiring_Sdk_CallContext_
@@ -1919,6 +2214,15 @@ references:
   fullName.vb: Worldline.Acquiring.Sdk.Communicator.Put(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Object, System.Action(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader)), Worldline.Acquiring.Sdk.CallContext)
   nameWithType: Communicator.Put(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, Action<Stream, IEnumerable<IResponseHeader>>, CallContext)
   nameWithType.vb: Communicator.Put(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, Action(Of Stream, IEnumerable(Of IResponseHeader)), CallContext)
+- uid: Worldline.Acquiring.Sdk.Communicator.Put(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Put(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Put_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Put(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Put(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Put(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, object, System.Func<System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task>, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Put(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Object, System.Func(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task), Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Put(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Put(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Put*
   name: Put
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Put_
@@ -1926,6 +2230,15 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.Communicator.Put
   nameWithType: Communicator.Put
+- uid: Worldline.Acquiring.Sdk.Communicator.Put``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: Put<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Put__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.Communicator.Put``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: Put(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.Communicator.Put<T>(string, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IRequestHeader>, Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, object, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.Communicator.Put(Of T)(String, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IRequestHeader), Worldline.Acquiring.Sdk.Communication.AbstractParamRequest, Object, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: Communicator.Put<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, CallContext, CancellationToken)
+  nameWithType.vb: Communicator.Put(Of T)(String, IEnumerable(Of IRequestHeader), AbstractParamRequest, Object, CallContext, CancellationToken)
 - uid: Worldline.Acquiring.Sdk.Communicator.Put``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext)
   name: Put<T>(string, IEnumerable<IRequestHeader>, AbstractParamRequest, object, CallContext)
   href: api/Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_Put__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_Worldline_Acquiring_Sdk_CallContext_
@@ -3928,6 +4241,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerification
   nameWithType: AccountVerificationsClient.ProcessAccountVerification
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: ProcessAccountVerificationAsync(ApiAccountVerificationRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Accountverifications_AccountVerificationsClient_ProcessAccountVerificationAsync_Worldline_Acquiring_Sdk_V1_Domain_ApiAccountVerificationRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: AccountVerificationsClient.ProcessAccountVerificationAsync(ApiAccountVerificationRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync*
+  name: ProcessAccountVerificationAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Accountverifications_AccountVerificationsClient_ProcessAccountVerificationAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync
+  nameWithType: AccountVerificationsClient.ProcessAccountVerificationAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries
   name: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.html
@@ -3972,6 +4298,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.ProcessBalanceInquiry
   nameWithType: BalanceInquiriesClient.ProcessBalanceInquiry
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.ProcessBalanceInquiryAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: ProcessBalanceInquiryAsync(ApiBalanceInquiryRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Balanceinquiries_BalanceInquiriesClient_ProcessBalanceInquiryAsync_Worldline_Acquiring_Sdk_V1_Domain_ApiBalanceInquiryRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.ProcessBalanceInquiryAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.ProcessBalanceInquiryAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiBalanceInquiryRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: BalanceInquiriesClient.ProcessBalanceInquiryAsync(ApiBalanceInquiryRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.ProcessBalanceInquiryAsync*
+  name: ProcessBalanceInquiryAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Balanceinquiries_BalanceInquiriesClient_ProcessBalanceInquiryAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.ProcessBalanceInquiryAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Balanceinquiries.BalanceInquiriesClient.ProcessBalanceInquiryAsync
+  nameWithType: BalanceInquiriesClient.ProcessBalanceInquiryAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments
   name: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.html
@@ -4019,6 +4358,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefund
   nameWithType: CardPaymentsClient.CreateRefund
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: CreateRefundAsync(string, ApiPaymentRefundRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_CreateRefundAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRefundRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: CreateRefundAsync(String, ApiPaymentRefundRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync(string, Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync(String, Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardPaymentsClient.CreateRefundAsync(string, ApiPaymentRefundRequest, CallContext, CancellationToken)
+  nameWithType.vb: CardPaymentsClient.CreateRefundAsync(String, ApiPaymentRefundRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync*
+  name: CreateRefundAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_CreateRefundAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync
+  nameWithType: CardPaymentsClient.CreateRefundAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatus(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams,Worldline.Acquiring.Sdk.CallContext)
   name: GetPaymentStatus(string, GetPaymentStatusParams, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_GetPaymentStatus_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_GetPaymentStatusParams_Worldline_Acquiring_Sdk_CallContext_
@@ -4035,6 +4390,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatus
   nameWithType: CardPaymentsClient.GetPaymentStatus
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: GetPaymentStatusAsync(string, GetPaymentStatusParams, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_GetPaymentStatusAsync_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_GetPaymentStatusParams_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: GetPaymentStatusAsync(String, GetPaymentStatusParams, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync(string, Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync(String, Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardPaymentsClient.GetPaymentStatusAsync(string, GetPaymentStatusParams, CallContext, CancellationToken)
+  nameWithType.vb: CardPaymentsClient.GetPaymentStatusAsync(String, GetPaymentStatusParams, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync*
+  name: GetPaymentStatusAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_GetPaymentStatusAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync
+  nameWithType: CardPaymentsClient.GetPaymentStatusAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPayment(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest,Worldline.Acquiring.Sdk.CallContext)
   name: IncrementPayment(string, ApiIncrementRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_IncrementPayment_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiIncrementRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4051,6 +4422,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPayment
   nameWithType: CardPaymentsClient.IncrementPayment
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: IncrementPaymentAsync(string, ApiIncrementRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_IncrementPaymentAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiIncrementRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: IncrementPaymentAsync(String, ApiIncrementRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync(string, Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync(String, Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardPaymentsClient.IncrementPaymentAsync(string, ApiIncrementRequest, CallContext, CancellationToken)
+  nameWithType.vb: CardPaymentsClient.IncrementPaymentAsync(String, ApiIncrementRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync*
+  name: IncrementPaymentAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_IncrementPaymentAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync
+  nameWithType: CardPaymentsClient.IncrementPaymentAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPayment(Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest,Worldline.Acquiring.Sdk.CallContext)
   name: ProcessPayment(ApiPaymentRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ProcessPayment_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4064,6 +4451,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPayment
   nameWithType: CardPaymentsClient.ProcessPayment
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: ProcessPaymentAsync(ApiPaymentRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ProcessPaymentAsync_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardPaymentsClient.ProcessPaymentAsync(ApiPaymentRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync*
+  name: ProcessPaymentAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ProcessPaymentAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync
+  nameWithType: CardPaymentsClient.ProcessPaymentAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext)
   name: ReverseAuthorization(string, ApiPaymentReversalRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ReverseAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentReversalRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4080,6 +4480,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorization
   nameWithType: CardPaymentsClient.ReverseAuthorization
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: ReverseAuthorizationAsync(string, ApiPaymentReversalRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ReverseAuthorizationAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentReversalRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: ReverseAuthorizationAsync(String, ApiPaymentReversalRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync(string, Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync(String, Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardPaymentsClient.ReverseAuthorizationAsync(string, ApiPaymentReversalRequest, CallContext, CancellationToken)
+  nameWithType.vb: CardPaymentsClient.ReverseAuthorizationAsync(String, ApiPaymentReversalRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync*
+  name: ReverseAuthorizationAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ReverseAuthorizationAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync
+  nameWithType: CardPaymentsClient.ReverseAuthorizationAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPayment(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest,Worldline.Acquiring.Sdk.CallContext)
   name: SimpleCaptureOfPayment(string, ApiCaptureRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_SimpleCaptureOfPayment_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiCaptureRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4096,6 +4512,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPayment
   nameWithType: CardPaymentsClient.SimpleCaptureOfPayment
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: SimpleCaptureOfPaymentAsync(string, ApiCaptureRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_SimpleCaptureOfPaymentAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiCaptureRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: SimpleCaptureOfPaymentAsync(String, ApiCaptureRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync(string, Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync(String, Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardPaymentsClient.SimpleCaptureOfPaymentAsync(string, ApiCaptureRequest, CallContext, CancellationToken)
+  nameWithType.vb: CardPaymentsClient.SimpleCaptureOfPaymentAsync(String, ApiCaptureRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync*
+  name: SimpleCaptureOfPaymentAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_SimpleCaptureOfPaymentAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync
+  nameWithType: CardPaymentsClient.SimpleCaptureOfPaymentAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams
   name: GetPaymentStatusParams
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams.html
@@ -4175,6 +4607,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefund
   nameWithType: CardRefundsClient.CaptureRefund
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: CaptureRefundAsync(string, ApiCaptureRequestForRefund, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_CaptureRefundAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiCaptureRequestForRefund_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: CaptureRefundAsync(String, ApiCaptureRequestForRefund, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync(string, Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync(String, Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequestForRefund, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardRefundsClient.CaptureRefundAsync(string, ApiCaptureRequestForRefund, CallContext, CancellationToken)
+  nameWithType.vb: CardRefundsClient.CaptureRefundAsync(String, ApiCaptureRequestForRefund, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync*
+  name: CaptureRefundAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_CaptureRefundAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.CaptureRefundAsync
+  nameWithType: CardRefundsClient.CaptureRefundAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefund(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams,Worldline.Acquiring.Sdk.CallContext)
   name: GetRefund(string, GetRefundParams, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_GetRefund_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_GetRefundParams_Worldline_Acquiring_Sdk_CallContext_
@@ -4191,6 +4639,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefund
   nameWithType: CardRefundsClient.GetRefund
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: GetRefundAsync(string, GetRefundParams, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_GetRefundAsync_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_GetRefundParams_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: GetRefundAsync(String, GetRefundParams, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync(string, Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync(String, Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardRefundsClient.GetRefundAsync(string, GetRefundParams, CallContext, CancellationToken)
+  nameWithType.vb: CardRefundsClient.GetRefundAsync(String, GetRefundParams, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync*
+  name: GetRefundAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_GetRefundAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.GetRefundAsync
+  nameWithType: CardRefundsClient.GetRefundAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefund(Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest,Worldline.Acquiring.Sdk.CallContext)
   name: ProcessStandaloneRefund(ApiRefundRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ProcessStandaloneRefund_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4204,6 +4668,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefund
   nameWithType: CardRefundsClient.ProcessStandaloneRefund
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: ProcessStandaloneRefundAsync(ApiRefundRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ProcessStandaloneRefundAsync_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiRefundRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardRefundsClient.ProcessStandaloneRefundAsync(ApiRefundRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync*
+  name: ProcessStandaloneRefundAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ProcessStandaloneRefundAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ProcessStandaloneRefundAsync
+  nameWithType: CardRefundsClient.ProcessStandaloneRefundAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext)
   name: ReverseRefundAuthorization(string, ApiRefundReversalRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ReverseRefundAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4220,6 +4697,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorization
   nameWithType: CardRefundsClient.ReverseRefundAuthorization
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: ReverseRefundAuthorizationAsync(string, ApiRefundReversalRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ReverseRefundAuthorizationAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiRefundReversalRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: ReverseRefundAuthorizationAsync(String, ApiRefundReversalRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync(string, Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync(String, Worldline.Acquiring.Sdk.V1.Domain.ApiRefundReversalRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: CardRefundsClient.ReverseRefundAuthorizationAsync(string, ApiRefundReversalRequest, CallContext, CancellationToken)
+  nameWithType.vb: CardRefundsClient.ReverseRefundAuthorizationAsync(String, ApiRefundReversalRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync*
+  name: ReverseRefundAuthorizationAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardrefunds_CardRefundsClient_ReverseRefundAuthorizationAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.CardRefundsClient.ReverseRefundAuthorizationAsync
+  nameWithType: CardRefundsClient.ReverseRefundAuthorizationAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams
   name: GetRefundParams
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardrefunds.GetRefundParams.html
@@ -4296,6 +4789,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.RequestDccRate
   nameWithType: DynamicCurrencyConversionClient.RequestDccRate
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.RequestDccRateAsync(Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: RequestDccRateAsync(GetDccRateRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Dynamiccurrencyconversion_DynamicCurrencyConversionClient_RequestDccRateAsync_Worldline_Acquiring_Sdk_V1_Domain_GetDccRateRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.RequestDccRateAsync(Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.RequestDccRateAsync(Worldline.Acquiring.Sdk.V1.Domain.GetDccRateRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DynamicCurrencyConversionClient.RequestDccRateAsync(GetDccRateRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.RequestDccRateAsync*
+  name: RequestDccRateAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Dynamiccurrencyconversion_DynamicCurrencyConversionClient_RequestDccRateAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.RequestDccRateAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Dynamiccurrencyconversion.DynamicCurrencyConversionClient.RequestDccRateAsync
+  nameWithType: DynamicCurrencyConversionClient.RequestDccRateAsync
 - uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.MerchantClient
   name: MerchantClient
   href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.MerchantClient.html
@@ -4446,6 +4952,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversal
   nameWithType: TechnicalReversalsClient.TechnicalReversal
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversalAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: TechnicalReversalAsync(string, ApiTechnicalReversalRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Technicalreversals_TechnicalReversalsClient_TechnicalReversalAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiTechnicalReversalRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversalAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: TechnicalReversalAsync(String, ApiTechnicalReversalRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversalAsync(string, Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversalAsync(String, Worldline.Acquiring.Sdk.V1.Domain.ApiTechnicalReversalRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: TechnicalReversalsClient.TechnicalReversalAsync(string, ApiTechnicalReversalRequest, CallContext, CancellationToken)
+  nameWithType.vb: TechnicalReversalsClient.TechnicalReversalAsync(String, ApiTechnicalReversalRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversalAsync*
+  name: TechnicalReversalAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.html#Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Technicalreversals_TechnicalReversalsClient_TechnicalReversalAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversalAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Technicalreversals.TechnicalReversalsClient.TechnicalReversalAsync
+  nameWithType: TechnicalReversalsClient.TechnicalReversalAsync
 - uid: Worldline.Acquiring.Sdk.V1.ApiException
   name: ApiException
   href: api/Worldline.Acquiring.Sdk.V1.ApiException.html
@@ -4665,6 +5187,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocument
   nameWithType: DisputeDocumentsClient.GetDisputeDocument
+- uid: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocumentAsync(System.String,System.String,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: GetDisputeDocumentAsync(string, string, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.html#Worldline_Acquiring_Sdk_V1_Disputedocuments_DisputeDocumentsClient_GetDisputeDocumentAsync_System_String_System_String_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocumentAsync(System.String,System.String,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: GetDisputeDocumentAsync(String, String, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocumentAsync(string, string, System.Func<System.IO.Stream, System.Collections.Generic.IEnumerable<Worldline.Acquiring.Sdk.Communication.IResponseHeader>, System.Threading.Tasks.Task>, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocumentAsync(String, String, System.Func(Of System.IO.Stream, System.Collections.Generic.IEnumerable(Of Worldline.Acquiring.Sdk.Communication.IResponseHeader), System.Threading.Tasks.Task), Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DisputeDocumentsClient.GetDisputeDocumentAsync(string, string, Func<Stream, IEnumerable<IResponseHeader>, Task>, CallContext, CancellationToken)
+  nameWithType.vb: DisputeDocumentsClient.GetDisputeDocumentAsync(String, String, Func(Of Stream, IEnumerable(Of IResponseHeader), Task), CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocumentAsync*
+  name: GetDisputeDocumentAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.html#Worldline_Acquiring_Sdk_V1_Disputedocuments_DisputeDocumentsClient_GetDisputeDocumentAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocumentAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.GetDisputeDocumentAsync
+  nameWithType: DisputeDocumentsClient.GetDisputeDocumentAsync
 - uid: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocument(Worldline.Acquiring.Sdk.V1.Disputedocuments.UploadDisputeDocumentRequest,Worldline.Acquiring.Sdk.CallContext)
   name: UploadDisputeDocument(UploadDisputeDocumentRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.html#Worldline_Acquiring_Sdk_V1_Disputedocuments_DisputeDocumentsClient_UploadDisputeDocument_Worldline_Acquiring_Sdk_V1_Disputedocuments_UploadDisputeDocumentRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4678,6 +5216,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocument
   nameWithType: DisputeDocumentsClient.UploadDisputeDocument
+- uid: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocumentAsync(Worldline.Acquiring.Sdk.V1.Disputedocuments.UploadDisputeDocumentRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: UploadDisputeDocumentAsync(UploadDisputeDocumentRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.html#Worldline_Acquiring_Sdk_V1_Disputedocuments_DisputeDocumentsClient_UploadDisputeDocumentAsync_Worldline_Acquiring_Sdk_V1_Disputedocuments_UploadDisputeDocumentRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocumentAsync(Worldline.Acquiring.Sdk.V1.Disputedocuments.UploadDisputeDocumentRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocumentAsync(Worldline.Acquiring.Sdk.V1.Disputedocuments.UploadDisputeDocumentRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DisputeDocumentsClient.UploadDisputeDocumentAsync(UploadDisputeDocumentRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocumentAsync*
+  name: UploadDisputeDocumentAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.html#Worldline_Acquiring_Sdk_V1_Disputedocuments_DisputeDocumentsClient_UploadDisputeDocumentAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocumentAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Disputedocuments.DisputeDocumentsClient.UploadDisputeDocumentAsync
+  nameWithType: DisputeDocumentsClient.UploadDisputeDocumentAsync
 - uid: Worldline.Acquiring.Sdk.V1.Disputedocuments.UploadDisputeDocumentRequest
   name: UploadDisputeDocumentRequest
   href: api/Worldline.Acquiring.Sdk.V1.Disputedocuments.UploadDisputeDocumentRequest.html
@@ -4754,6 +5305,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.SearchDisputeEntries
   nameWithType: DisputeEntriesClient.SearchDisputeEntries
+- uid: Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.SearchDisputeEntriesAsync(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputeEntriesRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: SearchDisputeEntriesAsync(SearchDisputeEntriesRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.html#Worldline_Acquiring_Sdk_V1_Disputeentries_DisputeEntriesClient_SearchDisputeEntriesAsync_Worldline_Acquiring_Sdk_V1_Domain_SearchDisputeEntriesRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.SearchDisputeEntriesAsync(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputeEntriesRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.SearchDisputeEntriesAsync(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputeEntriesRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DisputeEntriesClient.SearchDisputeEntriesAsync(SearchDisputeEntriesRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.SearchDisputeEntriesAsync*
+  name: SearchDisputeEntriesAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.html#Worldline_Acquiring_Sdk_V1_Disputeentries_DisputeEntriesClient_SearchDisputeEntriesAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.SearchDisputeEntriesAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Disputeentries.DisputeEntriesClient.SearchDisputeEntriesAsync
+  nameWithType: DisputeEntriesClient.SearchDisputeEntriesAsync
 - uid: Worldline.Acquiring.Sdk.V1.Disputemanagement
   name: Worldline.Acquiring.Sdk.V1.Disputemanagement
   href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.html
@@ -4801,6 +5365,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiability
   nameWithType: DisputeManagementClient.AcceptDisputeLiability
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.AcceptDisputeLiabilityRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: AcceptDisputeLiabilityAsync(string, AcceptDisputeLiabilityRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_AcceptDisputeLiabilityAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_AcceptDisputeLiabilityRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.AcceptDisputeLiabilityRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: AcceptDisputeLiabilityAsync(String, AcceptDisputeLiabilityRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync(string, Worldline.Acquiring.Sdk.V1.Domain.AcceptDisputeLiabilityRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync(String, Worldline.Acquiring.Sdk.V1.Domain.AcceptDisputeLiabilityRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DisputeManagementClient.AcceptDisputeLiabilityAsync(string, AcceptDisputeLiabilityRequest, CallContext, CancellationToken)
+  nameWithType.vb: DisputeManagementClient.AcceptDisputeLiabilityAsync(String, AcceptDisputeLiabilityRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync*
+  name: AcceptDisputeLiabilityAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_AcceptDisputeLiabilityAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.AcceptDisputeLiabilityAsync
+  nameWithType: DisputeManagementClient.AcceptDisputeLiabilityAsync
 - uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDispute(System.String,Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams,Worldline.Acquiring.Sdk.CallContext)
   name: GetDispute(string, GetDisputeParams, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_GetDispute_System_String_Worldline_Acquiring_Sdk_V1_Disputemanagement_GetDisputeParams_Worldline_Acquiring_Sdk_CallContext_
@@ -4817,6 +5397,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDispute
   nameWithType: DisputeManagementClient.GetDispute
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync(System.String,Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: GetDisputeAsync(string, GetDisputeParams, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_GetDisputeAsync_System_String_Worldline_Acquiring_Sdk_V1_Disputemanagement_GetDisputeParams_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync(System.String,Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: GetDisputeAsync(String, GetDisputeParams, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync(string, Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync(String, Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DisputeManagementClient.GetDisputeAsync(string, GetDisputeParams, CallContext, CancellationToken)
+  nameWithType.vb: DisputeManagementClient.GetDisputeAsync(String, GetDisputeParams, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync*
+  name: GetDisputeAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_GetDisputeAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.GetDisputeAsync
+  nameWithType: DisputeManagementClient.GetDisputeAsync
 - uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputes(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesRequest,Worldline.Acquiring.Sdk.CallContext)
   name: SearchDisputes(SearchDisputesRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SearchDisputes_Worldline_Acquiring_Sdk_V1_Domain_SearchDisputesRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4830,6 +5426,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputes
   nameWithType: DisputeManagementClient.SearchDisputes
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: SearchDisputesAsync(SearchDisputesRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SearchDisputesAsync_Worldline_Acquiring_Sdk_V1_Domain_SearchDisputesRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync(Worldline.Acquiring.Sdk.V1.Domain.SearchDisputesRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DisputeManagementClient.SearchDisputesAsync(SearchDisputesRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync*
+  name: SearchDisputesAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SearchDisputesAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SearchDisputesAsync
+  nameWithType: DisputeManagementClient.SearchDisputesAsync
 - uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidence(System.String,Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest,Worldline.Acquiring.Sdk.CallContext)
   name: SubmitEvidence(string, SubmitEvidenceRequest, CallContext)
   href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SubmitEvidence_System_String_Worldline_Acquiring_Sdk_V1_Domain_SubmitEvidenceRequest_Worldline_Acquiring_Sdk_CallContext_
@@ -4846,6 +5455,22 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidence
   nameWithType: DisputeManagementClient.SubmitEvidence
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: SubmitEvidenceAsync(string, SubmitEvidenceRequest, CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SubmitEvidenceAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_SubmitEvidenceRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name.vb: SubmitEvidenceAsync(String, SubmitEvidenceRequest, CallContext, CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync(string, Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  fullName.vb: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync(String, Worldline.Acquiring.Sdk.V1.Domain.SubmitEvidenceRequest, Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: DisputeManagementClient.SubmitEvidenceAsync(string, SubmitEvidenceRequest, CallContext, CancellationToken)
+  nameWithType.vb: DisputeManagementClient.SubmitEvidenceAsync(String, SubmitEvidenceRequest, CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync*
+  name: SubmitEvidenceAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.html#Worldline_Acquiring_Sdk_V1_Disputemanagement_DisputeManagementClient_SubmitEvidenceAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Disputemanagement.DisputeManagementClient.SubmitEvidenceAsync
+  nameWithType: DisputeManagementClient.SubmitEvidenceAsync
 - uid: Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams
   name: GetDisputeParams
   href: api/Worldline.Acquiring.Sdk.V1.Disputemanagement.GetDisputeParams.html
@@ -12383,6 +13008,19 @@ references:
   isSpec: "True"
   fullName: Worldline.Acquiring.Sdk.V1.Ping.PingClient.Ping
   nameWithType: PingClient.Ping
+- uid: Worldline.Acquiring.Sdk.V1.Ping.PingClient.PingAsync(Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  name: PingAsync(CallContext, CancellationToken)
+  href: api/Worldline.Acquiring.Sdk.V1.Ping.PingClient.html#Worldline_Acquiring_Sdk_V1_Ping_PingClient_PingAsync_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_
+  commentId: M:Worldline.Acquiring.Sdk.V1.Ping.PingClient.PingAsync(Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)
+  fullName: Worldline.Acquiring.Sdk.V1.Ping.PingClient.PingAsync(Worldline.Acquiring.Sdk.CallContext, System.Threading.CancellationToken)
+  nameWithType: PingClient.PingAsync(CallContext, CancellationToken)
+- uid: Worldline.Acquiring.Sdk.V1.Ping.PingClient.PingAsync*
+  name: PingAsync
+  href: api/Worldline.Acquiring.Sdk.V1.Ping.PingClient.html#Worldline_Acquiring_Sdk_V1_Ping_PingClient_PingAsync_
+  commentId: Overload:Worldline.Acquiring.Sdk.V1.Ping.PingClient.PingAsync
+  isSpec: "True"
+  fullName: Worldline.Acquiring.Sdk.V1.Ping.PingClient.PingAsync
+  nameWithType: PingClient.PingAsync
 - uid: Worldline.Acquiring.Sdk.V1.PlatformException
   name: PlatformException
   href: api/Worldline.Acquiring.Sdk.V1.PlatformException.html

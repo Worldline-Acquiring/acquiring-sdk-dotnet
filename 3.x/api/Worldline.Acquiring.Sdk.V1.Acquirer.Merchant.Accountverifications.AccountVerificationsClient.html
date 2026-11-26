@@ -172,7 +172,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiAccountVerificationResponse&gt; ProcessAccountVerification(ApiAccountVerificationRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ProcessAccountVerificationAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiAccountVerificationResponse&gt; ProcessAccountVerification(ApiAccountVerificationRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -249,6 +250,108 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       <tr>
         <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
         <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Accountverifications_AccountVerificationsClient_ProcessAccountVerificationAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Accountverifications_AccountVerificationsClient_ProcessAccountVerificationAsync_Worldline_Acquiring_Sdk_V1_Domain_ApiAccountVerificationRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Accountverifications.AccountVerificationsClient.ProcessAccountVerificationAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">ProcessAccountVerificationAsync(ApiAccountVerificationRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/account-verifications</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Account-Verifications/operation/processAccountVerification">Verify account</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiAccountVerificationResponse&gt; ProcessAccountVerificationAsync(ApiAccountVerificationRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationRequest.html">ApiAccountVerificationRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiAccountVerificationRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiAccountVerificationResponse.html">ApiAccountVerificationResponse</a>&gt;</td>
+        <td><p>ApiAccountVerificationResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>

@@ -255,6 +255,69 @@ It is also thread safe.</p>
   <h3 id="methods">Methods
 </h3>
   <a id="Worldline_Acquiring_Sdk_Communicator_AddGenericHeaders_" data-uid="Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_AddGenericHeaders_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">AddGenericHeaders(HttpMethod, Uri, IEnumerable&lt;IRequestHeader&gt;, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Adds the necessary headers to the given list of headers, like <a class="xref" href="Worldline.Acquiring.Sdk.Communicator.html#Worldline_Acquiring_Sdk_Communicator_AddGenericHeaders_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_CallContext_">AddGenericHeaders(HttpMethod, Uri, IEnumerable&lt;IRequestHeader&gt;, CallContext)</a>,
+but passes the cancellation token on to the authenticator if that is an <a class="xref" href="Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.html">ICancellableAuthenticator</a>.
+Otherwise the token is only honoured before the authenticator is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;IEnumerable&lt;IRequestHeader&gt;&gt; AddGenericHeaders(HttpMethod httpMethod, Uri uri, IEnumerable&lt;IRequestHeader&gt; requestHeaders, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></td>
+        <td><span class="parametername">httpMethod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_AddGenericHeaders_" data-uid="Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders*"></a>
   <h4 id="Worldline_Acquiring_Sdk_Communicator_AddGenericHeaders_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.Communicator.AddGenericHeaders(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.CallContext)">AddGenericHeaders(HttpMethod, Uri, IEnumerable&lt;IRequestHeader&gt;, CallContext)</h4>
   <div class="markdown level1 summary"><p>Adds the necessary headers to the given list of headers. This includes the authorization header,
 which uses other headers, so when you need to override this method,
@@ -358,7 +421,8 @@ If not this method does nothing.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Delete(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken and an asynchronous body handler instead. This method will be removed in a future major version.&quot;)]
+public Task Delete(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -437,8 +501,219 @@ If not this method does nothing.
 </td>
       </tr>
       <tr>
-        <td><span class="xref">BodyHandlerException</span></td>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
         <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Delete_" data-uid="Worldline.Acquiring.Sdk.Communicator.Delete*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Delete_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Delete(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Delete(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt;, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP DELETE method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Delete(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt; bodyHandler, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IResponseHeader.html">IResponseHeader</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">bodyHandler</span></td>
+        <td><p>An asynchronous callback that receives the contents of the body as a stream. The response stays open until it has completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
+        <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Delete_" data-uid="Worldline.Acquiring.Sdk.Communicator.Delete*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Delete__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Delete``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Delete&lt;T&gt;(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP DELETE method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Delete&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>
@@ -450,7 +725,8 @@ If not this method does nothing.
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Delete&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;T&gt; Delete&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -615,7 +891,8 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Get(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken and an asynchronous body handler instead. This method will be removed in a future major version.&quot;)]
+public Task Get(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -694,8 +971,219 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
 </td>
       </tr>
       <tr>
-        <td><span class="xref">BodyHandlerException</span></td>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
         <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Get_" data-uid="Worldline.Acquiring.Sdk.Communicator.Get*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Get_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Get(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Get(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt;, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP Get method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Get(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt; bodyHandler, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IResponseHeader.html">IResponseHeader</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">bodyHandler</span></td>
+        <td><p>An asynchronous callback that receives the contents of the body as a stream. The response stays open until it has completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
+        <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Get_" data-uid="Worldline.Acquiring.Sdk.Communicator.Get*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Get__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Get``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Get&lt;T&gt;(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP Get method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Get&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>
@@ -707,7 +1195,8 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Get&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;T&gt; Get&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -829,7 +1318,8 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Post(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken and an asynchronous body handler instead. This method will be removed in a future major version.&quot;)]
+public Task Post(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -914,8 +1404,231 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
 </td>
       </tr>
       <tr>
-        <td><span class="xref">BodyHandlerException</span></td>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
         <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Post_" data-uid="Worldline.Acquiring.Sdk.Communicator.Post*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Post_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Post(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Post(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, object, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt;, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP POST method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Post(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt; bodyHandler, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The optional request body to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IResponseHeader.html">IResponseHeader</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">bodyHandler</span></td>
+        <td><p>An asynchronous callback that receives the contents of the body as a stream. The response stays open until it has completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
+        <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Post_" data-uid="Worldline.Acquiring.Sdk.Communicator.Post*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Post__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Post``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Post&lt;T&gt;(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, object, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP POST method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Post&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The optional request body to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>
@@ -927,7 +1640,8 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Post&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;T&gt; Post&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1103,6 +1817,93 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_ProcessResponseAsync_" data-uid="Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_ProcessResponseAsync__1_System_Net_HttpStatusCode_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_String_Worldline_Acquiring_Sdk_CallContext_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.ProcessResponseAsync``1(System.Net.HttpStatusCode,System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.String,Worldline.Acquiring.Sdk.CallContext,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},System.Threading.CancellationToken)">ProcessResponseAsync&lt;T&gt;(HttpStatusCode, Stream, IEnumerable&lt;IResponseHeader&gt;, string, CallContext, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Like <code>ProcessResponse</code>, but the body handler is asynchronous, so it can await while the response is still open.
+If the body handler is cancelled because the given token was cancelled, that cancellation is not wrapped in a <a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;T&gt; ProcessResponseAsync&lt;T&gt;(HttpStatusCode statusCode, Stream stream, IEnumerable&lt;IResponseHeader&gt; headers, string requestPath, CallContext context, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt; bodyHandler, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode">HttpStatusCode</a></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IResponseHeader.html">IResponseHeader</a>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">requestPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IResponseHeader.html">IResponseHeader</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">bodyHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_Communicator_Put_" data-uid="Worldline.Acquiring.Sdk.Communicator.Put*"></a>
   <h4 id="Worldline_Acquiring_Sdk_Communicator_Put_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_System_Action_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader___Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.Communicator.Put(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Action{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader}},Worldline.Acquiring.Sdk.CallContext)">Put(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, object, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt;, CallContext)</h4>
   <div class="markdown level1 summary"><p>Corresponds to the HTTP PUT method.</p>
@@ -1110,7 +1911,8 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task Put(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken and an asynchronous body handler instead. This method will be removed in a future major version.&quot;)]
+public Task Put(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, Action&lt;Stream, IEnumerable&lt;IResponseHeader&gt;&gt; bodyHandler, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -1195,8 +1997,231 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
 </td>
       </tr>
       <tr>
-        <td><span class="xref">BodyHandlerException</span></td>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
         <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Put_" data-uid="Worldline.Acquiring.Sdk.Communicator.Put*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Put_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_System_Func_System_IO_Stream_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IResponseHeader__System_Threading_Tasks_Task__Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Put(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,System.Func{System.IO.Stream,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IResponseHeader},System.Threading.Tasks.Task},Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Put(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, object, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt;, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP PUT method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Put(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, Func&lt;Stream, IEnumerable&lt;IResponseHeader&gt;, Task&gt; bodyHandler, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The optional request body to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IResponseHeader.html">IResponseHeader</a>&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">bodyHandler</span></td>
+        <td><p>An asynchronous callback that receives the contents of the body as a stream. The response stays open until it has completed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.BodyHandlerException.html">BodyHandlerException</a></td>
+        <td><p>when the BodyHandler throws an exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_Communicator_Put_" data-uid="Worldline.Acquiring.Sdk.Communicator.Put*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Communicator_Put__1_System_String_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__Worldline_Acquiring_Sdk_Communication_AbstractParamRequest_System_Object_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Communicator.Put``1(System.String,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},Worldline.Acquiring.Sdk.Communication.AbstractParamRequest,System.Object,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">Put&lt;T&gt;(string, IEnumerable&lt;IRequestHeader&gt;, AbstractParamRequest, object, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Corresponds to the HTTP PUT method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Put&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, CallContext context, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">relativePath</span></td>
+        <td><p>The path to call, relative to the base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>An optional list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.AbstractParamRequest.html">AbstractParamRequest</a></td>
+        <td><span class="parametername">requestParameters</span></td>
+        <td><p>The optional set of request parameters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The optional request body to send.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The optional call context to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of the response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.CommunicationException.html">CommunicationException</a></td>
+        <td><p>when an exception occurred communicating with the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.Communication.ResponseException.html">ResponseException</a></td>
+        <td><p>when an error response was received from the Worldline Acquiring platform</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>
@@ -1208,7 +2233,8 @@ collector can reclaim the memory that the <a class="xref" href="Worldline.Acquir
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; Put&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, CallContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use the overload that takes a CancellationToken instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;T&gt; Put&lt;T&gt;(string relativePath, IEnumerable&lt;IRequestHeader&gt; requestHeaders, AbstractParamRequest requestParameters, object requestBody, CallContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

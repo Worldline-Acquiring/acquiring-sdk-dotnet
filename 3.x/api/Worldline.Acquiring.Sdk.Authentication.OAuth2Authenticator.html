@@ -93,6 +93,7 @@
   </div>
   <div class="implements">
     <h5>Implements</h5>
+    <div><a class="xref" href="Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.html">ICancellableAuthenticator</a></div>
     <div><a class="xref" href="Worldline.Acquiring.Sdk.Authentication.IAuthenticator.html">IAuthenticator</a></div>
   </div>
   <div class="inheritedMembers">
@@ -123,7 +124,7 @@
   <h6><strong>Assembly</strong>: Worldline.Acquiring.Sdk.dll</h6>
   <h5 id="Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OAuth2Authenticator : IAuthenticator</code></pre>
+    <pre><code class="lang-csharp hljs">public class OAuth2Authenticator : ICancellableAuthenticator, IAuthenticator</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -158,6 +159,86 @@ the timeout values must be positive.</p>
   </table>
   <h3 id="methods">Methods
 </h3>
+  <a id="Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_GetAuthorization_" data-uid="Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_GetAuthorization_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader},System.Threading.CancellationToken)">GetAuthorization(HttpMethod, Uri, IEnumerable&lt;IRequestHeader&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns a value that can be used for the <code>Authorization</code> header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAuthorization(HttpMethod httpMethod, Uri resourceUri, IEnumerable&lt;IRequestHeader&gt; requestHeaders, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpmethod">HttpMethod</a></td>
+        <td><span class="parametername">httpMethod</span></td>
+        <td><p>HTTP method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">resourceUri</span></td>
+        <td><p>Resource URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.Communication.IRequestHeader.html">IRequestHeader</a>&gt;</td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td><p>A list of request headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel waiting for, or retrieving, the authorization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>The <code>Authorization</code> header value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_GetAuthorization_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The list of Request headers may not be modified and may not contain headers with the same name.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_GetAuthorization_" data-uid="Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization*"></a>
   <h4 id="Worldline_Acquiring_Sdk_Authentication_OAuth2Authenticator_GetAuthorization_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_IEnumerable_Worldline_Acquiring_Sdk_Communication_IRequestHeader__" data-uid="Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.GetAuthorization(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.IEnumerable{Worldline.Acquiring.Sdk.Communication.IRequestHeader})">GetAuthorization(HttpMethod, Uri, IEnumerable&lt;IRequestHeader&gt;)</h4>
   <div class="markdown level1 summary"><p>Returns a value that can be used for the <code>Authorization</code> header.</p>
@@ -217,6 +298,9 @@ the timeout values must be positive.</p>
   <div class="markdown level1 remarks"><p>The list of Request headers may not be modified and may not contain headers with the same name.</p>
 </div>
   <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.html">ICancellableAuthenticator</a>
+  </div>
   <div>
       <a class="xref" href="Worldline.Acquiring.Sdk.Authentication.IAuthenticator.html">IAuthenticator</a>
   </div>

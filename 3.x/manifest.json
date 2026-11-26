@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/home/runner/work/acquiring-sdk-dotnet/acquiring-sdk-dotnet/code/documentation",
+  "source_base_path": "/builds/sdks/acquiring/s2s/acquiring-sdk-dotnet/documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -43,6 +43,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.ICancellableAuthenticator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Worldline.Acquiring.Sdk.Authentication.OAuth2Authenticator.yml",
       "output": {
         ".html": {
@@ -77,6 +87,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Worldline.Acquiring.Sdk.Authentication.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.BodyHandlerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.BodyHandlerException.html"
         }
       },
       "version": ""
@@ -127,6 +147,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Worldline.Acquiring.Sdk.Communication.DefaultConnection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Worldline.Acquiring.Sdk.Communication.ICancellableConnection.html"
         }
       },
       "version": ""

@@ -172,7 +172,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; CreateRefund(string paymentId, ApiPaymentRefundRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use CreateRefundAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiActionResponseForRefund&gt; CreateRefund(string paymentId, ApiPaymentRefundRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -259,6 +260,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_CreateRefundAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_CreateRefundAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRefundRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.CreateRefundAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">CreateRefundAsync(string, ApiPaymentRefundRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/refunds</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/createRefund">Refund card payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponseForRefund&gt; CreateRefundAsync(string paymentId, ApiPaymentRefundRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRefundRequest.html">ApiPaymentRefundRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiPaymentRefundRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponseForRefund.html">ApiActionResponseForRefund</a>&gt;</td>
+        <td><p>ApiActionResponseForRefund</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_GetPaymentStatus_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatus*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_GetPaymentStatus_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_GetPaymentStatusParams_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatus(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams,Worldline.Acquiring.Sdk.CallContext)">GetPaymentStatus(string, GetPaymentStatusParams, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}</p>
@@ -269,7 +378,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiPaymentResource&gt; GetPaymentStatus(string paymentId, GetPaymentStatusParams query, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use GetPaymentStatusAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiPaymentResource&gt; GetPaymentStatus(string paymentId, GetPaymentStatusParams query, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -356,6 +466,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_GetPaymentStatusAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_GetPaymentStatusAsync_System_String_Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_GetPaymentStatusParams_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.GetPaymentStatusAsync(System.String,Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">GetPaymentStatusAsync(string, GetPaymentStatusParams, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/getPaymentStatus">Retrieve payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiPaymentResource&gt; GetPaymentStatusAsync(string paymentId, GetPaymentStatusParams query, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.GetPaymentStatusParams.html">GetPaymentStatusParams</a></td>
+        <td><span class="parametername">query</span></td>
+        <td><p>GetPaymentStatusParams</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResource.html">ApiPaymentResource</a>&gt;</td>
+        <td><p>ApiPaymentResource</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_IncrementPayment_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPayment*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_IncrementPayment_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiIncrementRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPayment(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest,Worldline.Acquiring.Sdk.CallContext)">IncrementPayment(string, ApiIncrementRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/increments</p>
@@ -366,7 +584,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiIncrementResponse&gt; IncrementPayment(string paymentId, ApiIncrementRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use IncrementPaymentAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiIncrementResponse&gt; IncrementPayment(string paymentId, ApiIncrementRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -453,6 +672,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_IncrementPaymentAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_IncrementPaymentAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiIncrementRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.IncrementPaymentAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">IncrementPaymentAsync(string, ApiIncrementRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/increments</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/incrementPayment">Increment authorization</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiIncrementResponse&gt; IncrementPaymentAsync(string paymentId, ApiIncrementRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementRequest.html">ApiIncrementRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiIncrementRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiIncrementResponse.html">ApiIncrementResponse</a>&gt;</td>
+        <td><p>ApiIncrementResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ProcessPayment_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPayment*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ProcessPayment_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPayment(Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest,Worldline.Acquiring.Sdk.CallContext)">ProcessPayment(ApiPaymentRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments</p>
@@ -463,7 +790,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiPaymentResponse&gt; ProcessPayment(ApiPaymentRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ProcessPaymentAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiPaymentResponse&gt; ProcessPayment(ApiPaymentRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -544,6 +872,108 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ProcessPaymentAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ProcessPaymentAsync_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ProcessPaymentAsync(Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">ProcessPaymentAsync(ApiPaymentRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/processPayment">Create payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiPaymentResponse&gt; ProcessPaymentAsync(ApiPaymentRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentRequest.html">ApiPaymentRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiPaymentRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentResponse.html">ApiPaymentResponse</a>&gt;</td>
+        <td><p>ApiPaymentResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ReverseAuthorization_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorization*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ReverseAuthorization_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentReversalRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorization(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext)">ReverseAuthorization(string, ApiPaymentReversalRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/authorization-reversals</p>
@@ -554,7 +984,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiReversalResponse&gt; ReverseAuthorization(string paymentId, ApiPaymentReversalRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use ReverseAuthorizationAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiReversalResponse&gt; ReverseAuthorization(string paymentId, ApiPaymentReversalRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -641,6 +1072,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       </tr>
     </tbody>
   </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ReverseAuthorizationAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_ReverseAuthorizationAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiPaymentReversalRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.ReverseAuthorizationAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">ReverseAuthorizationAsync(string, ApiPaymentReversalRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/authorization-reversals</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/reverseAuthorization">Reverse authorization</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiReversalResponse&gt; ReverseAuthorizationAsync(string paymentId, ApiPaymentReversalRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiPaymentReversalRequest.html">ApiPaymentReversalRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiPaymentReversalRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiReversalResponse.html">ApiReversalResponse</a>&gt;</td>
+        <td><p>ApiReversalResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_SimpleCaptureOfPayment_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPayment*"></a>
   <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_SimpleCaptureOfPayment_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiCaptureRequest_Worldline_Acquiring_Sdk_CallContext_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPayment(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest,Worldline.Acquiring.Sdk.CallContext)">SimpleCaptureOfPayment(string, ApiCaptureRequest, CallContext)</h4>
   <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/captures</p>
@@ -651,7 +1190,8 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponse&gt; SimpleCaptureOfPayment(string paymentId, ApiCaptureRequest body, CallContext context = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use SimpleCaptureOfPaymentAsync instead. This method will be removed in a future major version.&quot;)]
+public Task&lt;ApiActionResponse&gt; SimpleCaptureOfPayment(string paymentId, ApiCaptureRequest body, CallContext context = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -734,6 +1274,114 @@ or the service that you're trying to reach is temporary unavailable (HTTP status
       <tr>
         <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
         <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_SimpleCaptureOfPaymentAsync_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync*"></a>
+  <h4 id="Worldline_Acquiring_Sdk_V1_Acquirer_Merchant_Cardpayments_CardPaymentsClient_SimpleCaptureOfPaymentAsync_System_String_Worldline_Acquiring_Sdk_V1_Domain_ApiCaptureRequest_Worldline_Acquiring_Sdk_CallContext_System_Threading_CancellationToken_" data-uid="Worldline.Acquiring.Sdk.V1.Acquirer.Merchant.Cardpayments.CardPaymentsClient.SimpleCaptureOfPaymentAsync(System.String,Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest,Worldline.Acquiring.Sdk.CallContext,System.Threading.CancellationToken)">SimpleCaptureOfPaymentAsync(string, ApiCaptureRequest, CallContext, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Resource /processing/v1/{acquirerId}/{merchantId}/payments/{paymentId}/captures</p>
+<ul>
+<li><a href="https://docs.acquiring.worldline-solutions.com/api-reference#tag/Card-Payments/operation/simpleCaptureOfPayment">Capture payment</a></li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ApiActionResponse&gt; SimpleCaptureOfPaymentAsync(string paymentId, ApiCaptureRequest body, CallContext context = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">paymentId</span></td>
+        <td><p>string</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiCaptureRequest.html">ApiCaptureRequest</a></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>ApiCaptureRequest</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.CallContext.html">CallContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>CallContext</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A token to cancel the call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Worldline.Acquiring.Sdk.V1.Domain.ApiActionResponse.html">ApiActionResponse</a>&gt;</td>
+        <td><p>ApiActionResponse</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ValidationException.html">ValidationException</a></td>
+        <td><p>if the request was not correct and couldn't be processed (HTTP status code 400)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.AuthorizationException.html">AuthorizationException</a></td>
+        <td><p>if the request was not allowed (HTTP status code 403)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ReferenceException.html">ReferenceException</a></td>
+        <td><p>if an object was attempted to be referenced that doesn't exist or has been removed,
+or there was a conflict (HTTP status code 404, 409 or 410)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.PlatformException.html">PlatformException</a></td>
+        <td><p>if something went wrong at the Worldline Acquiring platform,
+the Worldline Acquiring platform was unable to process a message from a downstream partner/acquirer,
+or the service that you're trying to reach is temporary unavailable (HTTP status code 500, 502 or 503)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Worldline.Acquiring.Sdk.V1.ApiException.html">ApiException</a></td>
+        <td><p>if the Worldline Acquiring platform returned any other error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.operationcanceledexception">OperationCanceledException</a></td>
+        <td><p>when the cancellation token was cancelled</p>
 </td>
       </tr>
     </tbody>
